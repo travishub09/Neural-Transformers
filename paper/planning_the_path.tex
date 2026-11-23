@@ -363,7 +363,7 @@ Per-token sparsity in SwiGLU models lives at the level of individual neurons. Wi
 
 Clustered activation vocabularies fail for the same reason. Replacing NeuroPrefetcher's predictor with the true nearest of its 512 patterns per layer changes perplexity at 50\% retention only from 78.03 to 76.57 (dense 5.89). The pattern vocabulary, not the predictor, limits it once skipping covers most of the model.
 
-\subsection{Planning ahead versus predicting layer by layer}
+\subsection{Planning ahead versus layer-ahead prediction}
 
 Committing to a token's whole path after layer~2 costs quality relative to layer-ahead prediction, which observes the token's hidden state at every layer: on Qwen3-1.7B at the 50\% target, the layer-ahead predictor with hidden-state input reaches +2.64\%, against +8.6\% at 51.62\% retention for the Neural Transformer under the same protocol, although the two predictors also differ in training length (13M versus 2M end-to-end tokens). Part of the gap is the price of lead time, which layer-ahead prediction cannot offer beyond a layer or two.
 
