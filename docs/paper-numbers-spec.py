@@ -237,3 +237,9 @@ for v,desc in (('30 of 32','sparse layers: layers 3–32 of Mistral (first two d
                ('64 / 512 / 1,024 / 1,536','prompt lengths and WikiText-2 window length, configs/mistral-long-prompt.json'),('1,024 (HellaSwag calibration)','unlabeled HellaSwag training examples for calibration, hellaswag-matched-v1 protocol'),
                ('0.59','A40 hourly rate in Qwen run records'),('95','confidence level of all intervals')):
     row(v,c(desc),'raw','configuration or setup constant','-','-')
+# ---- abstract (rounded restatements)
+row('49',(P2_64%('50','planner'),O+'routed_kept'),'pct',CONT+' (abstract: retention for the 5.2% result)','(retention)')
+row('72',(P2_64%('50','griffin'),O+'relative_ppl_increase'),'pct',CONT+' (abstract)',(P2_64%('50','griffin'),O+'routed_kept'))
+row('228',(P2_64%('50','neuro'),O+'relative_ppl_increase'),'pct',CONT+' (abstract)',(P2_64%('50','neuro'),O+'routed_kept'))
+row('48',(HS%'griffin-50','/suffix_kept'),'pct',HSP+' (abstract: GRIFFIN retention)','(retention)','single seed')
+row('20',(HSL,'/results/1/suffix_kept'),'pct',HSP+' (abstract: NT-20 retention 19.74%)','(retention)','single seed')
