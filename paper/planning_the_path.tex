@@ -1,3 +1,4 @@
+\pdfoutput=1
 \documentclass[10pt,twocolumn,letterpaper]{article}
 
 % ---------- Page layout (close to ICML / NeurIPS-style preprint) ----------
@@ -102,7 +103,7 @@ Our contributions are:
 \draw[->] (tok) -- (l1);
 \draw[->] (l1) -- (l2); \draw[->] (l2) -- (l3); \draw[->] (l3) -- (l4);
 \node[font=\scriptsize\bfseries, above=0.1cm of lL] {Frozen base model};
-% planner
+% Neural Transformer
 \node[pl] (p3) at (\px,1.16) {$u_3$};
 \node[pl] (p4) at (\px,1.74) {$u_4$};
 \node     (pd) at (\px,2.28) {$\vdots$};
@@ -110,7 +111,7 @@ Our contributions are:
 \node[draw, dashed, rounded corners=2pt, inner sep=4pt, fit=(p3)(pL)] (planbox) {};
 \node[font=\scriptsize\bfseries, above=0.02cm of planbox, align=center] {Neural Transformer\\(causal over layer positions)};
 \draw[->] (p3) -- (p4); \draw[->] (p4) -- (pd); \draw[->] (pd) -- (pL);
-% seed
+% context vector
 \node[draw, rounded corners=1.5pt, fill=green!10] (seed) at (\px,0.4) {context $c_t$};
 \draw[->] (l2.east) -- node[above, font=\tiny]{$h^{(2)}_t$} (seed.west |- l2.east);
 \node[align=left, font=\tiny, anchor=west] (prev) at (\px+0.75,-0.2) {previous-token\\path $b_{t-1}$};
