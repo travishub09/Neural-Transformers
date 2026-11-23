@@ -1,0 +1,33 @@
+{
+  "collection": "results/mistral--position-losses-v1",
+  "output": "artifacts/value-followups/positions-v1",
+  "protocol": "mistral-paired-wikitext-position-losses-v1",
+  "seed": 20261122,
+  "budgets": [
+    50,
+    40
+  ],
+  "prompt_and_calibration": [
+    [
+      64,
+      512
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      1024,
+      512
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "batch_size": 8,
+  "bootstrap_repetitions": 2000,
+  "dollar_cap": 8,
+  "launch_status": "preregistered; awaiting allocation",
+  "maximum_gpu_hours": 3.7
+}

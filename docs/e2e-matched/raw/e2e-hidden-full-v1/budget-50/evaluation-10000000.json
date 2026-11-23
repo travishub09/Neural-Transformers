@@ -1,0 +1,189 @@
+{
+  "overall": {
+    "tokens": 28857,
+    "windows": 63,
+    "dense_nll": 1.7737570432899072,
+    "student_nll": 1.7998204704480771,
+    "dense_perplexity": 5.892951898195651,
+    "student_perplexity": 6.048561471401205,
+    "relative_ppl_increase": 0.0264060484276479,
+    "teacher_kl_nats": 0.033260460106983684,
+    "top1_agreement": 0.9178015732751152,
+    "relative_ppl_increase_ci95": [
+      0.02232088035735308,
+      0.030373508116868328
+    ],
+    "teacher_kl_nats_ci95": [
+      0.03162930673869743,
+      0.0348323726319087
+    ],
+    "method": "paired document bootstrap within domains",
+    "routed_kept": 0.5059664818498698,
+    "all_mlp_kept": 0.5412545902891648,
+    "effort": {
+      "mean": 0.5059664818498698,
+      "std": 0.1462701248467702,
+      "quantiles": {
+        "min": 0.11896534264087677,
+        "p05": 0.267744654417038,
+        "p25": 0.40944889187812805,
+        "median": 0.502854585647583,
+        "p75": 0.5919221043586731,
+        "p95": 0.7770783543586723,
+        "max": 0.9624337553977966
+      },
+      "pearson_dense_next_token_nll": 0.054528218175140815,
+      "pearson_within_domain_centered": 0.0937041296950164,
+      "interpretation": "Association with dense next-token surprisal, not causal evidence of useful difficulty adaptation."
+    }
+  },
+  "domains": {
+    "web": {
+      "tokens": 9578,
+      "windows": 24,
+      "dense_nll": 2.622686183144544,
+      "student_nll": 2.648179927707021,
+      "dense_perplexity": 13.772669854257309,
+      "student_perplexity": 14.128300701368076,
+      "relative_ppl_increase": 0.02582148928813803,
+      "teacher_kl_nats": 0.03470522017456352,
+      "top1_agreement": 0.8985174357903529,
+      "relative_ppl_increase_ci95": [
+        0.018963273646192096,
+        0.032403213675797835
+      ],
+      "teacher_kl_nats_ci95": [
+        0.03309535862914754,
+        0.036345187443692514
+      ],
+      "method": "paired document bootstrap within domains",
+      "routed_kept": 0.4933854117297223,
+      "all_mlp_kept": 0.5295721680347422,
+      "effort": {
+        "mean": 0.4933854117297223,
+        "std": 0.1179165068733305,
+        "quantiles": {
+          "min": 0.12208285182714462,
+          "p05": 0.2909643054008484,
+          "p25": 0.4153270572423935,
+          "median": 0.4998028427362442,
+          "p75": 0.5729151666164398,
+          "p95": 0.6784912645816803,
+          "max": 0.919771671295166
+        },
+        "pearson_dense_next_token_nll": 0.08472056782301549,
+        "pearson_within_domain_centered": 0.08472056782301549,
+        "interpretation": "Association with dense next-token surprisal, not causal evidence of useful difficulty adaptation."
+      }
+    },
+    "code": {
+      "tokens": 7515,
+      "windows": 15,
+      "dense_nll": 1.0437167389644662,
+      "student_nll": 1.0675581425303153,
+      "dense_perplexity": 2.83975204131263,
+      "student_perplexity": 2.908269243417566,
+      "relative_ppl_increase": 0.024127881979887463,
+      "teacher_kl_nats": 0.02725427091539772,
+      "top1_agreement": 0.9510312707917499,
+      "relative_ppl_increase_ci95": [
+        0.018200207249410866,
+        0.029929140648671776
+      ],
+      "teacher_kl_nats_ci95": [
+        0.02279714369508691,
+        0.031427039391635415
+      ],
+      "method": "paired document bootstrap within domains",
+      "routed_kept": 0.5606690584958909,
+      "all_mlp_kept": 0.5920498400318986,
+      "effort": {
+        "mean": 0.5606690584958909,
+        "std": 0.1911361065830531,
+        "quantiles": {
+          "min": 0.1398112028837204,
+          "p05": 0.24800431281328203,
+          "p25": 0.4142284393310547,
+          "median": 0.5587127804756165,
+          "p75": 0.7128155529499054,
+          "p95": 0.8660663664340973,
+          "max": 0.9624337553977966
+        },
+        "pearson_dense_next_token_nll": 0.018245472535846026,
+        "pearson_within_domain_centered": 0.018245472535846016,
+        "interpretation": "Association with dense next-token surprisal, not causal evidence of useful difficulty adaptation."
+      }
+    },
+    "conversation": {
+      "tokens": 11764,
+      "windows": 24,
+      "dense_nll": 1.5489363688150672,
+      "student_nll": 1.5768830777819616,
+      "dense_perplexity": 4.706461580102747,
+      "student_perplexity": 4.839846850561622,
+      "relative_ppl_increase": 0.028340881613222915,
+      "teacher_kl_nats": 0.035921000726457396,
+      "top1_agreement": 0.912274736484189,
+      "relative_ppl_increase_ci95": [
+        0.020961198716754115,
+        0.03576439790997159
+      ],
+      "teacher_kl_nats_ci95": [
+        0.03380170635430477,
+        0.03837731629206679
+      ],
+      "method": "paired document bootstrap within domains",
+      "routed_kept": 0.48126498798009126,
+      "all_mlp_kept": 0.5183174888386561,
+      "effort": {
+        "mean": 0.48126498798009126,
+        "std": 0.1231774257083722,
+        "quantiles": {
+          "min": 0.11896534264087677,
+          "p05": 0.26391448080539703,
+          "p25": 0.4024157449603081,
+          "median": 0.4871920347213745,
+          "p75": 0.5629241466522217,
+          "p95": 0.6688765197992326,
+          "max": 0.9583271741867065
+        },
+        "pearson_dense_next_token_nll": 0.1860451743633441,
+        "pearson_within_domain_centered": 0.18604517436334417,
+        "interpretation": "Association with dense next-token surprisal, not causal evidence of useful difficulty adaptation."
+      }
+    }
+  },
+  "seconds": 12.29705847700825,
+  "documents": 63,
+  "offsets": [
+    0.087890625,
+    0.087890625,
+    0.5987578630447388,
+    0.5829419493675232,
+    0.6196291446685791,
+    0.563392162322998,
+    0.6110695600509644,
+    0.6234983801841736,
+    0.6332010626792908,
+    0.5818324089050293,
+    0.5253481268882751,
+    0.5903892517089844,
+    0.5781368017196655,
+    0.5920659303665161,
+    0.5876026749610901,
+    0.5565255880355835,
+    0.5022997856140137,
+    0.5673021674156189,
+    0.6217807531356812,
+    0.6790940761566162,
+    0.7973614931106567,
+    0.8494614362716675,
+    0.8393052220344543,
+    0.7929818630218506,
+    0.7754477858543396,
+    0.7753807306289673,
+    0.7450922727584839,
+    0.7465283274650574
+  ],
+  "scope": "Dense masked simulation; attention and first two MLP layers dense; no measured inference speedup."
+}

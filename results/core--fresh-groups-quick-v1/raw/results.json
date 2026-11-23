@@ -1,0 +1,557 @@
+{
+  "status": "complete",
+  "fingerprint": {
+    "scripts/quick_fresh_groups.py": "a04f99e4d568305be21c9655b2fa8c1c20a7135221329aaf39e0a992b19b07e2",
+    "pathpred/fresh_groups.py": "01ccb56c3c1b64df2bcf2d11d7533520b7619bb8e76af7ea6268eea2e15063f2",
+    "pathpred/clustering.py": "2a3fb8264f52986e339bfcecb51276312d94ea4831e747b0a5d5d89158c77950",
+    "scripts/cluster_neurons.py": "a31fa9937de4448b02ea915f866ce2583673da3a4a6867bda2dbac5b1190c9ec",
+    "pathpred/sparsity_diagnostics.py": "457f8f80bc3fde8582ec1362846f20fa68b8d66a8362b442f8a3b8c6bc67a19b",
+    "pathpred/oracle_checks.py": "9d481975e52146959809986b7a25b2eeffbdda80948dc0c2cd16ead7820e6b8d",
+    "configs/fresh-groups-quick.json": "822b6cdae04266f22ee728c52df9ea37fa28a244546f7843416bb2d27defd992",
+    "docs/fresh-groups-protocol.md": "ba33fe37d7e6d18001d7ed1799aa76a10228933824d4e4376fb01cf575939af7",
+    "data/stage3-corpus-v1/manifest.json": "3c9dcf7ab27c65b1c604899e4febf1e74fa66a1bfff72ee8abbda098c709e9da",
+    "data/stage3-full-v1/manifest.json": "902a62ad2ef5c908a7a18a21f93527f5309f6b0cc9284dd2d0c06464b7f890bd",
+    "data/stage4-clusters-v1/manifest.json": "5ba4eb44eda86372bbbce56baf443ab22ccfa63c1305469c00d3a161371a719c",
+    "artifacts/sparsity-calibration-v2/grid-results.json": "e2918d14b2dcdb8cd3796ccf2d8dde763018c592a3dfef6e79f1388cacab2132"
+  },
+  "config": {
+    "seed": 20261108,
+    "sizes": [
+      16,
+      32
+    ],
+    "restarts": 1,
+    "max_iterations": 15,
+    "relative_tolerance": 1e-05,
+    "distance_integer_scale": 1000000,
+    "kept_fractions": [
+      0.75,
+      0.5
+    ],
+    "bootstrap_repetitions": 2000,
+    "maximum_runtime_minutes": 30,
+    "scope": "Fresh balanced clustering of all 6144 neurons independently per layer and size; training activations only; MLP-only exact contribution; attention dense; no protections"
+  },
+  "results": {
+    "g16-k75-old_subdivision": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.8187420381571928,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 6.164099368791575,
+        "relative_ppl_increase": 0.04601216423961412,
+        "teacher_kl_nats": 0.046159803807687104,
+        "top1_agreement": 0.9082025158540389,
+        "relative_ppl_increase_ci95": [
+          0.04095858747027502,
+          0.0514922184511296
+        ],
+        "teacher_kl_nats_ci95": [
+          0.04208330912088214,
+          0.050757587284269365
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.6678420303599677,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 14.40884177577187,
+          "relative_ppl_increase": 0.04619089314174722,
+          "teacher_kl_nats": 0.043954785400255485,
+          "top1_agreement": 0.8885988724159533
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.0862835271636067,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 2.9632407789319086,
+          "relative_ppl_increase": 0.04348574658025343,
+          "teacher_kl_nats": 0.044312113939144186,
+          "top1_agreement": 0.9370592149035263
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.5953270419653038,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 4.929941106131553,
+          "relative_ppl_increase": 0.04748355473113763,
+          "teacher_kl_nats": 0.049135412076004026,
+          "top1_agreement": 0.9057293437606256
+        }
+      }
+    },
+    "g16-k75-fresh": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.8190374620371186,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 6.165920659956557,
+        "relative_ppl_increase": 0.046321226861615,
+        "teacher_kl_nats": 0.04864170424816806,
+        "top1_agreement": 0.9067124094673736,
+        "relative_ppl_increase_ci95": [
+          0.04104829420976874,
+          0.05195579568291643
+        ],
+        "teacher_kl_nats_ci95": [
+          0.04424315064050398,
+          0.05371550963836726
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.662815010264846,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 14.336589996346923,
+          "relative_ppl_increase": 0.040944867484447804,
+          "teacher_kl_nats": 0.046453438183013604,
+          "top1_agreement": 0.8858843182292754
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.0900580876737118,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 2.9744468462428837,
+          "relative_ppl_increase": 0.04743188946454399,
+          "teacher_kl_nats": 0.047663286124757294,
+          "top1_agreement": 0.9387890884896873
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.5977333683118402,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 4.941818437939123,
+          "relative_ppl_increase": 0.050007177118236955,
+          "teacher_kl_nats": 0.05104837073656327,
+          "top1_agreement": 0.903179190751445
+        }
+      }
+    },
+    "g16-k50-old_subdivision": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.976772562892574,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 7.2194051686166185,
+        "relative_ppl_increase": 0.22509148103297952,
+        "teacher_kl_nats": 0.21077720854241724,
+        "top1_agreement": 0.8110337179887029,
+        "relative_ppl_increase_ci95": [
+          0.20594138603915524,
+          0.24459183495721537
+        ],
+        "teacher_kl_nats_ci95": [
+          0.19515849586283276,
+          0.22708811293045503
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.8292797599796047,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 16.933260419628493,
+          "relative_ppl_increase": 0.22948277994147978,
+          "teacher_kl_nats": 0.20864212263241527,
+          "top1_agreement": 0.7717686364585509
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.2673715425811312,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.5515053028388297,
+          "relative_ppl_increase": 0.2506392287677353,
+          "teacher_kl_nats": 0.22728923022284367,
+          "top1_agreement": 0.8694610778443114
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.7358540601673882,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 5.673771477333899,
+          "relative_ppl_increase": 0.20552805558226497,
+          "teacher_kl_nats": 0.20196745079994827,
+          "top1_agreement": 0.805678340700442
+        }
+      }
+    },
+    "g16-k50-fresh": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.9723813295239414,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 7.187772579609437,
+        "relative_ppl_increase": 0.219723612848468,
+        "teacher_kl_nats": 0.207512896796026,
+        "top1_agreement": 0.8073604324773885,
+        "relative_ppl_increase_ci95": [
+          0.20083560665331937,
+          0.23977667631429828
+        ],
+        "teacher_kl_nats_ci95": [
+          0.1918364592630293,
+          0.22361198611552927
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.815737544346459,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 16.70549227917627,
+          "relative_ppl_increase": 0.2129450902369803,
+          "teacher_kl_nats": 0.20063137276947024,
+          "top1_agreement": 0.767801211108791
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.2607596532503431,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.5281006027275983,
+          "relative_ppl_increase": 0.24239741759170985,
+          "teacher_kl_nats": 0.22406799614209097,
+          "top1_agreement": 0.8670658682634731
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.7403319476492407,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 5.699234956355775,
+          "relative_ppl_increase": 0.21093837894058712,
+          "teacher_kl_nats": 0.20254006999737523,
+          "top1_agreement": 0.8014280856851411
+        }
+      }
+    },
+    "g32-k75-old_subdivision": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.8343154519040994,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 6.260846827391019,
+        "relative_ppl_increase": 0.06242965080166569,
+        "teacher_kl_nats": 0.063791400976365,
+        "top1_agreement": 0.8974598884152892,
+        "relative_ppl_increase_ci95": [
+          0.055802455302202306,
+          0.0695808480326857
+        ],
+        "teacher_kl_nats_ci95": [
+          0.05752404127762293,
+          0.07118844156848102
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.682950831694336,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 14.628195013124436,
+          "relative_ppl_increase": 0.06211759723570763,
+          "teacher_kl_nats": 0.06070266085066808,
+          "top1_agreement": 0.8725203591564001
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.103989887833984,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.0161762532177008,
+          "relative_ppl_increase": 0.06212662561324238,
+          "teacher_kl_nats": 0.06652709540494214,
+          "top1_agreement": 0.9293413173652695
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.6099161783879514,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 5.002391901706237,
+          "relative_ppl_increase": 0.06287745402078257,
+          "teacher_kl_nats": 0.06455858979761353,
+          "top1_agreement": 0.8973988439306358
+        }
+      }
+    },
+    "g32-k75-fresh": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.8317564530858828,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 6.2448458097831185,
+        "relative_ppl_increase": 0.05971437026241683,
+        "teacher_kl_nats": 0.06150822890056898,
+        "top1_agreement": 0.895103441106144,
+        "relative_ppl_increase_ci95": [
+          0.05318976935766702,
+          0.06650094873161352
+        ],
+        "teacher_kl_nats_ci95": [
+          0.056106207969969506,
+          0.06754806410032223
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.676008749408869,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 14.526996550101178,
+          "relative_ppl_increase": 0.05476982341304701,
+          "teacher_kl_nats": 0.056939435089269165,
+          "top1_agreement": 0.8760701607851326
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.10305835262492,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.0133678870901313,
+          "relative_ppl_increase": 0.06113767795629444,
+          "teacher_kl_nats": 0.06317659965791117,
+          "top1_agreement": 0.927478376580173
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.609886147984095,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 5.0022416801128,
+          "relative_ppl_increase": 0.06284553586084836,
+          "teacher_kl_nats": 0.06416226671791027,
+          "top1_agreement": 0.8899183951037062
+        }
+      }
+    },
+    "g32-k50-old_subdivision": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 2.0228464415911476,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 7.559812902896982,
+        "relative_ppl_increase": 0.2828567131545233,
+        "teacher_kl_nats": 0.25674467517281757,
+        "top1_agreement": 0.793602938628409,
+        "relative_ppl_increase_ci95": [
+          0.25570708744385484,
+          0.31055650761861997
+        ],
+        "teacher_kl_nats_ci95": [
+          0.2359970942409171,
+          0.27875911131296227
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.864032701047315,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 17.532086231191936,
+          "relative_ppl_increase": 0.27296206303620524,
+          "teacher_kl_nats": 0.2448226153882476,
+          "top1_agreement": 0.7539152223846315
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.3330498379793025,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.7925925598937096,
+          "relative_ppl_increase": 0.33553652034374254,
+          "teacher_kl_nats": 0.29291465438870856,
+          "top1_agreement": 0.8506986027944112
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.778621644164409,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 5.921688596767947,
+          "relative_ppl_increase": 0.25820395980767147,
+          "teacher_kl_nats": 0.24334549928104524,
+          "top1_agreement": 0.7894423665419925
+        }
+      }
+    },
+    "g32-k50-fresh": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 2.0125772541251776,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 7.482577020615698,
+        "relative_ppl_increase": 0.269750228727774,
+        "teacher_kl_nats": 0.2489900001553044,
+        "top1_agreement": 0.79485046955678,
+        "relative_ppl_increase_ci95": [
+          0.24499938654037148,
+          0.29648401042658584
+        ],
+        "teacher_kl_nats_ci95": [
+          0.22849660997765323,
+          0.269706983031964
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.8491765928002004,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 17.273552815476343,
+          "relative_ppl_increase": 0.2541905816566762,
+          "teacher_kl_nats": 0.2336629149659091,
+          "top1_agreement": 0.7539152223846315
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.3240776077275809,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.7587167442568497,
+          "relative_ppl_increase": 0.3236073747197459,
+          "teacher_kl_nats": 0.28458568565123377,
+          "top1_agreement": 0.8534930139720559
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.7712585170330808,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 5.87824658160759,
+          "relative_ppl_increase": 0.24897366770372348,
+          "teacher_kl_nats": 0.23872999041730025,
+          "top1_agreement": 0.7907174430465828
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "g16-k75": {
+      "fresh_vs_old_relative_ppl_change": 0.00029546752185732373,
+      "fresh_vs_old_relative_ppl_change_ci95": [
+        -0.00498170259775531,
+        0.005310552894715436
+      ],
+      "fresh_minus_old_kl": 0.0024819004404809863,
+      "fresh_minus_old_kl_ci95": [
+        0.00014138452121385985,
+        0.004892339268320813
+      ],
+      "method": "paired document bootstrap stratified by domain; 2000 draws; lower favors fresh"
+    },
+    "g16-k50": {
+      "fresh_vs_old_relative_ppl_change": -0.004381606000545501,
+      "fresh_vs_old_relative_ppl_change_ci95": [
+        -0.011538522578857294,
+        0.003130782047339853
+      ],
+      "fresh_minus_old_kl": -0.0032643117463912715,
+      "fresh_minus_old_kl_ci95": [
+        -0.007704981870126568,
+        0.0012542337948615457
+      ],
+      "method": "paired document bootstrap stratified by domain; 2000 draws; lower favors fresh"
+    },
+    "g32-k75": {
+      "fresh_vs_old_relative_ppl_change": -0.00255572737187738,
+      "fresh_vs_old_relative_ppl_change_ci95": [
+        -0.007228103761400062,
+        0.002263759521447453
+      ],
+      "fresh_minus_old_kl": -0.002283172075796013,
+      "fresh_minus_old_kl_ci95": [
+        -0.005626209477263717,
+        0.0007636183893745997
+      ],
+      "method": "paired document bootstrap stratified by domain; 2000 draws; lower favors fresh"
+    },
+    "g32-k50": {
+      "fresh_vs_old_relative_ppl_change": -0.010216639389539353,
+      "fresh_vs_old_relative_ppl_change_ci95": [
+        -0.020640767929271164,
+        -0.0006633572808351869
+      ],
+      "fresh_minus_old_kl": -0.007754675017513154,
+      "fresh_minus_old_kl_ci95": [
+        -0.01358200149015866,
+        -0.0023360827141120474
+      ],
+      "method": "paired document bootstrap stratified by domain; 2000 draws; lower favors fresh"
+    }
+  },
+  "checks": {
+    "all_on_bitwise_equal": true,
+    "old_window_metrics_match_previous": true,
+    "attention_untouched": true,
+    "weights_not_reordered_or_trained": true
+  },
+  "documents": 63,
+  "fit_and_read_seconds": 363.43862747302046,
+  "evaluation_seconds": 49.08278103300836,
+  "total_seconds": 420.51190705999034
+}

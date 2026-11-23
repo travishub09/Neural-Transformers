@@ -1,0 +1,64 @@
+{
+  "name": "phase0-strong-v1",
+  "signals": [
+    "decisions",
+    "binary",
+    "coarse",
+    "magnitudes",
+    "hidden"
+  ],
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "gated_budget_anchors": [
+    0.5,
+    0.25,
+    0.1
+  ],
+  "context_length_for_cost": 1024,
+  "target_norm_coverage": 0.95,
+  "target_families": [
+    [
+      0,
+      16
+    ],
+    [
+      16,
+      64
+    ]
+  ],
+  "epochs": 40,
+  "minimum_epochs": 12,
+  "early_stopping_patience": 8,
+  "batch_size": 256,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "warmup_epochs": 1,
+  "minimum_lr_fraction": 0.1,
+  "positive_loss_weight": 2.0,
+  "gradient_clip": 1.0,
+  "output_initialization_scale": 0.01,
+  "validation_mask_seed": 73001,
+  "test_mask_seeds": [
+    83001,
+    83002,
+    83003
+  ],
+  "bootstrap_seed": 94001,
+  "bootstrap_repetitions": 2000,
+  "primary_budget": 0.25,
+  "noninferiority_margin": 0.02,
+  "minimum_static_gain": 0.01,
+  "training_gpu_time_limit_hours": 6,
+  "notes": [
+    "Above-own-training-q75 binary target replaces the prior 95% coverage target",
+    "All five inputs, seeds, masks, architecture and optimizer settings unchanged",
+    "Report method-count-normalized skill and common-cost-cap oracle advantage over fixed selection",
+    "Joint gate also requires exact-budget binary activity oracle to preserve quality; no automatic end-to-end training"
+  ],
+  "target": "strong",
+  "protocol_path": "docs/phase0-followup-protocol.md",
+  "minimum_oracle_fixed_gap_recovered": 0.2
+}

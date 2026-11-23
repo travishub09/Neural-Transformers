@@ -1,0 +1,511 @@
+{
+  "conditions": {
+    "gsm8k-dense": {
+      "examples": 1319,
+      "accuracy": 0.4048521607278241,
+      "accuracy_ci95": [
+        0.3775587566338135,
+        0.43214556482183475
+      ],
+      "paired_accuracy_gap_vs_dense": 0.0,
+      "paired_accuracy_gap_ci95": [
+        0.0,
+        0.0
+      ],
+      "routed_kept": 1.0,
+      "domains": {
+        "gsm8k": 0.4048521607278241
+      },
+      "macro_subject_accuracy": 0.4048521607278241,
+      "quality": {
+        "dense_perplexity": 1.7534727800411827,
+        "student_perplexity": 1.7534727800411827,
+        "relative_ppl_increase": 0.0,
+        "teacher_kl_nats": 0.0,
+        "top1_agreement": 1.0,
+        "routed_kept": 1.0,
+        "tokens": 8033.0,
+        "dense_perplexity_ci95": [
+          1.6802369196811917,
+          1.8300294613554164
+        ],
+        "student_perplexity_ci95": [
+          1.6802369196811917,
+          1.8300294613554164
+        ],
+        "relative_ppl_increase_ci95": [
+          0.0,
+          0.0
+        ],
+        "teacher_kl_nats_ci95": [
+          0.0,
+          0.0
+        ],
+        "top1_agreement_ci95": [
+          1.0,
+          1.0
+        ],
+        "routed_kept_ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "quality_protocol": "first 64 official test reference answers; full answer teacher forcing, separate from generated accuracy",
+      "single_seed": true,
+      "bootstrap": "paired example percentile bootstrap; evaluation noise, not seed variation",
+      "flexible_accuracy": 0.4048521607278241,
+      "stop_reason_counts": {
+        "length": 88,
+        "next_question": 1231
+      }
+    },
+    "gsm8k-planner-30": {
+      "examples": 1319,
+      "accuracy": 0.1516300227445034,
+      "accuracy_ci95": [
+        0.13191811978771797,
+        0.17134192570128887
+      ],
+      "paired_accuracy_gap_vs_dense": -0.2532221379833207,
+      "paired_accuracy_gap_ci95": [
+        -0.2812736921910538,
+        -0.22441243366186506
+      ],
+      "routed_kept": 0.15188431716110076,
+      "domains": {
+        "gsm8k": 0.1516300227445034
+      },
+      "macro_subject_accuracy": 0.1516300227445034,
+      "quality": {
+        "dense_perplexity": 1.7534727800411827,
+        "student_perplexity": 1.9493080292271898,
+        "relative_ppl_increase": 0.11168422539265627,
+        "teacher_kl_nats": 0.09565119873572868,
+        "top1_agreement": 0.9177144279845637,
+        "routed_kept": 0.208000355011408,
+        "tokens": 8033.0,
+        "dense_perplexity_ci95": [
+          1.6802369196811917,
+          1.8300294613554164
+        ],
+        "student_perplexity_ci95": [
+          1.849406873070103,
+          2.049714310918622
+        ],
+        "relative_ppl_increase_ci95": [
+          0.09527863265717637,
+          0.12776516651357356
+        ],
+        "teacher_kl_nats_ci95": [
+          0.08822217498181517,
+          0.10286729206007186
+        ],
+        "top1_agreement_ci95": [
+          0.909304603566425,
+          0.926437909196309
+        ],
+        "routed_kept_ci95": [
+          0.20152257429782075,
+          0.21466503057117148
+        ]
+      },
+      "quality_protocol": "first 64 official test reference answers; full answer teacher forcing, separate from generated accuracy",
+      "single_seed": true,
+      "bootstrap": "paired example percentile bootstrap; evaluation noise, not seed variation",
+      "flexible_accuracy": 0.15466262319939347,
+      "stop_reason_counts": {
+        "length": 244,
+        "next_question": 1075
+      }
+    },
+    "gsm8k-planner-20": {
+      "examples": 1319,
+      "accuracy": 0.0887035633055345,
+      "accuracy_ci95": [
+        0.07354056103108415,
+        0.10386656557998483
+      ],
+      "paired_accuracy_gap_vs_dense": -0.3161485974222896,
+      "paired_accuracy_gap_ci95": [
+        -0.34420015163002277,
+        -0.28959438968915857
+      ],
+      "routed_kept": 0.10226882177430946,
+      "domains": {
+        "gsm8k": 0.0887035633055345
+      },
+      "macro_subject_accuracy": 0.0887035633055345,
+      "quality": {
+        "dense_perplexity": 1.7534727800411827,
+        "student_perplexity": 2.077096374902779,
+        "relative_ppl_increase": 0.18456151617819555,
+        "teacher_kl_nats": 0.15150520080030405,
+        "top1_agreement": 0.8945599402464832,
+        "routed_kept": 0.14663527641975463,
+        "tokens": 8033.0,
+        "dense_perplexity_ci95": [
+          1.6802369196811917,
+          1.8300294613554164
+        ],
+        "student_perplexity_ci95": [
+          1.9627224876007574,
+          2.193007659247914
+        ],
+        "relative_ppl_increase_ci95": [
+          0.15957124759922373,
+          0.2103024962128212
+        ],
+        "teacher_kl_nats_ci95": [
+          0.14156184011204148,
+          0.1616559241186955
+        ],
+        "top1_agreement_ci95": [
+          0.8846187915073295,
+          0.9039679914329128
+        ],
+        "routed_kept_ci95": [
+          0.14186692427072364,
+          0.15148480968909378
+        ]
+      },
+      "quality_protocol": "first 64 official test reference answers; full answer teacher forcing, separate from generated accuracy",
+      "single_seed": true,
+      "bootstrap": "paired example percentile bootstrap; evaluation noise, not seed variation",
+      "flexible_accuracy": 0.0932524639878696,
+      "stop_reason_counts": {
+        "length": 332,
+        "next_question": 987
+      }
+    },
+    "mmlu-dense": {
+      "examples": 14042,
+      "accuracy": 0.624198832075203,
+      "accuracy_ci95": [
+        0.6165076199971514,
+        0.6323208944594787
+      ],
+      "paired_accuracy_gap_vs_dense": 0.0,
+      "paired_accuracy_gap_ci95": [
+        0.0,
+        0.0
+      ],
+      "routed_kept": 1.0,
+      "domains": {
+        "abstract_algebra": 0.29,
+        "anatomy": 0.6148148148148148,
+        "astronomy": 0.6578947368421053,
+        "business_ethics": 0.58,
+        "clinical_knowledge": 0.6566037735849056,
+        "college_biology": 0.7291666666666666,
+        "college_chemistry": 0.49,
+        "college_computer_science": 0.53,
+        "college_mathematics": 0.39,
+        "college_medicine": 0.5953757225433526,
+        "college_physics": 0.3333333333333333,
+        "computer_security": 0.78,
+        "conceptual_physics": 0.574468085106383,
+        "econometrics": 0.5087719298245614,
+        "electrical_engineering": 0.5793103448275863,
+        "elementary_mathematics": 0.3862433862433862,
+        "formal_logic": 0.4126984126984127,
+        "global_facts": 0.33,
+        "high_school_biology": 0.7774193548387097,
+        "high_school_chemistry": 0.49261083743842365,
+        "high_school_computer_science": 0.68,
+        "high_school_european_history": 0.7818181818181819,
+        "high_school_geography": 0.7828282828282829,
+        "high_school_government_and_politics": 0.8601036269430051,
+        "high_school_macroeconomics": 0.6564102564102564,
+        "high_school_mathematics": 0.35185185185185186,
+        "high_school_microeconomics": 0.6596638655462185,
+        "high_school_physics": 0.31788079470198677,
+        "high_school_psychology": 0.8220183486238533,
+        "high_school_statistics": 0.5555555555555556,
+        "high_school_us_history": 0.803921568627451,
+        "high_school_world_history": 0.7637130801687764,
+        "human_aging": 0.695067264573991,
+        "human_sexuality": 0.7938931297709924,
+        "international_law": 0.7933884297520661,
+        "jurisprudence": 0.75,
+        "logical_fallacies": 0.7668711656441718,
+        "machine_learning": 0.5089285714285714,
+        "management": 0.8058252427184466,
+        "marketing": 0.8717948717948718,
+        "medical_genetics": 0.74,
+        "miscellaneous": 0.8148148148148148,
+        "moral_disputes": 0.7196531791907514,
+        "moral_scenarios": 0.33631284916201115,
+        "nutrition": 0.7516339869281046,
+        "philosophy": 0.7138263665594855,
+        "prehistory": 0.7314814814814815,
+        "professional_accounting": 0.5035460992907801,
+        "professional_law": 0.45371577574967403,
+        "professional_medicine": 0.6580882352941176,
+        "professional_psychology": 0.6797385620915033,
+        "public_relations": 0.6454545454545455,
+        "security_studies": 0.7224489795918367,
+        "sociology": 0.8308457711442786,
+        "us_foreign_policy": 0.87,
+        "virology": 0.5421686746987951,
+        "world_religions": 0.8362573099415205
+      },
+      "macro_subject_accuracy": 0.6364953003318399,
+      "quality": {
+        "dense_perplexity": 2.4377920984101085,
+        "student_perplexity": 2.4377920984101085,
+        "relative_ppl_increase": 0.0,
+        "teacher_kl_nats": 0.0,
+        "top1_agreement": 1.0,
+        "routed_kept": 1.0,
+        "tokens": 14042,
+        "dense_perplexity_ci95": [
+          2.403232012904261,
+          2.4706009402168942
+        ],
+        "student_perplexity_ci95": [
+          2.403232012904261,
+          2.4706009402168942
+        ],
+        "relative_ppl_increase_ci95": [
+          0.0,
+          0.0
+        ],
+        "teacher_kl_nats_ci95": [
+          0.0,
+          0.0
+        ],
+        "top1_agreement_ci95": [
+          1.0,
+          1.0
+        ],
+        "routed_kept_ci95": [
+          1.0,
+          1.0
+        ]
+      },
+      "quality_protocol": "all MMLU gold letter predictions",
+      "single_seed": true,
+      "bootstrap": "paired example percentile bootstrap; evaluation noise, not seed variation"
+    },
+    "mmlu-planner-30": {
+      "examples": 14042,
+      "accuracy": 0.5598917533114941,
+      "accuracy_ci95": [
+        0.5519139011536818,
+        0.5683663295826805
+      ],
+      "paired_accuracy_gap_vs_dense": -0.06430707876370888,
+      "paired_accuracy_gap_ci95": [
+        -0.07157278165503489,
+        -0.05718380572568011
+      ],
+      "routed_kept": 0.13196087486245,
+      "domains": {
+        "abstract_algebra": 0.34,
+        "anatomy": 0.6222222222222222,
+        "astronomy": 0.5921052631578947,
+        "business_ethics": 0.54,
+        "clinical_knowledge": 0.4830188679245283,
+        "college_biology": 0.625,
+        "college_chemistry": 0.35,
+        "college_computer_science": 0.43,
+        "college_mathematics": 0.25,
+        "college_medicine": 0.5086705202312138,
+        "college_physics": 0.37254901960784315,
+        "computer_security": 0.72,
+        "conceptual_physics": 0.502127659574468,
+        "econometrics": 0.4473684210526316,
+        "electrical_engineering": 0.5172413793103449,
+        "elementary_mathematics": 0.373015873015873,
+        "formal_logic": 0.35714285714285715,
+        "global_facts": 0.36,
+        "high_school_biology": 0.6741935483870968,
+        "high_school_chemistry": 0.4482758620689655,
+        "high_school_computer_science": 0.64,
+        "high_school_european_history": 0.6484848484848484,
+        "high_school_geography": 0.6313131313131313,
+        "high_school_government_and_politics": 0.7875647668393783,
+        "high_school_macroeconomics": 0.617948717948718,
+        "high_school_mathematics": 0.2962962962962963,
+        "high_school_microeconomics": 0.5798319327731093,
+        "high_school_physics": 0.32450331125827814,
+        "high_school_psychology": 0.7688073394495413,
+        "high_school_statistics": 0.47685185185185186,
+        "high_school_us_history": 0.6911764705882353,
+        "high_school_world_history": 0.7426160337552743,
+        "human_aging": 0.6636771300448431,
+        "human_sexuality": 0.7404580152671756,
+        "international_law": 0.7603305785123967,
+        "jurisprudence": 0.6203703703703703,
+        "logical_fallacies": 0.6932515337423313,
+        "machine_learning": 0.4017857142857143,
+        "management": 0.7184466019417476,
+        "marketing": 0.7735042735042735,
+        "medical_genetics": 0.64,
+        "miscellaneous": 0.776500638569604,
+        "moral_disputes": 0.6473988439306358,
+        "moral_scenarios": 0.24916201117318434,
+        "nutrition": 0.6372549019607843,
+        "philosophy": 0.6913183279742765,
+        "prehistory": 0.7098765432098766,
+        "professional_accounting": 0.37943262411347517,
+        "professional_law": 0.3970013037809648,
+        "professional_medicine": 0.5992647058823529,
+        "professional_psychology": 0.6225490196078431,
+        "public_relations": 0.6727272727272727,
+        "security_studies": 0.6081632653061224,
+        "sociology": 0.7810945273631841,
+        "us_foreign_policy": 0.86,
+        "virology": 0.4759036144578313,
+        "world_religions": 0.8128654970760234
+      },
+      "macro_subject_accuracy": 0.5728186580536295,
+      "quality": {
+        "dense_perplexity": 2.4377920984101085,
+        "student_perplexity": 2.7773014138619105,
+        "relative_ppl_increase": 0.13926918364910007,
+        "teacher_kl_nats": 0.14593871639747413,
+        "top1_agreement": 0.7088733798604188,
+        "routed_kept": 0.13196087486245,
+        "tokens": 14042,
+        "dense_perplexity_ci95": [
+          2.403232012904261,
+          2.4706009402168942
+        ],
+        "student_perplexity_ci95": [
+          2.7465468758634928,
+          2.806483900036193
+        ],
+        "relative_ppl_increase_ci95": [
+          0.12995258590487427,
+          0.14825309130379913
+        ],
+        "teacher_kl_nats_ci95": [
+          0.14249746999613813,
+          0.14937804845753194
+        ],
+        "top1_agreement_ci95": [
+          0.7013245976356645,
+          0.7164221620851731
+        ],
+        "routed_kept_ci95": [
+          0.13160068485880552,
+          0.1323327551147914
+        ]
+      },
+      "quality_protocol": "all MMLU gold letter predictions",
+      "single_seed": true,
+      "bootstrap": "paired example percentile bootstrap; evaluation noise, not seed variation"
+    },
+    "mmlu-planner-20": {
+      "examples": 14042,
+      "accuracy": 0.5313345677253952,
+      "accuracy_ci95": [
+        0.523356715567583,
+        0.5393106395100413
+      ],
+      "paired_accuracy_gap_vs_dense": -0.09286426434980773,
+      "paired_accuracy_gap_ci95": [
+        -0.10055547642785928,
+        -0.08488819256516165
+      ],
+      "routed_kept": 0.08434711834698334,
+      "domains": {
+        "abstract_algebra": 0.26,
+        "anatomy": 0.6444444444444445,
+        "astronomy": 0.5789473684210527,
+        "business_ethics": 0.55,
+        "clinical_knowledge": 0.4490566037735849,
+        "college_biology": 0.6111111111111112,
+        "college_chemistry": 0.33,
+        "college_computer_science": 0.42,
+        "college_mathematics": 0.28,
+        "college_medicine": 0.47398843930635837,
+        "college_physics": 0.3137254901960784,
+        "computer_security": 0.7,
+        "conceptual_physics": 0.4808510638297872,
+        "econometrics": 0.4473684210526316,
+        "electrical_engineering": 0.4896551724137931,
+        "elementary_mathematics": 0.3333333333333333,
+        "formal_logic": 0.3888888888888889,
+        "global_facts": 0.23,
+        "high_school_biology": 0.635483870967742,
+        "high_school_chemistry": 0.43349753694581283,
+        "high_school_computer_science": 0.57,
+        "high_school_european_history": 0.6424242424242425,
+        "high_school_geography": 0.5858585858585859,
+        "high_school_government_and_politics": 0.7357512953367875,
+        "high_school_macroeconomics": 0.5820512820512821,
+        "high_school_mathematics": 0.3037037037037037,
+        "high_school_microeconomics": 0.5672268907563025,
+        "high_school_physics": 0.31125827814569534,
+        "high_school_psychology": 0.7339449541284404,
+        "high_school_statistics": 0.42592592592592593,
+        "high_school_us_history": 0.6911764705882353,
+        "high_school_world_history": 0.7088607594936709,
+        "human_aging": 0.6636771300448431,
+        "human_sexuality": 0.732824427480916,
+        "international_law": 0.7355371900826446,
+        "jurisprudence": 0.5555555555555556,
+        "logical_fallacies": 0.7116564417177914,
+        "machine_learning": 0.39285714285714285,
+        "management": 0.6310679611650486,
+        "marketing": 0.7777777777777778,
+        "medical_genetics": 0.61,
+        "miscellaneous": 0.7458492975734355,
+        "moral_disputes": 0.5838150289017341,
+        "moral_scenarios": 0.23016759776536314,
+        "nutrition": 0.6143790849673203,
+        "philosophy": 0.6752411575562701,
+        "prehistory": 0.6697530864197531,
+        "professional_accounting": 0.32978723404255317,
+        "professional_law": 0.3494132985658409,
+        "professional_medicine": 0.6066176470588235,
+        "professional_psychology": 0.5947712418300654,
+        "public_relations": 0.5818181818181818,
+        "security_studies": 0.5510204081632653,
+        "sociology": 0.7512437810945274,
+        "us_foreign_policy": 0.84,
+        "virology": 0.5,
+        "world_religions": 0.8011695906432749
+      },
+      "macro_subject_accuracy": 0.5463953402838531,
+      "quality": {
+        "dense_perplexity": 2.4377920984101085,
+        "student_perplexity": 2.8978223802468848,
+        "relative_ppl_increase": 0.18870775819513125,
+        "teacher_kl_nats": 0.18678911267771642,
+        "top1_agreement": 0.6442814413901153,
+        "routed_kept": 0.08434711834698334,
+        "tokens": 14042,
+        "dense_perplexity_ci95": [
+          2.403232012904261,
+          2.4706009402168942
+        ],
+        "student_perplexity_ci95": [
+          2.8665178150631285,
+          2.926548875777912
+        ],
+        "relative_ppl_increase_ci95": [
+          0.17785282515949108,
+          0.1993621721477561
+        ],
+        "teacher_kl_nats_ci95": [
+          0.18303180411298195,
+          0.19056103136598954
+        ],
+        "top1_agreement_ci95": [
+          0.6362341546788207,
+          0.6523287281014101
+        ],
+        "routed_kept_ci95": [
+          0.08413213904482907,
+          0.08456413148145069
+        ]
+      },
+      "quality_protocol": "all MMLU gold letter predictions",
+      "single_seed": true,
+      "bootstrap": "paired example percentile bootstrap; evaluation noise, not seed variation"
+    }
+  }
+}

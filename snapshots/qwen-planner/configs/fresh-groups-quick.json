@@ -1,0 +1,12 @@
+{
+  "seed": 20261108,
+  "sizes": [16, 32],
+  "restarts": 1,
+  "max_iterations": 15,
+  "relative_tolerance": 0.00001,
+  "distance_integer_scale": 1000000,
+  "kept_fractions": [0.75, 0.5],
+  "bootstrap_repetitions": 2000,
+  "maximum_runtime_minutes": 30,
+  "scope": "Fresh balanced clustering of all 6144 neurons independently per layer and size; training activations only; MLP-only exact contribution; attention dense; no protections"
+}

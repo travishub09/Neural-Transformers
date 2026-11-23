@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+artifacts/
+checkpoints/
+data/*/
+!data/*.json
+*.safetensors
+*.pt
+.env

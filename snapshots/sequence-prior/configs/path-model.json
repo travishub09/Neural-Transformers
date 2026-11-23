@@ -1,0 +1,21 @@
+{
+  "seed": 20261108,
+  "signal_definition": "one binary above-own-75th-percentile observation per unit that ran; -1 means unobserved",
+  "calibration_split": "train",
+  "calibration_quantile": 0.75,
+  "coarse_quantiles": [0.25, 0.75],
+  "default": {
+    "llm_layers": 28, "units": 64, "width": 128, "depth": 2, "heads": 4,
+    "expansion": 4, "lookahead": 2, "previous_token": true, "signal": "binary",
+    "hidden_size": 2048, "hidden_summary": 64
+  },
+  "original_proposal": {"width": 256, "depth": 4},
+  "comparisons": ["decisions", "binary", "coarse", "magnitudes", "hidden"],
+  "hidden_summary_interpretation": "64 learned scalar features; not a 64-bit payload",
+  "notes": [
+    "The default is sized for under 1% theoretical matmul overhead on 1.7B at 1K context; measure wall time separately",
+    "First two LLM layers are always dense; the last two observation positions do not predict another layer",
+    "Observation bits are NOT causal-importance labels or direct instructions to skip weak units",
+    "Prediction targets, loss, and matched evaluation budgets are defined in Phase 0, not trained in this stage"
+  ]
+}

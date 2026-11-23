@@ -1,0 +1,1001 @@
+{
+  "schema_version": 1,
+  "fingerprint": {
+    "corpus_sha256": "3c9dcf7ab27c65b1c604899e4febf1e74fa66a1bfff72ee8abbda098c709e9da",
+    "collector_sha256": "7f6236d2eb5256da1496b5ebe4e783bc792c1da55a24033f9450eef780bb9b8c",
+    "runner_sha256": "7c4cf52f1afd54f844dbef34fd849112e824a651dcd2581e87e3e3834fbd5e3b",
+    "model_revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
+    "max_sequences": 12073,
+    "batch_size": 8,
+    "shard_sequences": 128,
+    "norm_dtype": "float16",
+    "raw_dtype": "bfloat16",
+    "group_size": 128
+  },
+  "model": {
+    "model_id": "Qwen/Qwen3-1.7B-Base",
+    "revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
+    "dtype": "bfloat16",
+    "attention_implementation": "eager",
+    "seed": 42,
+    "expected_architecture": {
+      "model_type": "qwen3",
+      "num_hidden_layers": 28,
+      "num_attention_heads": 16,
+      "num_key_value_heads": 8,
+      "intermediate_size": 6144,
+      "hidden_size": 2048
+    }
+  },
+  "target_tokens": 5000000,
+  "target_samples": 20000,
+  "target_sequences": 12073,
+  "status": "complete",
+  "shards": [
+    {
+      "file": "shard-00000.safetensors",
+      "bytes": 292108960,
+      "sha256": "948342a5d76338b9bd691969868b4e38907a487b31ad84739ff938e08081fe1e",
+      "sequence_start": 0,
+      "sequence_end": 128,
+      "tokens": 55069,
+      "samples": 202,
+      "seconds": 6.62730787799228
+    },
+    {
+      "file": "shard-00001.safetensors",
+      "bytes": 282619360,
+      "sha256": "e61ca952956cd4239acf117c515bfd250e5782659c1c6a903be213b370b51a62",
+      "sequence_start": 128,
+      "sequence_end": 256,
+      "tokens": 52433,
+      "samples": 202,
+      "seconds": 6.186047371011227
+    },
+    {
+      "file": "shard-00002.safetensors",
+      "bytes": 291877984,
+      "sha256": "99f16e9241eaad091c33fba2666a6c528a3d6e21d85bcd4a5b068ffeeafcf92c",
+      "sequence_start": 256,
+      "sequence_end": 384,
+      "tokens": 53456,
+      "samples": 214,
+      "seconds": 6.226853547967039
+    },
+    {
+      "file": "shard-00003.safetensors",
+      "bytes": 293501584,
+      "sha256": "eec9af690cf9b55640c6db9cbcad13c07c34a92116c276e2d59e26f27992493a",
+      "sequence_start": 384,
+      "sequence_end": 512,
+      "tokens": 53907,
+      "samples": 214,
+      "seconds": 5.84148964198539
+    },
+    {
+      "file": "shard-00004.safetensors",
+      "bytes": 289638784,
+      "sha256": "c8028e441c6517418baa3bbdf245906ea91b1bee263fdbcae345ca493db62731",
+      "sequence_start": 512,
+      "sequence_end": 640,
+      "tokens": 52834,
+      "samples": 214,
+      "seconds": 6.271888298972044
+    },
+    {
+      "file": "shard-00005.safetensors",
+      "bytes": 293827096,
+      "sha256": "9893faaa18b42add9ecadf0f2777ad630fae9f4ada2f99e1c02bba67df46cb4c",
+      "sequence_start": 640,
+      "sequence_end": 768,
+      "tokens": 53223,
+      "samples": 220,
+      "seconds": 6.278528339986224
+    },
+    {
+      "file": "shard-00006.safetensors",
+      "bytes": 275449744,
+      "sha256": "7ef97b7267c49e9933a06406a6dcd5f8f49777cbe5eea0eef10427865962d9ad",
+      "sequence_start": 768,
+      "sequence_end": 896,
+      "tokens": 51474,
+      "samples": 194,
+      "seconds": 6.274805882014334
+    },
+    {
+      "file": "shard-00007.safetensors",
+      "bytes": 279097984,
+      "sha256": "8ff4f529da39fa35f7054e9beac73a67ea35a4c7d2a8c2765b5619c837fc9ead",
+      "sequence_start": 896,
+      "sequence_end": 1024,
+      "tokens": 49906,
+      "samples": 214,
+      "seconds": 6.326913706026971
+    },
+    {
+      "file": "shard-00008.safetensors",
+      "bytes": 299235304,
+      "sha256": "7a3652a198cef4be3dab01eb73fe5cd39fd063f6a42c7d0e28886a3324a18c5d",
+      "sequence_start": 1024,
+      "sequence_end": 1152,
+      "tokens": 54209,
+      "samples": 224,
+      "seconds": 6.571998895029537
+    },
+    {
+      "file": "shard-00009.safetensors",
+      "bytes": 289602856,
+      "sha256": "a23a013b5eeb1bd72385e16ebcdc6da85b69d4d92cb115a5950257c3cc7d2f7d",
+      "sequence_start": 1152,
+      "sequence_end": 1280,
+      "tokens": 54631,
+      "samples": 200,
+      "seconds": 6.34988021798199
+    },
+    {
+      "file": "shard-00010.safetensors",
+      "bytes": 278714368,
+      "sha256": "db20811412d436dee55ade2ceb8951ab4dc4680476a23268a35d0f20d56d0862",
+      "sequence_start": 1280,
+      "sequence_end": 1408,
+      "tokens": 50832,
+      "samples": 206,
+      "seconds": 6.348302560974844
+    },
+    {
+      "file": "shard-00011.safetensors",
+      "bytes": 295832296,
+      "sha256": "4eb8aaa357b558c2a3f2f6a347c56da7d2bcb9a5b1aec3af3f654df1349e3e37",
+      "sequence_start": 1408,
+      "sequence_end": 1536,
+      "tokens": 53780,
+      "samples": 220,
+      "seconds": 6.366522008029278
+    },
+    {
+      "file": "shard-00012.safetensors",
+      "bytes": 292637584,
+      "sha256": "bf7504bd77e23096b6fa5e33be4d36cf8862418a4f7f75a2e0c6b882481bd639",
+      "sequence_start": 1536,
+      "sequence_end": 1664,
+      "tokens": 53667,
+      "samples": 214,
+      "seconds": 6.331476774998009
+    },
+    {
+      "file": "shard-00013.safetensors",
+      "bytes": 280531288,
+      "sha256": "0adb26e58a250734296ebcc9f3f790bbb6086e96726876da2ea1d5d086681216",
+      "sequence_start": 1664,
+      "sequence_end": 1792,
+      "tokens": 50046,
+      "samples": 216,
+      "seconds": 6.2204258480342105
+    },
+    {
+      "file": "shard-00014.safetensors",
+      "bytes": 290634904,
+      "sha256": "b5228d2713e335b7c16ec960e76bc675589e2be9bbd2121a9576f4389f0a41c4",
+      "sequence_start": 1792,
+      "sequence_end": 1920,
+      "tokens": 51820,
+      "samples": 224,
+      "seconds": 6.360979553021025
+    },
+    {
+      "file": "shard-00015.safetensors",
+      "bytes": 286536664,
+      "sha256": "d32d3fe8817fcf6c5928caa9ada6337b21d4736bf746cd8b71ceb464b967f2c9",
+      "sequence_start": 1920,
+      "sequence_end": 2048,
+      "tokens": 53263,
+      "samples": 204,
+      "seconds": 6.264088255993556
+    },
+    {
+      "file": "shard-00016.safetensors",
+      "bytes": 307702000,
+      "sha256": "a374a5c9c7b46d517a846b457727297a7814bd6efc478e3743c601fb248519e3",
+      "sequence_start": 2048,
+      "sequence_end": 2176,
+      "tokens": 56819,
+      "samples": 222,
+      "seconds": 6.369008339999709
+    },
+    {
+      "file": "shard-00017.safetensors",
+      "bytes": 295189984,
+      "sha256": "1bc53177acc6dd95f1e0b4824f404beccb5bc1eb8413c65058e7171471e63c4b",
+      "sequence_start": 2176,
+      "sequence_end": 2304,
+      "tokens": 54376,
+      "samples": 214,
+      "seconds": 6.266932149010245
+    },
+    {
+      "file": "shard-00018.safetensors",
+      "bytes": 291349792,
+      "sha256": "4a020293827aefce6053cf1dd06406716f94b169ac2a7f166919addcd012049b",
+      "sequence_start": 2304,
+      "sequence_end": 2432,
+      "tokens": 52793,
+      "samples": 218,
+      "seconds": 5.895275818998925
+    },
+    {
+      "file": "shard-00019.safetensors",
+      "bytes": 284923864,
+      "sha256": "1fec04bc8815d64054748b0a75e1041595c867aa6717c579e1231fc612454cca",
+      "sequence_start": 2432,
+      "sequence_end": 2560,
+      "tokens": 52815,
+      "samples": 204,
+      "seconds": 6.1932574739912525
+    },
+    {
+      "file": "shard-00020.safetensors",
+      "bytes": 284690296,
+      "sha256": "e9e22fffa2cd420a4515f27840b27b91fc6f1b709da4ce6c6a2175eb45adf60f",
+      "sequence_start": 2560,
+      "sequence_end": 2688,
+      "tokens": 50685,
+      "samples": 220,
+      "seconds": 6.2320983040262945
+    },
+    {
+      "file": "shard-00021.safetensors",
+      "bytes": 303710176,
+      "sha256": "bfd91915e52a81c0a23b26ae3ea0ea012cd38e071d56801a377779f4cd5305e8",
+      "sequence_start": 2688,
+      "sequence_end": 2816,
+      "tokens": 57259,
+      "samples": 210,
+      "seconds": 6.733269184012897
+    },
+    {
+      "file": "shard-00022.safetensors",
+      "bytes": 285256576,
+      "sha256": "db4ad13c036d0178ea06a5f1d278059ccc927428dba20eb966f4370bb5de4ea4",
+      "sequence_start": 2816,
+      "sequence_end": 2944,
+      "tokens": 52133,
+      "samples": 210,
+      "seconds": 6.332612939004321
+    },
+    {
+      "file": "shard-00023.safetensors",
+      "bytes": 293305096,
+      "sha256": "5a7e03d1fac9f65fb6d5b388f128aac201bed7f4b31f53d4967531127bb9706b",
+      "sequence_start": 2944,
+      "sequence_end": 3072,
+      "tokens": 53078,
+      "samples": 220,
+      "seconds": 6.487237809051294
+    },
+    {
+      "file": "shard-00024.safetensors",
+      "bytes": 297230680,
+      "sha256": "4c11e45b4237567dd49c812eed767e500fcaad4440d31bb19dc0dfc5ac4c795c",
+      "sequence_start": 3072,
+      "sequence_end": 3200,
+      "tokens": 55201,
+      "samples": 212,
+      "seconds": 6.398820568982046
+    },
+    {
+      "file": "shard-00025.safetensors",
+      "bytes": 294772888,
+      "sha256": "30b7050bce4216f0a7075e6eb24fd4efabb5c877aa55640df1b5c7baa5970328",
+      "sequence_start": 3200,
+      "sequence_end": 3328,
+      "tokens": 54002,
+      "samples": 216,
+      "seconds": 6.6620025059673935
+    },
+    {
+      "file": "shard-00026.safetensors",
+      "bytes": 297788176,
+      "sha256": "ccec19dde15ef42dabfcab9de0713f8f812975633aa92a1472034b4dd2347bda",
+      "sequence_start": 3328,
+      "sequence_end": 3456,
+      "tokens": 55614,
+      "samples": 210,
+      "seconds": 6.469775917998049
+    },
+    {
+      "file": "shard-00027.safetensors",
+      "bytes": 290511496,
+      "sha256": "46ac181ecbf460eeb174f394ceafbf704ee2854a3e77e335e53e28ed917cd1db",
+      "sequence_start": 3456,
+      "sequence_end": 3584,
+      "tokens": 52302,
+      "samples": 220,
+      "seconds": 6.387296336994041
+    },
+    {
+      "file": "shard-00028.safetensors",
+      "bytes": 283390768,
+      "sha256": "70bd1b9308b3cc2e10b77931c0470985ba60ac551393540ed0acd4976de9a6a7",
+      "sequence_start": 3584,
+      "sequence_end": 3712,
+      "tokens": 52131,
+      "samples": 206,
+      "seconds": 6.567549269006122
+    },
+    {
+      "file": "shard-00029.safetensors",
+      "bytes": 282234088,
+      "sha256": "056e19a9518bd114deb1078e72c41f35ea751c6021738b5ec1679af02f0d584f",
+      "sequence_start": 3712,
+      "sequence_end": 3840,
+      "tokens": 50519,
+      "samples": 216,
+      "seconds": 6.418791897012852
+    },
+    {
+      "file": "shard-00030.safetensors",
+      "bytes": 276228856,
+      "sha256": "f569ca43bf0297c5b90d500d273d2b79311f01bc90b8d4fd3f71ba9770bb4baa",
+      "sequence_start": 3840,
+      "sequence_end": 3968,
+      "tokens": 50916,
+      "samples": 200,
+      "seconds": 6.322016786027234
+    },
+    {
+      "file": "shard-00031.safetensors",
+      "bytes": 296294032,
+      "sha256": "f8e13ebb1749afed52523344382f7df7fb602ce9db085591980a88e2a338408b",
+      "sequence_start": 3968,
+      "sequence_end": 4096,
+      "tokens": 51585,
+      "samples": 238,
+      "seconds": 6.448210687958635
+    },
+    {
+      "file": "shard-00032.safetensors",
+      "bytes": 299643184,
+      "sha256": "79a216945020c4a563be8b15a68da992777e7b3c9cab0697c652f240813f69c2",
+      "sequence_start": 4096,
+      "sequence_end": 4224,
+      "tokens": 55613,
+      "samples": 214,
+      "seconds": 6.726600417983718
+    },
+    {
+      "file": "shard-00033.safetensors",
+      "bytes": 288347464,
+      "sha256": "c7100137619ba9d1101bd277e7e8bcac30369b473ca6631cf56ae84319c5935e",
+      "sequence_start": 4224,
+      "sequence_end": 4352,
+      "tokens": 53766,
+      "samples": 204,
+      "seconds": 6.405769303033594
+    },
+    {
+      "file": "shard-00034.safetensors",
+      "bytes": 306805600,
+      "sha256": "b1b3967667bbee171bf1e5c38ff1e487495ae1952ac03314698eae5055073312",
+      "sequence_start": 4352,
+      "sequence_end": 4480,
+      "tokens": 56570,
+      "samples": 222,
+      "seconds": 6.41835405502934
+    },
+    {
+      "file": "shard-00035.safetensors",
+      "bytes": 285923584,
+      "sha256": "9dd7c74cccb65012cc8b6a4fda05442a37c69681db700c770d063f10796024ba",
+      "sequence_start": 4480,
+      "sequence_end": 4608,
+      "tokens": 51802,
+      "samples": 214,
+      "seconds": 6.503373086976353
+    },
+    {
+      "file": "shard-00036.safetensors",
+      "bytes": 285624784,
+      "sha256": "26eb1e1d772b78b0094a86a703c89323d6e3333ebacfde802a2ce6c904cb64d6",
+      "sequence_start": 4608,
+      "sequence_end": 4736,
+      "tokens": 51719,
+      "samples": 214,
+      "seconds": 6.298062157991808
+    },
+    {
+      "file": "shard-00037.safetensors",
+      "bytes": 281320768,
+      "sha256": "7c38a4138a3b807f5c8d94a2bfb3d2cbacf568ddbcd61bfbd1434d29126728a8",
+      "sequence_start": 4736,
+      "sequence_end": 4864,
+      "tokens": 51556,
+      "samples": 206,
+      "seconds": 6.17388639098499
+    },
+    {
+      "file": "shard-00038.safetensors",
+      "bytes": 288158176,
+      "sha256": "24f063477cdf8e5e0513710bebe9ef7ec034927d506ec107425996eba3d2b554",
+      "sequence_start": 4864,
+      "sequence_end": 4992,
+      "tokens": 52939,
+      "samples": 210,
+      "seconds": 6.294467489991803
+    },
+    {
+      "file": "shard-00039.safetensors",
+      "bytes": 289271080,
+      "sha256": "3d643ac02d210261ad45972e05924d0bf30d0005a821b8bc7af3df4d80dafd26",
+      "sequence_start": 4992,
+      "sequence_end": 5120,
+      "tokens": 52990,
+      "samples": 212,
+      "seconds": 6.450827544031199
+    },
+    {
+      "file": "shard-00040.safetensors",
+      "bytes": 285739984,
+      "sha256": "c16bd0882ca8a493e59601f5aee007298e72c72238bd438ab7ae7d8942c210dc",
+      "sequence_start": 5120,
+      "sequence_end": 5248,
+      "tokens": 51751,
+      "samples": 214,
+      "seconds": 6.300187425978947
+    },
+    {
+      "file": "shard-00041.safetensors",
+      "bytes": 295961392,
+      "sha256": "efd363f058a5307a96df605f655b9e204f09a27583c9cc1ccb518007640b04f2",
+      "sequence_start": 5248,
+      "sequence_end": 5376,
+      "tokens": 54074,
+      "samples": 218,
+      "seconds": 6.399546696047764
+    },
+    {
+      "file": "shard-00042.safetensors",
+      "bytes": 285219568,
+      "sha256": "4ccd0f2f5738dad85d049a68face1f7a8440b921e13067b60245381be88bd3c1",
+      "sequence_start": 5376,
+      "sequence_end": 5504,
+      "tokens": 52639,
+      "samples": 206,
+      "seconds": 6.4541747169569135
+    },
+    {
+      "file": "shard-00043.safetensors",
+      "bytes": 298542664,
+      "sha256": "261af0234f919b7ad7b9b253026262e16b7b4843f370d36e7bd3e7dbdb392dd1",
+      "sequence_start": 5504,
+      "sequence_end": 5632,
+      "tokens": 56598,
+      "samples": 204,
+      "seconds": 6.4117549440125
+    },
+    {
+      "file": "shard-00044.safetensors",
+      "bytes": 291735568,
+      "sha256": "8f0bad0ec3d6b67891ef0bbb7678079abfc1ab03f6fe143b8f4da368d307b4f1",
+      "sequence_start": 5632,
+      "sequence_end": 5760,
+      "tokens": 54449,
+      "samples": 206,
+      "seconds": 6.330488573003095
+    },
+    {
+      "file": "shard-00045.safetensors",
+      "bytes": 276886072,
+      "sha256": "cd44b743dab91d7bed0de200014943b93d90cd1e9f9f031cf38652bd0a96c56b",
+      "sequence_start": 5760,
+      "sequence_end": 5888,
+      "tokens": 50066,
+      "samples": 208,
+      "seconds": 6.302498019998893
+    },
+    {
+      "file": "shard-00046.safetensors",
+      "bytes": 295277896,
+      "sha256": "1eda0ec64a6e7ed414bd564106f0fcc36007c22aa65267ea897da7f5b5a88ed6",
+      "sequence_start": 5888,
+      "sequence_end": 6016,
+      "tokens": 53626,
+      "samples": 220,
+      "seconds": 7.101525061996654
+    },
+    {
+      "file": "shard-00047.safetensors",
+      "bytes": 275034160,
+      "sha256": "a4c0f44879000cbd6467d894480f26e191cd9d3e90b87146f2aada7fb0807534",
+      "sequence_start": 6016,
+      "sequence_end": 6144,
+      "tokens": 50326,
+      "samples": 202,
+      "seconds": 6.369113946042489
+    },
+    {
+      "file": "shard-00048.safetensors",
+      "bytes": 286670872,
+      "sha256": "2d8df54f561364a992a75ef8a58bac97d1dd4e9fea4bc3ed9634bab1c92d1be5",
+      "sequence_start": 6144,
+      "sequence_end": 6272,
+      "tokens": 52784,
+      "samples": 208,
+      "seconds": 6.420235653000418
+    },
+    {
+      "file": "shard-00049.safetensors",
+      "bytes": 302643064,
+      "sha256": "19c99669c118f2fd62a054684426c08af6875a6cf5303aa82a999f8eaaec793e",
+      "sequence_start": 6272,
+      "sequence_end": 6400,
+      "tokens": 57737,
+      "samples": 204,
+      "seconds": 6.430699985998217
+    },
+    {
+      "file": "shard-00050.safetensors",
+      "bytes": 286279408,
+      "sha256": "dab2f1086dc57d18d131720da7f5b7781fa41c2967d96cf6785d3e5bbbb7d73c",
+      "sequence_start": 6400,
+      "sequence_end": 6528,
+      "tokens": 50352,
+      "samples": 226,
+      "seconds": 6.3095590799930505
+    },
+    {
+      "file": "shard-00051.safetensors",
+      "bytes": 297693496,
+      "sha256": "a101b9ad7f96a9ea747273dce8bebe63af5be70f16183eb2a432426d1dbff409",
+      "sequence_start": 6528,
+      "sequence_end": 6656,
+      "tokens": 54297,
+      "samples": 220,
+      "seconds": 5.864316573017277
+    },
+    {
+      "file": "shard-00052.safetensors",
+      "bytes": 286820992,
+      "sha256": "0a194fa1302c81ce7243e505ef6b00f0337a132384b9932d1aca003d65c60c44",
+      "sequence_start": 6656,
+      "sequence_end": 6784,
+      "tokens": 51535,
+      "samples": 218,
+      "seconds": 6.187465230002999
+    },
+    {
+      "file": "shard-00053.safetensors",
+      "bytes": 286872976,
+      "sha256": "244eb1d5ae66d4ab145a7f4aba68bc62efdf9b6b76479a7dc7965aa6b0c78b4d",
+      "sequence_start": 6784,
+      "sequence_end": 6912,
+      "tokens": 52582,
+      "samples": 210,
+      "seconds": 6.388297023018822
+    },
+    {
+      "file": "shard-00054.safetensors",
+      "bytes": 291786472,
+      "sha256": "e54b5f5b1604bab404c552e3b844954e286d81f31a38210e2c33e67ab3f70669",
+      "sequence_start": 6912,
+      "sequence_end": 7040,
+      "tokens": 54205,
+      "samples": 208,
+      "seconds": 6.375961638987064
+    },
+    {
+      "file": "shard-00055.safetensors",
+      "bytes": 288615880,
+      "sha256": "3884b5e532d6704142672f6d0b44ac8b38d152b9625335d8304a6cc0388a7fef",
+      "sequence_start": 7040,
+      "sequence_end": 7168,
+      "tokens": 52808,
+      "samples": 212,
+      "seconds": 6.270139606029261
+    },
+    {
+      "file": "shard-00056.safetensors",
+      "bytes": 286721272,
+      "sha256": "0a5ccf6ff1a1615be02b45221a45649d45534c6338eeabed2a3480f9ed98a774",
+      "sequence_start": 7168,
+      "sequence_end": 7296,
+      "tokens": 52798,
+      "samples": 208,
+      "seconds": 6.414381320995744
+    },
+    {
+      "file": "shard-00057.safetensors",
+      "bytes": 296471080,
+      "sha256": "9255e05c59b0c4f78696376d2c421720b0c136e3a02d7b0838eddd53fae2d88f",
+      "sequence_start": 7296,
+      "sequence_end": 7424,
+      "tokens": 54990,
+      "samples": 212,
+      "seconds": 5.865218279999681
+    },
+    {
+      "file": "shard-00058.safetensors",
+      "bytes": 280083448,
+      "sha256": "641092a413f6990f059c711c4e77271faca0d36eaffbc1e10bddfd84a465c859",
+      "sequence_start": 7424,
+      "sequence_end": 7552,
+      "tokens": 52503,
+      "samples": 196,
+      "seconds": 6.346351913001854
+    },
+    {
+      "file": "shard-00059.safetensors",
+      "bytes": 300743776,
+      "sha256": "b46cbd94f71c3d35f7591c21e0964cc4b35e721b528a49c5a0ffba1741ad4841",
+      "sequence_start": 7552,
+      "sequence_end": 7680,
+      "tokens": 56435,
+      "samples": 210,
+      "seconds": 6.005591808003373
+    },
+    {
+      "file": "shard-00060.safetensors",
+      "bytes": 288850312,
+      "sha256": "e5d02df20bd9630fb7de54b5f55ef59d2bea7715dd3070c6d2910de631c9955d",
+      "sequence_start": 7680,
+      "sequence_end": 7808,
+      "tokens": 50808,
+      "samples": 228,
+      "seconds": 6.490218805032782
+    },
+    {
+      "file": "shard-00061.safetensors",
+      "bytes": 291437272,
+      "sha256": "99c225508a134a38687c45453b5cd52a2a1485a62d49f411e9ac87f372360617",
+      "sequence_start": 7808,
+      "sequence_end": 7936,
+      "tokens": 54108,
+      "samples": 208,
+      "seconds": 6.541622921009548
+    },
+    {
+      "file": "shard-00062.safetensors",
+      "bytes": 288674488,
+      "sha256": "072cdd361aae9b4affb3196ca5626e346359831168db426193bf1facc3f4432f",
+      "sequence_start": 7936,
+      "sequence_end": 8064,
+      "tokens": 52308,
+      "samples": 216,
+      "seconds": 6.5813773610279895
+    },
+    {
+      "file": "shard-00063.safetensors",
+      "bytes": 298635688,
+      "sha256": "99e46c9e02b8a7f15c91356665bffa333ac800e46ea54ea27f7ab55a86781c39",
+      "sequence_start": 8064,
+      "sequence_end": 8192,
+      "tokens": 55075,
+      "samples": 216,
+      "seconds": 7.007769096991979
+    },
+    {
+      "file": "shard-00064.safetensors",
+      "bytes": 294863968,
+      "sha256": "9536c994882ee5842cd78dfbf13591d531810ad5db8ca9392b25937c803c2bfc",
+      "sequence_start": 8192,
+      "sequence_end": 8320,
+      "tokens": 55318,
+      "samples": 206,
+      "seconds": 6.704938460956328
+    },
+    {
+      "file": "shard-00065.safetensors",
+      "bytes": 288158680,
+      "sha256": "8490d805317afb67e28f1ee29ba542b38818c2d0bdac8b32ccecfd8b558c3440",
+      "sequence_start": 8320,
+      "sequence_end": 8448,
+      "tokens": 52681,
+      "samples": 212,
+      "seconds": 6.6224897429929115
+    },
+    {
+      "file": "shard-00066.safetensors",
+      "bytes": 297198280,
+      "sha256": "6deea2d33bcfd80b10c0cb77135d23628fd7c1d08aa9c27893f8e2af75c3812d",
+      "sequence_start": 8448,
+      "sequence_end": 8576,
+      "tokens": 55192,
+      "samples": 212,
+      "seconds": 6.633972313022241
+    },
+    {
+      "file": "shard-00067.safetensors",
+      "bytes": 277918768,
+      "sha256": "263a7d4586a533f73f35bedd363d13a5c9b90c9f3b5c45551f7d63d73a617909",
+      "sequence_start": 8576,
+      "sequence_end": 8704,
+      "tokens": 50611,
+      "samples": 206,
+      "seconds": 6.365105853998102
+    },
+    {
+      "file": "shard-00068.safetensors",
+      "bytes": 293420296,
+      "sha256": "7fea5b213a84fee10b7b7754d08c2b21d796249e4a91361e2147a4bb43e913fa",
+      "sequence_start": 8704,
+      "sequence_end": 8832,
+      "tokens": 53110,
+      "samples": 220,
+      "seconds": 6.484714720980264
+    },
+    {
+      "file": "shard-00069.safetensors",
+      "bytes": 274025656,
+      "sha256": "c8856e710deb39dad8d922d80e374701e57ae8d718696423b5b109cb45b4cc03",
+      "sequence_start": 8832,
+      "sequence_end": 8960,
+      "tokens": 50304,
+      "samples": 200,
+      "seconds": 6.412921515991911
+    },
+    {
+      "file": "shard-00070.safetensors",
+      "bytes": 287072488,
+      "sha256": "da83702288dc052a13e2474a9a47dad328567b400b4724e10b311d865197ca5e",
+      "sequence_start": 8960,
+      "sequence_end": 9088,
+      "tokens": 51863,
+      "samples": 216,
+      "seconds": 6.900641261017881
+    },
+    {
+      "file": "shard-00071.safetensors",
+      "bytes": 272050840,
+      "sha256": "b9f916ceca02c21f428c1f3e0553053b53ecbe1e7fd90b9c6177f44347f10acf",
+      "sequence_start": 9088,
+      "sequence_end": 9216,
+      "tokens": 50788,
+      "samples": 192,
+      "seconds": 6.378096670960076
+    },
+    {
+      "file": "shard-00072.safetensors",
+      "bytes": 280075600,
+      "sha256": "73208ad0626c6bead1de3a5383844fb48562a35ca395bb83e9a96f7d79187910",
+      "sequence_start": 9216,
+      "sequence_end": 9344,
+      "tokens": 49145,
+      "samples": 222,
+      "seconds": 6.389148476009723
+    },
+    {
+      "file": "shard-00073.safetensors",
+      "bytes": 270359272,
+      "sha256": "cf8c18e75f70163f5f98373e487764b8b356849ada4fc1255fc0c2aeec1dad9e",
+      "sequence_start": 9344,
+      "sequence_end": 9472,
+      "tokens": 48253,
+      "samples": 208,
+      "seconds": 6.294030419026967
+    },
+    {
+      "file": "shard-00074.safetensors",
+      "bytes": 303996088,
+      "sha256": "25c84e26c18154a594871f399a099ac77eb72410d581e548cb84309f3c736d4c",
+      "sequence_start": 9472,
+      "sequence_end": 9600,
+      "tokens": 56564,
+      "samples": 216,
+      "seconds": 6.355905199015979
+    },
+    {
+      "file": "shard-00075.safetensors",
+      "bytes": 277519672,
+      "sha256": "61fa4bd77b7a495ab1451d0097fd69a16272291d746cf39cffeda41fcf55aa6a",
+      "sequence_start": 9600,
+      "sequence_end": 9728,
+      "tokens": 50242,
+      "samples": 208,
+      "seconds": 6.342744697001763
+    },
+    {
+      "file": "shard-00076.safetensors",
+      "bytes": 295147288,
+      "sha256": "802b4114bd8d0c5e0438914b56b7efaad8ff5c82fa4413a8ffb2db420db99b6a",
+      "sequence_start": 9728,
+      "sequence_end": 9856,
+      "tokens": 54106,
+      "samples": 216,
+      "seconds": 6.463416165031958
+    },
+    {
+      "file": "shard-00077.safetensors",
+      "bytes": 286173568,
+      "sha256": "f781d8631741e28e1d8831ebe98d47cbee6dfc4e52a9641488a4a4f66e30ff68",
+      "sequence_start": 9856,
+      "sequence_end": 9984,
+      "tokens": 52904,
+      "samples": 206,
+      "seconds": 6.549978719034698
+    },
+    {
+      "file": "shard-00078.safetensors",
+      "bytes": 291071080,
+      "sha256": "3f79ba0c7855351307814b339146ffaf1130096489658f72b8925dae82330a78",
+      "sequence_start": 9984,
+      "sequence_end": 10112,
+      "tokens": 53490,
+      "samples": 212,
+      "seconds": 6.660916652006563
+    },
+    {
+      "file": "shard-00079.safetensors",
+      "bytes": 291288592,
+      "sha256": "4ed18ab570f1881f2584e1dfaea476483caf38b3467b5c7d4a3adf3c2e19360b",
+      "sequence_start": 10112,
+      "sequence_end": 10240,
+      "tokens": 52776,
+      "samples": 218,
+      "seconds": 6.418175222992431
+    },
+    {
+      "file": "shard-00080.safetensors",
+      "bytes": 298290592,
+      "sha256": "f9b394cf94b425fa720f882d853f7a26944d2719d20365bb61cd31aa8153961d",
+      "sequence_start": 10240,
+      "sequence_end": 10368,
+      "tokens": 54721,
+      "samples": 218,
+      "seconds": 6.49936209700536
+    },
+    {
+      "file": "shard-00081.safetensors",
+      "bytes": 295437376,
+      "sha256": "7bfc2439fa7a7507b0245fd069de24977dd0bb76431e73b756a62f156f2f27f9",
+      "sequence_start": 10368,
+      "sequence_end": 10496,
+      "tokens": 54961,
+      "samples": 210,
+      "seconds": 6.3400375280180015
+    },
+    {
+      "file": "shard-00082.safetensors",
+      "bytes": 286682104,
+      "sha256": "d60a07f8fdf69b1423d9ac2635567929b52e576d29358396e6c8aefec4af2e08",
+      "sequence_start": 10496,
+      "sequence_end": 10624,
+      "tokens": 50722,
+      "samples": 224,
+      "seconds": 6.333839964994695
+    },
+    {
+      "file": "shard-00083.safetensors",
+      "bytes": 291873952,
+      "sha256": "07158c2db060652d04ea467997de68e92905a5a7ff305d27429091a07d8bb1bd",
+      "sequence_start": 10624,
+      "sequence_end": 10752,
+      "tokens": 55520,
+      "samples": 198,
+      "seconds": 6.4565646249684505
+    },
+    {
+      "file": "shard-00084.safetensors",
+      "bytes": 280137448,
+      "sha256": "5308dd3dbc39f78ca00e0405a8006b0803b6ec828acff6d3e0b8d2b876434791",
+      "sequence_start": 10752,
+      "sequence_end": 10880,
+      "tokens": 52518,
+      "samples": 196,
+      "seconds": 6.523415539995767
+    },
+    {
+      "file": "shard-00085.safetensors",
+      "bytes": 287936416,
+      "sha256": "c00ac402dc6ecd0f276ade26aac01f063cd718c645d51a2bc237341428a8eec4",
+      "sequence_start": 10880,
+      "sequence_end": 11008,
+      "tokens": 50296,
+      "samples": 230,
+      "seconds": 6.512849844992161
+    },
+    {
+      "file": "shard-00086.safetensors",
+      "bytes": 294544000,
+      "sha256": "92638e78d6a056c37ddd25c75e7d2c507f0f30e5648648ba63da29db70661333",
+      "sequence_start": 11008,
+      "sequence_end": 11136,
+      "tokens": 53164,
+      "samples": 222,
+      "seconds": 6.433083284005988
+    },
+    {
+      "file": "shard-00087.safetensors",
+      "bytes": 300496384,
+      "sha256": "3d31fae2abecf2a3b608b09229120efb60e1dc5dfc8cceb13a0746a20a0b5f52",
+      "sequence_start": 11136,
+      "sequence_end": 11264,
+      "tokens": 55850,
+      "samples": 214,
+      "seconds": 6.53244852903299
+    },
+    {
+      "file": "shard-00088.safetensors",
+      "bytes": 304274872,
+      "sha256": "a38c7d46a654c82b0228a853325c7d0ae1e4d0ed95a3a22dcb6208dfe03972ce",
+      "sequence_start": 11264,
+      "sequence_end": 11392,
+      "tokens": 57674,
+      "samples": 208,
+      "seconds": 6.466643940017093
+    },
+    {
+      "file": "shard-00089.safetensors",
+      "bytes": 282838888,
+      "sha256": "8670e7f258ed9af47b88fcb07abd32b468b02d8aaaed46ed6e6f8ca5d590b751",
+      "sequence_start": 11392,
+      "sequence_end": 11520,
+      "tokens": 50687,
+      "samples": 216,
+      "seconds": 6.281266907986719
+    },
+    {
+      "file": "shard-00090.safetensors",
+      "bytes": 282675376,
+      "sha256": "b86434e85849c25a3324d8da208274d91dcd65bcd4742863719da9b78f127b19",
+      "sequence_start": 11520,
+      "sequence_end": 11648,
+      "tokens": 51416,
+      "samples": 210,
+      "seconds": 6.3129534120089374
+    },
+    {
+      "file": "shard-00091.safetensors",
+      "bytes": 289646992,
+      "sha256": "5240ad420934b261b0883124210fd96b9daa537ef784e3fde1f45efe187dc0bd",
+      "sequence_start": 11648,
+      "sequence_end": 11776,
+      "tokens": 52320,
+      "samples": 218,
+      "seconds": 6.291699128982145
+    },
+    {
+      "file": "shard-00092.safetensors",
+      "bytes": 282865168,
+      "sha256": "6d660455cf463f63eb87ce74b9a90e3ed70f8f36e712b854158fb7bd98067ab2",
+      "sequence_start": 11776,
+      "sequence_end": 11904,
+      "tokens": 51985,
+      "samples": 206,
+      "seconds": 6.250305841967929
+    },
+    {
+      "file": "shard-00093.safetensors",
+      "bytes": 284747464,
+      "sha256": "3eebbd990d6d6bada747f0222b31138ac3ecbd3dee8d1c77d5188a9e1ec68260",
+      "sequence_start": 11904,
+      "sequence_end": 12032,
+      "tokens": 52766,
+      "samples": 204,
+      "seconds": 6.279845713987015
+    },
+    {
+      "file": "shard-00094.safetensors",
+      "bytes": 85416168,
+      "sha256": "b3337453b2daf6a35121095cafccc36170526be99d8c5c703052367d584456b8",
+      "sequence_start": 12032,
+      "sequence_end": 12073,
+      "tokens": 15466,
+      "samples": 64,
+      "seconds": 2.1323075789841823
+    }
+  ],
+  "sequences_completed": 12073,
+  "tokens_completed": 5000000,
+  "samples_completed": 20000,
+  "collection_seconds": 603.0953209212166,
+  "estimated_payload_bytes": 27293040000,
+  "gpu": "NVIDIA A40",
+  "torch": "2.8.0+cu128",
+  "packages": {
+    "transformers": "4.57.1",
+    "datasets": "4.4.1",
+    "safetensors": "0.6.2"
+  },
+  "attention_implementation": "eager",
+  "updated_at_utc": "2026-11-08T21:51:36.406569+00:00",
+  "total_bytes": 27293121304
+}

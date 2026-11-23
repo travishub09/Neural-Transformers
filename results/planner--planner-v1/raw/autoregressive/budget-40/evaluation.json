@@ -1,0 +1,278 @@
+{
+  "overall": {
+    "tokens": 28857.0,
+    "windows": 63,
+    "dense_nll": 1.7738305577069604,
+    "student_nll": 1.919693446605876,
+    "dense_perplexity": 5.893385131043404,
+    "student_perplexity": 6.818867801787792,
+    "relative_ppl_increase": 0.15703753448411298,
+    "teacher_kl_nats": 0.1612362310493203,
+    "top1_agreement": 0.8236129881831098,
+    "relative_ppl_increase_ci95": [
+      0.14725709202400342,
+      0.16744819716220338
+    ],
+    "teacher_kl_nats_ci95": [
+      0.15330856880319865,
+      0.16959638102078706
+    ],
+    "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+    "routed_kept": 0.41142757059456747
+  },
+  "domains": {
+    "web": {
+      "tokens": 9578.0,
+      "windows": 24,
+      "dense_nll": 2.6228023976702186,
+      "student_nll": 2.7597227149622774,
+      "dense_perplexity": 13.774270531560871,
+      "student_perplexity": 15.79546249555754,
+      "relative_ppl_increase": 0.1467367697886816,
+      "teacher_kl_nats": 0.15071110882931546,
+      "top1_agreement": 0.7908749216955523,
+      "routed_kept": 0.39421463553943564
+    },
+    "code": {
+      "tokens": 7515.0,
+      "windows": 15,
+      "dense_nll": 1.0438476198469662,
+      "student_nll": 1.1791111083953076,
+      "dense_perplexity": 2.8401237348891395,
+      "student_perplexity": 3.2514827022878876,
+      "relative_ppl_increase": 0.14483839642106486,
+      "teacher_kl_nats": 0.1417870052853006,
+      "top1_agreement": 0.8856952761144378,
+      "routed_kept": 0.4794879800028682
+    },
+    "conversation": {
+      "tokens": 11764.0,
+      "windows": 24,
+      "dense_nll": 1.5489384712440029,
+      "student_nll": 1.7088532510376002,
+      "dense_perplexity": 4.706471475114159,
+      "student_perplexity": 5.522624780781069,
+      "relative_ppl_increase": 0.17341086841434925,
+      "teacher_kl_nats": 0.18222998761509843,
+      "top1_agreement": 0.810608636518191,
+      "routed_kept": 0.381964081581874
+    }
+  },
+  "per_layer_oracle_accuracy": [
+    {
+      "layer_one_based": 3,
+      "recall": 0.6396387190583415,
+      "precision": 0.6587749595430389,
+      "iou": 0.48045703013836316,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 4,
+      "recall": 0.43809779109710567,
+      "precision": 0.6393433678087111,
+      "iou": 0.35128392476861064,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 5,
+      "recall": 0.5371902041696982,
+      "precision": 0.5225246987553127,
+      "iou": 0.36031839810598376,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 6,
+      "recall": 0.5767435382457302,
+      "precision": 0.4431347863730557,
+      "iou": 0.33438970896691356,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 7,
+      "recall": 0.5757852481695253,
+      "precision": 0.44060317612826705,
+      "iou": 0.33262654728814905,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 8,
+      "recall": 0.5542285712722816,
+      "precision": 0.44998015469096464,
+      "iou": 0.33040048374372705,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 9,
+      "recall": 0.4988736581126321,
+      "precision": 0.452729033262124,
+      "iou": 0.3112024519319363,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 10,
+      "recall": 0.49646181855801225,
+      "precision": 0.4808430258764185,
+      "iou": 0.32321306143835926,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 11,
+      "recall": 0.5488167531188908,
+      "precision": 0.5109344568894635,
+      "iou": 0.35980282640406136,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 12,
+      "recall": 0.5139141965235663,
+      "precision": 0.504696440386034,
+      "iou": 0.3416188233856389,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 13,
+      "recall": 0.48902156428998267,
+      "precision": 0.5362554595011146,
+      "iou": 0.3436801121224069,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 14,
+      "recall": 0.4676306411799741,
+      "precision": 0.5513019394200553,
+      "iou": 0.3387157634466677,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 15,
+      "recall": 0.46165301569962014,
+      "precision": 0.5848141651790304,
+      "iou": 0.34769620780902927,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 16,
+      "recall": 0.5268985392547461,
+      "precision": 0.6068668094768909,
+      "iou": 0.39281824125905057,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 17,
+      "recall": 0.6402314400520419,
+      "precision": 0.6110003100885835,
+      "iou": 0.45483581644283727,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 18,
+      "recall": 0.5919792959040783,
+      "precision": 0.6087012812470767,
+      "iou": 0.42879987763452787,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 19,
+      "recall": 0.6175517484677185,
+      "precision": 0.6174896081973064,
+      "iou": 0.4466762478053818,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 20,
+      "recall": 0.6377058976570673,
+      "precision": 0.6295449042512887,
+      "iou": 0.46369929461692616,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 21,
+      "recall": 0.6150933422073712,
+      "precision": 0.6426163412464758,
+      "iou": 0.4583144740795934,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 22,
+      "recall": 0.5860976657913592,
+      "precision": 0.6301035988784902,
+      "iou": 0.4360640896522894,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 23,
+      "recall": 0.5665193760213694,
+      "precision": 0.6171175846902708,
+      "iou": 0.4191815075842127,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 24,
+      "recall": 0.5654702646559436,
+      "precision": 0.6002310440507878,
+      "iou": 0.41076791794909945,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 25,
+      "recall": 0.5651247715616183,
+      "precision": 0.5794610570537019,
+      "iou": 0.4007594803016158,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 26,
+      "recall": 0.6106724799058955,
+      "precision": 0.5734980561447096,
+      "iou": 0.4199520795570798,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 27,
+      "recall": 0.7217829095988685,
+      "precision": 0.5551569941737412,
+      "iou": 0.457299562845594,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    },
+    {
+      "layer_one_based": 28,
+      "recall": 0.8588092688920054,
+      "precision": 0.5928863787123848,
+      "iou": 0.5402290447964917,
+      "reference": "dense full-model magnitude top-k, not a global optimum"
+    }
+  ],
+  "offsets": [
+    0.9054926037788391,
+    0.569473385810852,
+    0.5255621075630188,
+    0.3802156448364258,
+    0.39053982496261597,
+    0.39279016852378845,
+    0.36725789308547974,
+    0.30785614252090454,
+    0.2508498728275299,
+    0.2900979518890381,
+    0.2674906849861145,
+    0.2712189555168152,
+    0.2666144371032715,
+    0.26226305961608887,
+    0.2597517967224121,
+    0.28417474031448364,
+    0.3394603431224823,
+    0.3801719546318054,
+    0.4867863059043884,
+    0.5533995628356934,
+    0.5734659433364868,
+    0.5350939631462097,
+    0.5143202543258667,
+    0.5050432682037354,
+    0.47094660997390747,
+    0.585295557975769
+  ],
+  "drop_previous": false,
+  "execution": "exact sequential history with independent-document batching",
+  "batch_size": 16,
+  "seconds": 203.8400964209577,
+  "historical_full_sequence_numbers_not_directly_substituted": true
+}

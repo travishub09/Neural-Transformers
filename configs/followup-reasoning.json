@@ -1,0 +1,18 @@
+{
+  "collection": "results/mistral--reasoning-v1",
+  "output": "artifacts/value-followups/reasoning-v1",
+  "protocol": "mistral-reasoning-fewshot-sparse-answer-v1",
+  "title": "Mistral full GSM8K and MMLU",
+  "model_family": "Mistral",
+  "downstream": true,
+  "seed": 20261122,
+  "examples": {
+    "gsm8k": 1319,
+    "mmlu": 14042
+  },
+  "batch_size": 8,
+  "max_new_tokens": 512,
+  "bootstrap_repetitions": 2000,
+  "maximum_gpu_hours": 5.65,
+  "dollar_cap": 12
+}

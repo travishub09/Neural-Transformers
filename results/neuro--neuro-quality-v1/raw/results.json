@@ -1,0 +1,3100 @@
+{
+  "protocol": {
+    "user_override": "User explicitly requested perplexity after reviewing centroid accuracy.",
+    "training_status_preserved": "stopped_low_centroid_accuracy",
+    "predictor_tokens": 13000000,
+    "predictor_sha256": "705a18862afa05816a3804f612e4066d91e99dae9ad749bf6898ec7da0daca58",
+    "training_updates": 0,
+    "targets": [
+      0.5,
+      0.4,
+      0.5162
+    ],
+    "native_masks_also_evaluated": true,
+    "forty_percent_policy": "Same nominal50%-vocabulary checkpoint calibrated to40%; no separately trained40% predictor.",
+    "planner_retrained": false,
+    "planner_rerun": false
+  },
+  "results": {
+    "0.5000": {
+      "overall": {
+        "tokens": 28857.0,
+        "windows": 63,
+        "dense_nll": 1.7738305577069604,
+        "student_nll": 4.357036839383942,
+        "dense_perplexity": 5.893385131043404,
+        "student_perplexity": 78.02558918671892,
+        "relative_ppl_increase": 12.239519809373927,
+        "teacher_kl_nats": 2.598092764148879,
+        "top1_agreement": 0.36122951103718337,
+        "relative_ppl_increase_ci95": [
+          10.852983644173884,
+          13.954317440066864
+        ],
+        "teacher_kl_nats_ci95": [
+          2.4910477862515767,
+          2.7156090358064575
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.5001878254279863,
+        "previous_token_reuse_count_weighted": 0.7163154211769116,
+        "previous_token_reuse_token_mean": 0.7161936748047111,
+        "gate_centroid_top1": 0.589345072919249,
+        "up_centroid_top1": 0.47363657931284503,
+        "per_layer_centroid_top1": [
+          [
+            0.8512319367917663,
+            0.8302664864677548,
+            0.7593304917351076,
+            0.7588106871816197,
+            0.6831617978306823,
+            0.6092109366878053,
+            0.5651661641889316,
+            0.5261115154035416,
+            0.5165471116193645,
+            0.4930172921648127,
+            0.4948885885573691,
+            0.47076965727553105,
+            0.4955123540215546,
+            0.5178292961846346,
+            0.5289184599923762,
+            0.5696364833489275,
+            0.6129881831098174,
+            0.6239040787330631,
+            0.6226912014415913,
+            0.5901514363932495,
+            0.5568492913331254,
+            0.535537304640122,
+            0.5392798974252347,
+            0.5302006445576464,
+            0.5313095609384205,
+            0.5096510378764252
+          ],
+          [
+            0.7017014935717504,
+            0.6425477353848287,
+            0.6181862286446963,
+            0.6063693384620716,
+            0.5374432546695775,
+            0.4259278511279759,
+            0.4032990262328031,
+            0.4285615275323145,
+            0.44651211144609626,
+            0.38368506774786015,
+            0.40264060713171845,
+            0.373947395779187,
+            0.3871504314377794,
+            0.43344769033510067,
+            0.46324981806840626,
+            0.4919430294209377,
+            0.5507155976019683,
+            0.5535918494646013,
+            0.5511314412447587,
+            0.46096267803305957,
+            0.4104030217971376,
+            0.3745018539695741,
+            0.35194233634819977,
+            0.3774820667429047,
+            0.40465051807187163,
+            0.5325570918667915
+          ]
+        ]
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578.0,
+          "windows": 24,
+          "dense_nll": 2.6228023976702186,
+          "student_nll": 5.142511177204665,
+          "dense_perplexity": 13.774270531560871,
+          "student_perplexity": 171.14500458580562,
+          "relative_ppl_increase": 11.424977728850504,
+          "teacher_kl_nats": 2.536475249793484,
+          "top1_agreement": 0.307893088327417,
+          "relative_ppl_increase_ci95": [
+            9.862820133107522,
+            12.991652661638952
+          ],
+          "teacher_kl_nats_ci95": [
+            2.417150304280862,
+            2.6401252053349755
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.5011446326233061,
+          "previous_token_reuse_count_weighted": 0.7086004760902723,
+          "previous_token_reuse_token_mean": 0.7085029973938558,
+          "gate_centroid_top1": 0.5423526671699569,
+          "up_centroid_top1": 0.46261464574264743,
+          "per_layer_centroid_top1": [
+            [
+              0.8521612027563166,
+              0.8269993735644184,
+              0.7260388390060556,
+              0.7421173522656087,
+              0.6412612236375026,
+              0.5483399457089163,
+              0.5053247024430988,
+              0.46815619127166425,
+              0.45249530173313846,
+              0.4450824806849029,
+              0.44654416370849864,
+              0.41355188974733764,
+              0.4444560451033619,
+              0.4684694090624347,
+              0.4778659427855502,
+              0.5219252453539361,
+              0.572457715598246,
+              0.5891626644393402,
+              0.5847776153685529,
+              0.5369596993109209,
+              0.5030277719774483,
+              0.4785967842973481,
+              0.4736897055752767,
+              0.4556274796408436,
+              0.46627688452704114,
+              0.45980371685111715
+            ],
+            [
+              0.7047400292336605,
+              0.6304030068907914,
+              0.6114011275840467,
+              0.6108790979327626,
+              0.5411359365211944,
+              0.42900396742534974,
+              0.40164961369805807,
+              0.4129254541657966,
+              0.42148674044685736,
+              0.3735644184589685,
+              0.3827521403215703,
+              0.3491334307788682,
+              0.37022342869074965,
+              0.4093756525370641,
+              0.4564627270828983,
+              0.4832950511589058,
+              0.5423888076842764,
+              0.549175193150971,
+              0.5326790561703905,
+              0.460534558362915,
+              0.4093756525370641,
+              0.3682397160158697,
+              0.3600960534558363,
+              0.3617665483399457,
+              0.3782626853205262,
+              0.4770306953434955
+            ]
+          ]
+        },
+        "code": {
+          "tokens": 7515.0,
+          "windows": 15,
+          "dense_nll": 1.0438476198469662,
+          "student_nll": 3.5346291832955834,
+          "dense_perplexity": 2.8401237348891395,
+          "student_perplexity": 34.28229990747166,
+          "relative_ppl_increase": 11.070706457727564,
+          "teacher_kl_nats": 2.4661691946547446,
+          "top1_agreement": 0.44936793080505655,
+          "relative_ppl_increase_ci95": [
+            8.76128004394856,
+            14.78762252505128
+          ],
+          "teacher_kl_nats_ci95": [
+            2.246371225717639,
+            2.7385174521748463
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.5006094739940524,
+          "previous_token_reuse_count_weighted": 0.7356933245162348,
+          "previous_token_reuse_token_mean": 0.7354309622329622,
+          "gate_centroid_top1": 0.6680229285019704,
+          "up_centroid_top1": 0.4725574492041558,
+          "per_layer_centroid_top1": [
+            [
+              0.819560878243513,
+              0.8134397870924817,
+              0.7725881570192947,
+              0.7524950099800399,
+              0.7446440452428477,
+              0.7048569527611444,
+              0.6652029274783766,
+              0.6199600798403193,
+              0.6360612109115104,
+              0.587624750499002,
+              0.6006653359946773,
+              0.5878908848968729,
+              0.593080505655356,
+              0.6191616766467066,
+              0.6231536926147705,
+              0.6819693945442449,
+              0.688622754491018,
+              0.6878243512974052,
+              0.6799733865602129,
+              0.6592149035262808,
+              0.6407185628742516,
+              0.6070525615435796,
+              0.6487025948103793,
+              0.6517631403858949,
+              0.6790419161676646,
+              0.6033266799733865
+            ],
+            [
+              0.6529607451763141,
+              0.6018629407850965,
+              0.593080505655356,
+              0.5177644710578843,
+              0.4588157019294744,
+              0.3703260146373919,
+              0.35741849634065204,
+              0.4332667997338656,
+              0.48383233532934133,
+              0.36114437791084497,
+              0.42208915502328676,
+              0.4077178975382568,
+              0.38163672654690617,
+              0.45961410512308715,
+              0.4899534264803726,
+              0.5224218230206255,
+              0.5755156353958749,
+              0.5583499667332003,
+              0.5870924817032601,
+              0.4657351962741184,
+              0.4085163007318696,
+              0.3563539587491683,
+              0.3312042581503659,
+              0.3815036593479707,
+              0.43832335329341315,
+              0.6699933466400533
+            ]
+          ]
+        },
+        "conversation": {
+          "tokens": 11764.0,
+          "windows": 24,
+          "dense_nll": 1.5489384712440029,
+          "student_nll": 4.242885218154523,
+          "dense_perplexity": 4.706471475114159,
+          "student_perplexity": 69.6083978032555,
+          "relative_ppl_increase": 13.78993300422948,
+          "teacher_kl_nats": 2.7325349757473494,
+          "top1_agreement": 0.34835090105406324,
+          "relative_ppl_increase_ci95": [
+            10.905721188844492,
+            17.40247926946862
+          ],
+          "teacher_kl_nats_ci95": [
+            2.5318779732024055,
+            2.932523232983938
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.49913945852125724,
+          "previous_token_reuse_count_weighted": 0.7102030015336422,
+          "previous_token_reuse_token_mean": 0.7101627613695685,
+          "gate_centroid_top1": 0.5773448329976723,
+          "up_centroid_top1": 0.4832997672168023,
+          "per_layer_centroid_top1": [
+            [
+              0.8707072424345461,
+              0.8436756205372322,
+              0.7779666780006801,
+              0.7764365861951718,
+              0.6780006800408025,
+              0.5976708602516151,
+              0.5499829989799387,
+              0.5133458007480449,
+              0.49234954097245837,
+              0.47160829649778985,
+              0.4666780006800408,
+              0.4425365521931316,
+              0.47475348520911254,
+              0.49328459707582456,
+              0.5102856171370282,
+              0.5367222033321999,
+              0.5976708602516151,
+              0.6113566814008841,
+              0.6169670180210812,
+              0.5893403604216253,
+              0.5470928255695342,
+              0.5362121727303638,
+              0.5227813668820129,
+              0.5132607956477389,
+              0.48988439306358383,
+              0.4903944236654199
+            ],
+            [
+              0.7303638218293098,
+              0.6784257055423325,
+              0.6397483849030942,
+              0.6592995579734784,
+              0.5846650799047943,
+              0.45894253655219314,
+              0.4339510370622237,
+              0.4382862971778307,
+              0.4430465827949677,
+              0.4063243794627678,
+              0.4064093845630738,
+              0.3725773546412785,
+              0.40445426725603534,
+              0.43633117987079223,
+              0.45171710302618157,
+              0.4795137708262496,
+              0.541652499149949,
+              0.5541482488949337,
+              0.5431825909554573,
+              0.458262495749745,
+              0.4124447466848011,
+              0.3911934716082965,
+              0.3585515130907854,
+              0.38770826249574974,
+              0.4046242774566474,
+              0.48996939816388985
+            ]
+          ]
+        }
+      },
+      "calibration": {
+        "count_per_centroid": 4292,
+        "target_intersection_retention": 0.5,
+        "validation_retention": 0.5000659504252434,
+        "absolute_error": 6.595042524337735e-05,
+        "matched_budget": true,
+        "tolerance": 0.0005,
+        "measurements": {
+          "0": 0.0,
+          "3072": 0.2637375602963595,
+          "3840": 0.40397238750264536,
+          "4224": 0.4850077590557606,
+          "4272": 0.49561341492418837,
+          "4284": 0.4982805935470374,
+          "4290": 0.49961290106030876,
+          "4291": 0.49983888830550277,
+          "4292": 0.5000659504252434,
+          "4293": 0.5002895556130572,
+          "4296": 0.5009619265650961,
+          "4320": 0.5063414034134799,
+          "4416": 0.5281862111310595,
+          "4608": 0.5731435180166369,
+          "6144": 1.0
+        },
+        "calibration_variable": "common number of retained members per gate/up centroid",
+        "validation_documents": [
+          {
+            "sequence_id": 7797,
+            "document_sha256": "c44ca89881c15fdbaf73a5561053ca7278fc534628cbf8101c38ac342a9e7fb8",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:b61141a1-83d2-4ed0-91ab-fe29249336ed>",
+              "url": "http://www.intelihealth.com/IH/ihtIH/WSIHW000/9273/35323/1462316.html?d=dmtHMSContent"
+            },
+            "sample_pair_start": 108
+          },
+          {
+            "sequence_id": 11073,
+            "document_sha256": "0ad5448bac3c2b8dd9f6073fbcef671cd68614023c4f8e499ee559104a25df3c",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 509,
+            "provenance": {
+              "id": "<urn:uuid:e1b8261e-09d0-437a-bc11-cd6572bbf83b>",
+              "url": "http://www.deltacountyindependent.com/index.php/delta-area-2/3878-colorado-is-experiencing-significant-flu-activity?reset-settings"
+            },
+            "sample_pair_start": 311
+          },
+          {
+            "sequence_id": 9244,
+            "document_sha256": "66d6438a889ee8b31542ddd059b89c2dd0b749573db9596ca1e9a854edf09af2",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:7b194def-a735-46d6-8310-bd6761d97ac9>",
+              "url": "http://freemedprograms.com/free_medication_blog/tag/add-symptoms/"
+            },
+            "sample_pair_start": 20
+          },
+          {
+            "sequence_id": 7254,
+            "document_sha256": "67dce4672bc2763d195b06d30907adbd24dd7d4b8074f25d38ab95c706463be6",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:65f4ee5f-797b-46c0-a696-b4b488991750>",
+              "url": "http://www.scienceblog.com/community/older/2001/B/200111767.html"
+            },
+            "sample_pair_start": 441
+          },
+          {
+            "sequence_id": 1461,
+            "document_sha256": "0a796bd45688a5e4e58c295de438d634cb12a9718866847718240956da5c55b7",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:8690d840-c12f-4bf0-8124-0798628a837b>",
+              "url": "http://www.massgrown.org/high_protein_vegetables.html"
+            },
+            "sample_pair_start": 149
+          },
+          {
+            "sequence_id": 5513,
+            "document_sha256": "f76fe7fdd2d43597e1a6c95ace08e305f694510de222a85b0a16cb6423ba2649",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:1b1ebe26-94c4-4b92-bb8f-ba22fa0f2460>",
+              "url": "http://www.oldandsold.com/articles31n/herbals-14.shtml"
+            },
+            "sample_pair_start": 127
+          },
+          {
+            "sequence_id": 3423,
+            "document_sha256": "e478eac93e754b91696a4ac39306d3c1f4c22860a4931872a01df7d6d881b034",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:c5142607-ed8f-49d6-9f50-40c37dc76cf3>",
+              "url": "http://www.travelgrove.com/travel-guides/Czech-Republic/Prague-History-c434386.html"
+            },
+            "sample_pair_start": 361
+          },
+          {
+            "sequence_id": 870,
+            "document_sha256": "86b353a285b9e76340f35726befc8379f9c553484ad456e5cc5edbf108940faa",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:85f1268b-cf2c-46f4-9511-ba49f5ad2fa5>",
+              "url": "http://www.southeasternentallergy.com/ent-parathyroid.htm"
+            },
+            "sample_pair_start": 313
+          },
+          {
+            "sequence_id": 7517,
+            "document_sha256": "ce1cfdf010b21d8f336a6b7ae8a283c0785d56309dfd5f9c2849de22332d76ec",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "xyzz/vcmi-build",
+              "path": "project/jni/python/src/Lib/idlelib/run.py",
+              "license": "lgpl-2.1"
+            },
+            "sample_pair_start": 157
+          },
+          {
+            "sequence_id": 3732,
+            "document_sha256": "fc00eeb99e8bda1da3d84cfcdc89ff2ea9d5014a29ce2cebe7c383781fedb520",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "fyookball/electrum",
+              "path": "gui/qt/external_plugins_window.py",
+              "license": "mit"
+            },
+            "sample_pair_start": 72
+          },
+          {
+            "sequence_id": 9243,
+            "document_sha256": "4d3d99c4336d1c435c58c8d770bc5d748c171bc1f7e4348d1e51549a25ae1a74",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "leongold/lago",
+              "path": "lago/dirlock.py",
+              "license": "gpl-2.0"
+            },
+            "sample_pair_start": 379
+          },
+          {
+            "sequence_id": 1735,
+            "document_sha256": "1a28256fed779d0276cf39232185f5288e2f3ee8b28eb2b4d8aa53f1cd3f96b9",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "sharad1126/owtf",
+              "path": "framework/db/resource_manager.py",
+              "license": "bsd-3-clause"
+            },
+            "sample_pair_start": 12
+          },
+          {
+            "sequence_id": 8406,
+            "document_sha256": "452aa8f90a876eb9441e86f587cfdaf9511ec2feaa9ca41bd478003dfc6d5a95",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "tchernomax/ansible",
+              "path": "lib/ansible/modules/cloud/azure/azure_rm_managed_disk_facts.py",
+              "license": "gpl-3.0"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 6108,
+            "document_sha256": "8bd2f02383602aefe59815c497321b26a20d31fa3e088fbc885858f7926e4137",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "aaltay/beam",
+              "path": "sdks/python/apache_beam/examples/streaming_wordcount.py",
+              "license": "apache-2.0"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 8550,
+            "document_sha256": "84fd82b7a015529ae64436d715995bc2d9a3676307998139e54f53f052b86bb0",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "ant9000/yowsup",
+              "path": "yowsup/layers/protocol_receipts/protocolentities/receipt_incoming.py",
+              "license": "gpl-3.0"
+            },
+            "sample_pair_start": 349
+          },
+          {
+            "sequence_id": 4049,
+            "document_sha256": "0c3b262eb2dfee9a064b9013df25f33b6efed51d395599186d93b8ddda004444",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 458,
+            "provenance": {
+              "repo_name": "awslabs/aws-big-data-blog",
+              "path": "aws-blog-firehose-lambda-elasticsearch-near-real-time-discovery-platform/lambda-s3-twitter-to-es-python/twitter_to_es.py",
+              "license": "apache-2.0"
+            },
+            "sample_pair_start": 104
+          },
+          {
+            "sequence_id": 889,
+            "document_sha256": "6cee52f411886d6c39b9238861b02f656e68800c8b51973341b7fbd621c62492",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "691ff403df78367764fc6790418c9c0b88d970cba330fc31a5231ab8bd136907"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 9359,
+            "document_sha256": "a36e5c8c6617ba5af2d9276d6d624a59d0ca807395ed7a220a47998e6dc6e455",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "0f3188a00d2678f51e579eab16d9e8c8514ffc337fff30020f94144d01f3a36b"
+            },
+            "sample_pair_start": 9
+          },
+          {
+            "sequence_id": 6740,
+            "document_sha256": "9e401140e737c180664a341cf12c9828faccc3c721a61ba1f74048352db939e2",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "da6915752064369023430824a5be221c784c364dd4b6e3b6f415f5e9e8922c32"
+            },
+            "sample_pair_start": 286
+          },
+          {
+            "sequence_id": 5781,
+            "document_sha256": "28153f2c0acc4acac980a1d088bea0f9c15df09345b738be858a61e11f52d72a",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "a2e5944cb8a319c1b0a33aefeea213302068247584958cf1ac1c95da48de49aa"
+            },
+            "sample_pair_start": 202
+          },
+          {
+            "sequence_id": 5350,
+            "document_sha256": "dccaf064b829fe4385bb4e571e11e87ab538cd2f2b13364b74437e45e03eaaf0",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "dd1d8696312f20a1e3ae5b5f14dbc147e7c82815463c4692f75cbb2753bda276"
+            },
+            "sample_pair_start": 367
+          },
+          {
+            "sequence_id": 6187,
+            "document_sha256": "2327939a9645644ca60c8cc432e5d486094d064d5fe7e05031947edddcb9800c",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "bec51a453f3fee05fada80c861cbb5a8aaa81f90c4ccabffc59d7188f2f18b0a"
+            },
+            "sample_pair_start": 123
+          },
+          {
+            "sequence_id": 229,
+            "document_sha256": "1a1b4694b08bde4783e68952252f09bd77fdd866fccf357b788dba689216e21d",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "337ff84729e935fd4d5bee8de1e925d75be9ca5024dd6e75b214f3e2cc4a36f1"
+            },
+            "sample_pair_start": 324
+          },
+          {
+            "sequence_id": 8374,
+            "document_sha256": "6710f62657be21608701e971a1a443ef1eeedc35bfe382145e011facc7cd4592",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "03fd9e39d186507c0af048d809d004275f0fe3208204aa2f294e9fa373b91dc1"
+            },
+            "sample_pair_start": 292
+          }
+        ]
+      },
+      "seconds": 177.24095650797244,
+      "execution": "Sequential cached teacher and student; batch16; same planner order/padding",
+      "reuse_definition": "Current active rows also active in immediately previous token; first tokens excluded",
+      "centroid_accuracy_labels": "Original training vocabulary, before runtime mask-density calibration; actual cached held-out execution"
+    },
+    "0.4000": {
+      "overall": {
+        "tokens": 28857.0,
+        "windows": 63,
+        "dense_nll": 1.7738305577069604,
+        "student_nll": 5.910467921986845,
+        "dense_perplexity": 5.893385131043404,
+        "student_perplexity": 368.8787214967426,
+        "relative_ppl_increase": 61.59199310658899,
+        "teacher_kl_nats": 4.135246443779929,
+        "top1_agreement": 0.19953564126555082,
+        "relative_ppl_increase_ci95": [
+          53.88093354410112,
+          70.60249250041944
+        ],
+        "teacher_kl_nats_ci95": [
+          4.010771821334281,
+          4.260865277986454
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.4001256599567174,
+        "previous_token_reuse_count_weighted": 0.6603550542708182,
+        "previous_token_reuse_token_mean": 0.6601480050341972,
+        "gate_centroid_top1": 0.589345072919249,
+        "up_centroid_top1": 0.47363657931284503,
+        "per_layer_centroid_top1": [
+          [
+            0.8512319367917663,
+            0.8302664864677548,
+            0.7593304917351076,
+            0.7588106871816197,
+            0.6831617978306823,
+            0.6092109366878053,
+            0.5651661641889316,
+            0.5261115154035416,
+            0.5165471116193645,
+            0.4930172921648127,
+            0.4948885885573691,
+            0.47076965727553105,
+            0.4955123540215546,
+            0.5178292961846346,
+            0.5289184599923762,
+            0.5696364833489275,
+            0.6129881831098174,
+            0.6239040787330631,
+            0.6226912014415913,
+            0.5901514363932495,
+            0.5568492913331254,
+            0.535537304640122,
+            0.5392798974252347,
+            0.5302006445576464,
+            0.5313095609384205,
+            0.5096510378764252
+          ],
+          [
+            0.7017014935717504,
+            0.6425477353848287,
+            0.6181862286446963,
+            0.6063693384620716,
+            0.5374432546695775,
+            0.4259278511279759,
+            0.4032990262328031,
+            0.4285615275323145,
+            0.44651211144609626,
+            0.38368506774786015,
+            0.40264060713171845,
+            0.373947395779187,
+            0.3871504314377794,
+            0.43344769033510067,
+            0.46324981806840626,
+            0.4919430294209377,
+            0.5507155976019683,
+            0.5535918494646013,
+            0.5511314412447587,
+            0.46096267803305957,
+            0.4104030217971376,
+            0.3745018539695741,
+            0.35194233634819977,
+            0.3774820667429047,
+            0.40465051807187163,
+            0.5325570918667915
+          ]
+        ]
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578.0,
+          "windows": 24,
+          "dense_nll": 2.6228023976702186,
+          "student_nll": 6.169122079385287,
+          "dense_perplexity": 13.774270531560871,
+          "student_perplexity": 477.7664808748206,
+          "relative_ppl_increase": 33.68542887843812,
+          "teacher_kl_nats": 3.56418917159926,
+          "top1_agreement": 0.21037794946752975,
+          "relative_ppl_increase_ci95": [
+            28.308609084573558,
+            39.42042050421463
+          ],
+          "teacher_kl_nats_ci95": [
+            3.4097113875338994,
+            3.702675552665976
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.40113893351203656,
+          "previous_token_reuse_count_weighted": 0.6516165348770437,
+          "previous_token_reuse_token_mean": 0.6514745006414375,
+          "gate_centroid_top1": 0.5423526671699569,
+          "up_centroid_top1": 0.46261464574264743,
+          "per_layer_centroid_top1": [
+            [
+              0.8521612027563166,
+              0.8269993735644184,
+              0.7260388390060556,
+              0.7421173522656087,
+              0.6412612236375026,
+              0.5483399457089163,
+              0.5053247024430988,
+              0.46815619127166425,
+              0.45249530173313846,
+              0.4450824806849029,
+              0.44654416370849864,
+              0.41355188974733764,
+              0.4444560451033619,
+              0.4684694090624347,
+              0.4778659427855502,
+              0.5219252453539361,
+              0.572457715598246,
+              0.5891626644393402,
+              0.5847776153685529,
+              0.5369596993109209,
+              0.5030277719774483,
+              0.4785967842973481,
+              0.4736897055752767,
+              0.4556274796408436,
+              0.46627688452704114,
+              0.45980371685111715
+            ],
+            [
+              0.7047400292336605,
+              0.6304030068907914,
+              0.6114011275840467,
+              0.6108790979327626,
+              0.5411359365211944,
+              0.42900396742534974,
+              0.40164961369805807,
+              0.4129254541657966,
+              0.42148674044685736,
+              0.3735644184589685,
+              0.3827521403215703,
+              0.3491334307788682,
+              0.37022342869074965,
+              0.4093756525370641,
+              0.4564627270828983,
+              0.4832950511589058,
+              0.5423888076842764,
+              0.549175193150971,
+              0.5326790561703905,
+              0.460534558362915,
+              0.4093756525370641,
+              0.3682397160158697,
+              0.3600960534558363,
+              0.3617665483399457,
+              0.3782626853205262,
+              0.4770306953434955
+            ]
+          ]
+        },
+        "code": {
+          "tokens": 7515.0,
+          "windows": 15,
+          "dense_nll": 1.0438476198469662,
+          "student_nll": 5.666388736241805,
+          "dense_perplexity": 2.8401237348891395,
+          "student_perplexity": 288.9890321175159,
+          "relative_ppl_increase": 100.7522682436215,
+          "teacher_kl_nats": 4.580072410943407,
+          "top1_agreement": 0.2010645375914837,
+          "relative_ppl_increase_ci95": [
+            76.96204058695713,
+            130.83472046346537
+          ],
+          "teacher_kl_nats_ci95": [
+            4.324356048650896,
+            4.827054423186968
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.4009001578173781,
+          "previous_token_reuse_count_weighted": 0.6820232347400974,
+          "previous_token_reuse_token_mean": 0.6815411340082106,
+          "gate_centroid_top1": 0.6680229285019704,
+          "up_centroid_top1": 0.4725574492041558,
+          "per_layer_centroid_top1": [
+            [
+              0.819560878243513,
+              0.8134397870924817,
+              0.7725881570192947,
+              0.7524950099800399,
+              0.7446440452428477,
+              0.7048569527611444,
+              0.6652029274783766,
+              0.6199600798403193,
+              0.6360612109115104,
+              0.587624750499002,
+              0.6006653359946773,
+              0.5878908848968729,
+              0.593080505655356,
+              0.6191616766467066,
+              0.6231536926147705,
+              0.6819693945442449,
+              0.688622754491018,
+              0.6878243512974052,
+              0.6799733865602129,
+              0.6592149035262808,
+              0.6407185628742516,
+              0.6070525615435796,
+              0.6487025948103793,
+              0.6517631403858949,
+              0.6790419161676646,
+              0.6033266799733865
+            ],
+            [
+              0.6529607451763141,
+              0.6018629407850965,
+              0.593080505655356,
+              0.5177644710578843,
+              0.4588157019294744,
+              0.3703260146373919,
+              0.35741849634065204,
+              0.4332667997338656,
+              0.48383233532934133,
+              0.36114437791084497,
+              0.42208915502328676,
+              0.4077178975382568,
+              0.38163672654690617,
+              0.45961410512308715,
+              0.4899534264803726,
+              0.5224218230206255,
+              0.5755156353958749,
+              0.5583499667332003,
+              0.5870924817032601,
+              0.4657351962741184,
+              0.4085163007318696,
+              0.3563539587491683,
+              0.3312042581503659,
+              0.3815036593479707,
+              0.43832335329341315,
+              0.6699933466400533
+            ]
+          ]
+        },
+        "conversation": {
+          "tokens": 11764.0,
+          "windows": 24,
+          "dense_nll": 1.5489384712440029,
+          "student_nll": 5.855798214515893,
+          "dense_perplexity": 4.706471475114159,
+          "student_perplexity": 349.25356808853,
+          "relative_ppl_increase": 73.20709334694494,
+          "teacher_kl_nats": 4.316028440525331,
+          "top1_agreement": 0.18973138388303298,
+          "relative_ppl_increase_ci95": [
+            57.15734170084162,
+            92.35619621144023
+          ],
+          "teacher_kl_nats_ci95": [
+            4.072164945860965,
+            4.539873306340297
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.39880591450145453,
+          "previous_token_reuse_count_weighted": 0.6535925039641698,
+          "previous_token_reuse_token_mean": 0.6535396740004089,
+          "gate_centroid_top1": 0.5773448329976723,
+          "up_centroid_top1": 0.4832997672168023,
+          "per_layer_centroid_top1": [
+            [
+              0.8707072424345461,
+              0.8436756205372322,
+              0.7779666780006801,
+              0.7764365861951718,
+              0.6780006800408025,
+              0.5976708602516151,
+              0.5499829989799387,
+              0.5133458007480449,
+              0.49234954097245837,
+              0.47160829649778985,
+              0.4666780006800408,
+              0.4425365521931316,
+              0.47475348520911254,
+              0.49328459707582456,
+              0.5102856171370282,
+              0.5367222033321999,
+              0.5976708602516151,
+              0.6113566814008841,
+              0.6169670180210812,
+              0.5893403604216253,
+              0.5470928255695342,
+              0.5362121727303638,
+              0.5227813668820129,
+              0.5132607956477389,
+              0.48988439306358383,
+              0.4903944236654199
+            ],
+            [
+              0.7303638218293098,
+              0.6784257055423325,
+              0.6397483849030942,
+              0.6592995579734784,
+              0.5846650799047943,
+              0.45894253655219314,
+              0.4339510370622237,
+              0.4382862971778307,
+              0.4430465827949677,
+              0.4063243794627678,
+              0.4064093845630738,
+              0.3725773546412785,
+              0.40445426725603534,
+              0.43633117987079223,
+              0.45171710302618157,
+              0.4795137708262496,
+              0.541652499149949,
+              0.5541482488949337,
+              0.5431825909554573,
+              0.458262495749745,
+              0.4124447466848011,
+              0.3911934716082965,
+              0.3585515130907854,
+              0.38770826249574974,
+              0.4046242774566474,
+              0.48996939816388985
+            ]
+          ]
+        }
+      },
+      "calibration": {
+        "count_per_centroid": 3820,
+        "target_intersection_retention": 0.4,
+        "validation_retention": 0.39997038136007373,
+        "absolute_error": 2.961863992628766e-05,
+        "matched_budget": true,
+        "tolerance": 0.0005,
+        "measurements": {
+          "0": 0.0,
+          "3072": 0.2637375602963595,
+          "3456": 0.3302478351780478,
+          "3648": 0.36618200870799356,
+          "3744": 0.38486165498942654,
+          "3792": 0.3943529069793393,
+          "3816": 0.3991695162329359,
+          "3819": 0.3997675854563008,
+          "3820": 0.39997038136007373,
+          "3821": 0.40016769314724315,
+          "3822": 0.40036927725304206,
+          "3828": 0.4015648582624474,
+          "3840": 0.40397238750264536,
+          "4608": 0.5731435180166369,
+          "6144": 1.0
+        },
+        "calibration_variable": "common number of retained members per gate/up centroid",
+        "validation_documents": [
+          {
+            "sequence_id": 7797,
+            "document_sha256": "c44ca89881c15fdbaf73a5561053ca7278fc534628cbf8101c38ac342a9e7fb8",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:b61141a1-83d2-4ed0-91ab-fe29249336ed>",
+              "url": "http://www.intelihealth.com/IH/ihtIH/WSIHW000/9273/35323/1462316.html?d=dmtHMSContent"
+            },
+            "sample_pair_start": 108
+          },
+          {
+            "sequence_id": 11073,
+            "document_sha256": "0ad5448bac3c2b8dd9f6073fbcef671cd68614023c4f8e499ee559104a25df3c",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 509,
+            "provenance": {
+              "id": "<urn:uuid:e1b8261e-09d0-437a-bc11-cd6572bbf83b>",
+              "url": "http://www.deltacountyindependent.com/index.php/delta-area-2/3878-colorado-is-experiencing-significant-flu-activity?reset-settings"
+            },
+            "sample_pair_start": 311
+          },
+          {
+            "sequence_id": 9244,
+            "document_sha256": "66d6438a889ee8b31542ddd059b89c2dd0b749573db9596ca1e9a854edf09af2",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:7b194def-a735-46d6-8310-bd6761d97ac9>",
+              "url": "http://freemedprograms.com/free_medication_blog/tag/add-symptoms/"
+            },
+            "sample_pair_start": 20
+          },
+          {
+            "sequence_id": 7254,
+            "document_sha256": "67dce4672bc2763d195b06d30907adbd24dd7d4b8074f25d38ab95c706463be6",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:65f4ee5f-797b-46c0-a696-b4b488991750>",
+              "url": "http://www.scienceblog.com/community/older/2001/B/200111767.html"
+            },
+            "sample_pair_start": 441
+          },
+          {
+            "sequence_id": 1461,
+            "document_sha256": "0a796bd45688a5e4e58c295de438d634cb12a9718866847718240956da5c55b7",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:8690d840-c12f-4bf0-8124-0798628a837b>",
+              "url": "http://www.massgrown.org/high_protein_vegetables.html"
+            },
+            "sample_pair_start": 149
+          },
+          {
+            "sequence_id": 5513,
+            "document_sha256": "f76fe7fdd2d43597e1a6c95ace08e305f694510de222a85b0a16cb6423ba2649",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:1b1ebe26-94c4-4b92-bb8f-ba22fa0f2460>",
+              "url": "http://www.oldandsold.com/articles31n/herbals-14.shtml"
+            },
+            "sample_pair_start": 127
+          },
+          {
+            "sequence_id": 3423,
+            "document_sha256": "e478eac93e754b91696a4ac39306d3c1f4c22860a4931872a01df7d6d881b034",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:c5142607-ed8f-49d6-9f50-40c37dc76cf3>",
+              "url": "http://www.travelgrove.com/travel-guides/Czech-Republic/Prague-History-c434386.html"
+            },
+            "sample_pair_start": 361
+          },
+          {
+            "sequence_id": 870,
+            "document_sha256": "86b353a285b9e76340f35726befc8379f9c553484ad456e5cc5edbf108940faa",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:85f1268b-cf2c-46f4-9511-ba49f5ad2fa5>",
+              "url": "http://www.southeasternentallergy.com/ent-parathyroid.htm"
+            },
+            "sample_pair_start": 313
+          },
+          {
+            "sequence_id": 7517,
+            "document_sha256": "ce1cfdf010b21d8f336a6b7ae8a283c0785d56309dfd5f9c2849de22332d76ec",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "xyzz/vcmi-build",
+              "path": "project/jni/python/src/Lib/idlelib/run.py",
+              "license": "lgpl-2.1"
+            },
+            "sample_pair_start": 157
+          },
+          {
+            "sequence_id": 3732,
+            "document_sha256": "fc00eeb99e8bda1da3d84cfcdc89ff2ea9d5014a29ce2cebe7c383781fedb520",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "fyookball/electrum",
+              "path": "gui/qt/external_plugins_window.py",
+              "license": "mit"
+            },
+            "sample_pair_start": 72
+          },
+          {
+            "sequence_id": 9243,
+            "document_sha256": "4d3d99c4336d1c435c58c8d770bc5d748c171bc1f7e4348d1e51549a25ae1a74",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "leongold/lago",
+              "path": "lago/dirlock.py",
+              "license": "gpl-2.0"
+            },
+            "sample_pair_start": 379
+          },
+          {
+            "sequence_id": 1735,
+            "document_sha256": "1a28256fed779d0276cf39232185f5288e2f3ee8b28eb2b4d8aa53f1cd3f96b9",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "sharad1126/owtf",
+              "path": "framework/db/resource_manager.py",
+              "license": "bsd-3-clause"
+            },
+            "sample_pair_start": 12
+          },
+          {
+            "sequence_id": 8406,
+            "document_sha256": "452aa8f90a876eb9441e86f587cfdaf9511ec2feaa9ca41bd478003dfc6d5a95",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "tchernomax/ansible",
+              "path": "lib/ansible/modules/cloud/azure/azure_rm_managed_disk_facts.py",
+              "license": "gpl-3.0"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 6108,
+            "document_sha256": "8bd2f02383602aefe59815c497321b26a20d31fa3e088fbc885858f7926e4137",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "aaltay/beam",
+              "path": "sdks/python/apache_beam/examples/streaming_wordcount.py",
+              "license": "apache-2.0"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 8550,
+            "document_sha256": "84fd82b7a015529ae64436d715995bc2d9a3676307998139e54f53f052b86bb0",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "ant9000/yowsup",
+              "path": "yowsup/layers/protocol_receipts/protocolentities/receipt_incoming.py",
+              "license": "gpl-3.0"
+            },
+            "sample_pair_start": 349
+          },
+          {
+            "sequence_id": 4049,
+            "document_sha256": "0c3b262eb2dfee9a064b9013df25f33b6efed51d395599186d93b8ddda004444",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 458,
+            "provenance": {
+              "repo_name": "awslabs/aws-big-data-blog",
+              "path": "aws-blog-firehose-lambda-elasticsearch-near-real-time-discovery-platform/lambda-s3-twitter-to-es-python/twitter_to_es.py",
+              "license": "apache-2.0"
+            },
+            "sample_pair_start": 104
+          },
+          {
+            "sequence_id": 889,
+            "document_sha256": "6cee52f411886d6c39b9238861b02f656e68800c8b51973341b7fbd621c62492",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "691ff403df78367764fc6790418c9c0b88d970cba330fc31a5231ab8bd136907"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 9359,
+            "document_sha256": "a36e5c8c6617ba5af2d9276d6d624a59d0ca807395ed7a220a47998e6dc6e455",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "0f3188a00d2678f51e579eab16d9e8c8514ffc337fff30020f94144d01f3a36b"
+            },
+            "sample_pair_start": 9
+          },
+          {
+            "sequence_id": 6740,
+            "document_sha256": "9e401140e737c180664a341cf12c9828faccc3c721a61ba1f74048352db939e2",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "da6915752064369023430824a5be221c784c364dd4b6e3b6f415f5e9e8922c32"
+            },
+            "sample_pair_start": 286
+          },
+          {
+            "sequence_id": 5781,
+            "document_sha256": "28153f2c0acc4acac980a1d088bea0f9c15df09345b738be858a61e11f52d72a",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "a2e5944cb8a319c1b0a33aefeea213302068247584958cf1ac1c95da48de49aa"
+            },
+            "sample_pair_start": 202
+          },
+          {
+            "sequence_id": 5350,
+            "document_sha256": "dccaf064b829fe4385bb4e571e11e87ab538cd2f2b13364b74437e45e03eaaf0",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "dd1d8696312f20a1e3ae5b5f14dbc147e7c82815463c4692f75cbb2753bda276"
+            },
+            "sample_pair_start": 367
+          },
+          {
+            "sequence_id": 6187,
+            "document_sha256": "2327939a9645644ca60c8cc432e5d486094d064d5fe7e05031947edddcb9800c",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "bec51a453f3fee05fada80c861cbb5a8aaa81f90c4ccabffc59d7188f2f18b0a"
+            },
+            "sample_pair_start": 123
+          },
+          {
+            "sequence_id": 229,
+            "document_sha256": "1a1b4694b08bde4783e68952252f09bd77fdd866fccf357b788dba689216e21d",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "337ff84729e935fd4d5bee8de1e925d75be9ca5024dd6e75b214f3e2cc4a36f1"
+            },
+            "sample_pair_start": 324
+          },
+          {
+            "sequence_id": 8374,
+            "document_sha256": "6710f62657be21608701e971a1a443ef1eeedc35bfe382145e011facc7cd4592",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "03fd9e39d186507c0af048d809d004275f0fe3208204aa2f294e9fa373b91dc1"
+            },
+            "sample_pair_start": 292
+          }
+        ]
+      },
+      "seconds": 175.14771649905015,
+      "execution": "Sequential cached teacher and student; batch16; same planner order/padding",
+      "reuse_definition": "Current active rows also active in immediately previous token; first tokens excluded",
+      "centroid_accuracy_labels": "Original training vocabulary, before runtime mask-density calibration; actual cached held-out execution"
+    },
+    "0.5162": {
+      "overall": {
+        "tokens": 28857.0,
+        "windows": 63,
+        "dense_nll": 1.7738305577069604,
+        "student_nll": 4.129726189393489,
+        "dense_perplexity": 5.893385131043404,
+        "student_perplexity": 62.160900290567064,
+        "relative_ppl_increase": 9.547571371695113,
+        "teacher_kl_nats": 2.371757085501992,
+        "top1_agreement": 0.3883286550923519,
+        "relative_ppl_increase_ci95": [
+          8.523565982600232,
+          10.812508770604992
+        ],
+        "teacher_kl_nats_ci95": [
+          2.274484824763974,
+          2.4810143094281045
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.5164266870639278,
+        "previous_token_reuse_count_weighted": 0.7252525236449772,
+        "previous_token_reuse_token_mean": 0.7251425878177093,
+        "gate_centroid_top1": 0.589345072919249,
+        "up_centroid_top1": 0.47363657931284503,
+        "per_layer_centroid_top1": [
+          [
+            0.8512319367917663,
+            0.8302664864677548,
+            0.7593304917351076,
+            0.7588106871816197,
+            0.6831617978306823,
+            0.6092109366878053,
+            0.5651661641889316,
+            0.5261115154035416,
+            0.5165471116193645,
+            0.4930172921648127,
+            0.4948885885573691,
+            0.47076965727553105,
+            0.4955123540215546,
+            0.5178292961846346,
+            0.5289184599923762,
+            0.5696364833489275,
+            0.6129881831098174,
+            0.6239040787330631,
+            0.6226912014415913,
+            0.5901514363932495,
+            0.5568492913331254,
+            0.535537304640122,
+            0.5392798974252347,
+            0.5302006445576464,
+            0.5313095609384205,
+            0.5096510378764252
+          ],
+          [
+            0.7017014935717504,
+            0.6425477353848287,
+            0.6181862286446963,
+            0.6063693384620716,
+            0.5374432546695775,
+            0.4259278511279759,
+            0.4032990262328031,
+            0.4285615275323145,
+            0.44651211144609626,
+            0.38368506774786015,
+            0.40264060713171845,
+            0.373947395779187,
+            0.3871504314377794,
+            0.43344769033510067,
+            0.46324981806840626,
+            0.4919430294209377,
+            0.5507155976019683,
+            0.5535918494646013,
+            0.5511314412447587,
+            0.46096267803305957,
+            0.4104030217971376,
+            0.3745018539695741,
+            0.35194233634819977,
+            0.3774820667429047,
+            0.40465051807187163,
+            0.5325570918667915
+          ]
+        ]
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578.0,
+          "windows": 24,
+          "dense_nll": 2.6228023976702186,
+          "student_nll": 4.944161486730599,
+          "dense_perplexity": 13.774270531560871,
+          "student_perplexity": 140.35311354808726,
+          "relative_ppl_increase": 9.189513355825074,
+          "teacher_kl_nats": 2.338841885737433,
+          "top1_agreement": 0.3262685320526206,
+          "relative_ppl_increase_ci95": [
+            8.003252336045366,
+            10.354761806988407
+          ],
+          "teacher_kl_nats_ci95": [
+            2.226767335677922,
+            2.4418553114197046
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.5173695366648027,
+          "previous_token_reuse_count_weighted": 0.717717217539962,
+          "previous_token_reuse_token_mean": 0.7176270448584391,
+          "gate_centroid_top1": 0.5423526671699569,
+          "up_centroid_top1": 0.46261464574264743,
+          "per_layer_centroid_top1": [
+            [
+              0.8521612027563166,
+              0.8269993735644184,
+              0.7260388390060556,
+              0.7421173522656087,
+              0.6412612236375026,
+              0.5483399457089163,
+              0.5053247024430988,
+              0.46815619127166425,
+              0.45249530173313846,
+              0.4450824806849029,
+              0.44654416370849864,
+              0.41355188974733764,
+              0.4444560451033619,
+              0.4684694090624347,
+              0.4778659427855502,
+              0.5219252453539361,
+              0.572457715598246,
+              0.5891626644393402,
+              0.5847776153685529,
+              0.5369596993109209,
+              0.5030277719774483,
+              0.4785967842973481,
+              0.4736897055752767,
+              0.4556274796408436,
+              0.46627688452704114,
+              0.45980371685111715
+            ],
+            [
+              0.7047400292336605,
+              0.6304030068907914,
+              0.6114011275840467,
+              0.6108790979327626,
+              0.5411359365211944,
+              0.42900396742534974,
+              0.40164961369805807,
+              0.4129254541657966,
+              0.42148674044685736,
+              0.3735644184589685,
+              0.3827521403215703,
+              0.3491334307788682,
+              0.37022342869074965,
+              0.4093756525370641,
+              0.4564627270828983,
+              0.4832950511589058,
+              0.5423888076842764,
+              0.549175193150971,
+              0.5326790561703905,
+              0.460534558362915,
+              0.4093756525370641,
+              0.3682397160158697,
+              0.3600960534558363,
+              0.3617665483399457,
+              0.3782626853205262,
+              0.4770306953434955
+            ]
+          ]
+        },
+        "code": {
+          "tokens": 7515.0,
+          "windows": 15,
+          "dense_nll": 1.0438476198469662,
+          "student_nll": 3.283392134389377,
+          "dense_perplexity": 2.8401237348891395,
+          "student_perplexity": 26.666074363474166,
+          "relative_ppl_increase": 8.389053735898251,
+          "teacher_kl_nats": 2.2201615829187213,
+          "top1_agreement": 0.49101796407185627,
+          "relative_ppl_increase_ci95": [
+            6.571103310946803,
+            11.206960834611195
+          ],
+          "teacher_kl_nats_ci95": [
+            2.003258510383801,
+            2.485993693119369
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.5167987167691862,
+          "previous_token_reuse_count_weighted": 0.7441962680549228,
+          "previous_token_reuse_token_mean": 0.7439622710928059,
+          "gate_centroid_top1": 0.6680229285019704,
+          "up_centroid_top1": 0.4725574492041558,
+          "per_layer_centroid_top1": [
+            [
+              0.819560878243513,
+              0.8134397870924817,
+              0.7725881570192947,
+              0.7524950099800399,
+              0.7446440452428477,
+              0.7048569527611444,
+              0.6652029274783766,
+              0.6199600798403193,
+              0.6360612109115104,
+              0.587624750499002,
+              0.6006653359946773,
+              0.5878908848968729,
+              0.593080505655356,
+              0.6191616766467066,
+              0.6231536926147705,
+              0.6819693945442449,
+              0.688622754491018,
+              0.6878243512974052,
+              0.6799733865602129,
+              0.6592149035262808,
+              0.6407185628742516,
+              0.6070525615435796,
+              0.6487025948103793,
+              0.6517631403858949,
+              0.6790419161676646,
+              0.6033266799733865
+            ],
+            [
+              0.6529607451763141,
+              0.6018629407850965,
+              0.593080505655356,
+              0.5177644710578843,
+              0.4588157019294744,
+              0.3703260146373919,
+              0.35741849634065204,
+              0.4332667997338656,
+              0.48383233532934133,
+              0.36114437791084497,
+              0.42208915502328676,
+              0.4077178975382568,
+              0.38163672654690617,
+              0.45961410512308715,
+              0.4899534264803726,
+              0.5224218230206255,
+              0.5755156353958749,
+              0.5583499667332003,
+              0.5870924817032601,
+              0.4657351962741184,
+              0.4085163007318696,
+              0.3563539587491683,
+              0.3312042581503659,
+              0.3815036593479707,
+              0.43832335329341315,
+              0.6699933466400533
+            ]
+          ]
+        },
+        "conversation": {
+          "tokens": 11764.0,
+          "windows": 24,
+          "dense_nll": 1.5489384712440029,
+          "student_nll": 4.007279669966514,
+          "dense_perplexity": 4.706471475114159,
+          "student_perplexity": 54.99705673912776,
+          "relative_ppl_increase": 10.68541167835162,
+          "teacher_kl_nats": 2.49539717265417,
+          "top1_agreement": 0.3732573954437266,
+          "relative_ppl_increase_ci95": [
+            8.578673934606423,
+            13.219007190620601
+          ],
+          "teacher_kl_nats_ci95": [
+            2.3142101236880555,
+            2.6750909552738036
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.5154213813250469,
+          "previous_token_reuse_count_weighted": 0.7192733614421618,
+          "previous_token_reuse_token_mean": 0.7192359330365888,
+          "gate_centroid_top1": 0.5773448329976723,
+          "up_centroid_top1": 0.4832997672168023,
+          "per_layer_centroid_top1": [
+            [
+              0.8707072424345461,
+              0.8436756205372322,
+              0.7779666780006801,
+              0.7764365861951718,
+              0.6780006800408025,
+              0.5976708602516151,
+              0.5499829989799387,
+              0.5133458007480449,
+              0.49234954097245837,
+              0.47160829649778985,
+              0.4666780006800408,
+              0.4425365521931316,
+              0.47475348520911254,
+              0.49328459707582456,
+              0.5102856171370282,
+              0.5367222033321999,
+              0.5976708602516151,
+              0.6113566814008841,
+              0.6169670180210812,
+              0.5893403604216253,
+              0.5470928255695342,
+              0.5362121727303638,
+              0.5227813668820129,
+              0.5132607956477389,
+              0.48988439306358383,
+              0.4903944236654199
+            ],
+            [
+              0.7303638218293098,
+              0.6784257055423325,
+              0.6397483849030942,
+              0.6592995579734784,
+              0.5846650799047943,
+              0.45894253655219314,
+              0.4339510370622237,
+              0.4382862971778307,
+              0.4430465827949677,
+              0.4063243794627678,
+              0.4064093845630738,
+              0.3725773546412785,
+              0.40445426725603534,
+              0.43633117987079223,
+              0.45171710302618157,
+              0.4795137708262496,
+              0.541652499149949,
+              0.5541482488949337,
+              0.5431825909554573,
+              0.458262495749745,
+              0.4124447466848011,
+              0.3911934716082965,
+              0.3585515130907854,
+              0.38770826249574974,
+              0.4046242774566474,
+              0.48996939816388985
+            ]
+          ]
+        }
+      },
+      "calibration": {
+        "count_per_centroid": 4364,
+        "target_intersection_retention": 0.5162,
+        "validation_retention": 0.5163121284257154,
+        "absolute_error": 0.0001121284257153965,
+        "matched_budget": true,
+        "tolerance": 0.0005,
+        "measurements": {
+          "0": 0.0,
+          "3072": 0.2637375602963595,
+          "3840": 0.40397238750264536,
+          "4224": 0.4850077590557606,
+          "4320": 0.5063414034134799,
+          "4344": 0.5117749327079303,
+          "4356": 0.5144911683794423,
+          "4362": 0.5158562370022232,
+          "4363": 0.5160831329676921,
+          "4364": 0.5163121284257154,
+          "4365": 0.5165398243932325,
+          "4368": 0.5172218892162416,
+          "4416": 0.5281862111310595,
+          "4608": 0.5731435180166369,
+          "6144": 1.0
+        },
+        "calibration_variable": "common number of retained members per gate/up centroid",
+        "validation_documents": [
+          {
+            "sequence_id": 7797,
+            "document_sha256": "c44ca89881c15fdbaf73a5561053ca7278fc534628cbf8101c38ac342a9e7fb8",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:b61141a1-83d2-4ed0-91ab-fe29249336ed>",
+              "url": "http://www.intelihealth.com/IH/ihtIH/WSIHW000/9273/35323/1462316.html?d=dmtHMSContent"
+            },
+            "sample_pair_start": 108
+          },
+          {
+            "sequence_id": 11073,
+            "document_sha256": "0ad5448bac3c2b8dd9f6073fbcef671cd68614023c4f8e499ee559104a25df3c",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 509,
+            "provenance": {
+              "id": "<urn:uuid:e1b8261e-09d0-437a-bc11-cd6572bbf83b>",
+              "url": "http://www.deltacountyindependent.com/index.php/delta-area-2/3878-colorado-is-experiencing-significant-flu-activity?reset-settings"
+            },
+            "sample_pair_start": 311
+          },
+          {
+            "sequence_id": 9244,
+            "document_sha256": "66d6438a889ee8b31542ddd059b89c2dd0b749573db9596ca1e9a854edf09af2",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:7b194def-a735-46d6-8310-bd6761d97ac9>",
+              "url": "http://freemedprograms.com/free_medication_blog/tag/add-symptoms/"
+            },
+            "sample_pair_start": 20
+          },
+          {
+            "sequence_id": 7254,
+            "document_sha256": "67dce4672bc2763d195b06d30907adbd24dd7d4b8074f25d38ab95c706463be6",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:65f4ee5f-797b-46c0-a696-b4b488991750>",
+              "url": "http://www.scienceblog.com/community/older/2001/B/200111767.html"
+            },
+            "sample_pair_start": 441
+          },
+          {
+            "sequence_id": 1461,
+            "document_sha256": "0a796bd45688a5e4e58c295de438d634cb12a9718866847718240956da5c55b7",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:8690d840-c12f-4bf0-8124-0798628a837b>",
+              "url": "http://www.massgrown.org/high_protein_vegetables.html"
+            },
+            "sample_pair_start": 149
+          },
+          {
+            "sequence_id": 5513,
+            "document_sha256": "f76fe7fdd2d43597e1a6c95ace08e305f694510de222a85b0a16cb6423ba2649",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:1b1ebe26-94c4-4b92-bb8f-ba22fa0f2460>",
+              "url": "http://www.oldandsold.com/articles31n/herbals-14.shtml"
+            },
+            "sample_pair_start": 127
+          },
+          {
+            "sequence_id": 3423,
+            "document_sha256": "e478eac93e754b91696a4ac39306d3c1f4c22860a4931872a01df7d6d881b034",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:c5142607-ed8f-49d6-9f50-40c37dc76cf3>",
+              "url": "http://www.travelgrove.com/travel-guides/Czech-Republic/Prague-History-c434386.html"
+            },
+            "sample_pair_start": 361
+          },
+          {
+            "sequence_id": 870,
+            "document_sha256": "86b353a285b9e76340f35726befc8379f9c553484ad456e5cc5edbf108940faa",
+            "split": "validation",
+            "domain": "web",
+            "source_index": 0,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "id": "<urn:uuid:85f1268b-cf2c-46f4-9511-ba49f5ad2fa5>",
+              "url": "http://www.southeasternentallergy.com/ent-parathyroid.htm"
+            },
+            "sample_pair_start": 313
+          },
+          {
+            "sequence_id": 7517,
+            "document_sha256": "ce1cfdf010b21d8f336a6b7ae8a283c0785d56309dfd5f9c2849de22332d76ec",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "xyzz/vcmi-build",
+              "path": "project/jni/python/src/Lib/idlelib/run.py",
+              "license": "lgpl-2.1"
+            },
+            "sample_pair_start": 157
+          },
+          {
+            "sequence_id": 3732,
+            "document_sha256": "fc00eeb99e8bda1da3d84cfcdc89ff2ea9d5014a29ce2cebe7c383781fedb520",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "fyookball/electrum",
+              "path": "gui/qt/external_plugins_window.py",
+              "license": "mit"
+            },
+            "sample_pair_start": 72
+          },
+          {
+            "sequence_id": 9243,
+            "document_sha256": "4d3d99c4336d1c435c58c8d770bc5d748c171bc1f7e4348d1e51549a25ae1a74",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "leongold/lago",
+              "path": "lago/dirlock.py",
+              "license": "gpl-2.0"
+            },
+            "sample_pair_start": 379
+          },
+          {
+            "sequence_id": 1735,
+            "document_sha256": "1a28256fed779d0276cf39232185f5288e2f3ee8b28eb2b4d8aa53f1cd3f96b9",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "sharad1126/owtf",
+              "path": "framework/db/resource_manager.py",
+              "license": "bsd-3-clause"
+            },
+            "sample_pair_start": 12
+          },
+          {
+            "sequence_id": 8406,
+            "document_sha256": "452aa8f90a876eb9441e86f587cfdaf9511ec2feaa9ca41bd478003dfc6d5a95",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "tchernomax/ansible",
+              "path": "lib/ansible/modules/cloud/azure/azure_rm_managed_disk_facts.py",
+              "license": "gpl-3.0"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 6108,
+            "document_sha256": "8bd2f02383602aefe59815c497321b26a20d31fa3e088fbc885858f7926e4137",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "aaltay/beam",
+              "path": "sdks/python/apache_beam/examples/streaming_wordcount.py",
+              "license": "apache-2.0"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 8550,
+            "document_sha256": "84fd82b7a015529ae64436d715995bc2d9a3676307998139e54f53f052b86bb0",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "repo_name": "ant9000/yowsup",
+              "path": "yowsup/layers/protocol_receipts/protocolentities/receipt_incoming.py",
+              "license": "gpl-3.0"
+            },
+            "sample_pair_start": 349
+          },
+          {
+            "sequence_id": 4049,
+            "document_sha256": "0c3b262eb2dfee9a064b9013df25f33b6efed51d395599186d93b8ddda004444",
+            "split": "validation",
+            "domain": "code",
+            "source_index": 1,
+            "document_token_offset": 0,
+            "length": 458,
+            "provenance": {
+              "repo_name": "awslabs/aws-big-data-blog",
+              "path": "aws-blog-firehose-lambda-elasticsearch-near-real-time-discovery-platform/lambda-s3-twitter-to-es-python/twitter_to_es.py",
+              "license": "apache-2.0"
+            },
+            "sample_pair_start": 104
+          },
+          {
+            "sequence_id": 889,
+            "document_sha256": "6cee52f411886d6c39b9238861b02f656e68800c8b51973341b7fbd621c62492",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "691ff403df78367764fc6790418c9c0b88d970cba330fc31a5231ab8bd136907"
+            },
+            "sample_pair_start": null
+          },
+          {
+            "sequence_id": 9359,
+            "document_sha256": "a36e5c8c6617ba5af2d9276d6d624a59d0ca807395ed7a220a47998e6dc6e455",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "0f3188a00d2678f51e579eab16d9e8c8514ffc337fff30020f94144d01f3a36b"
+            },
+            "sample_pair_start": 9
+          },
+          {
+            "sequence_id": 6740,
+            "document_sha256": "9e401140e737c180664a341cf12c9828faccc3c721a61ba1f74048352db939e2",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "da6915752064369023430824a5be221c784c364dd4b6e3b6f415f5e9e8922c32"
+            },
+            "sample_pair_start": 286
+          },
+          {
+            "sequence_id": 5781,
+            "document_sha256": "28153f2c0acc4acac980a1d088bea0f9c15df09345b738be858a61e11f52d72a",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "a2e5944cb8a319c1b0a33aefeea213302068247584958cf1ac1c95da48de49aa"
+            },
+            "sample_pair_start": 202
+          },
+          {
+            "sequence_id": 5350,
+            "document_sha256": "dccaf064b829fe4385bb4e571e11e87ab538cd2f2b13364b74437e45e03eaaf0",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "dd1d8696312f20a1e3ae5b5f14dbc147e7c82815463c4692f75cbb2753bda276"
+            },
+            "sample_pair_start": 367
+          },
+          {
+            "sequence_id": 6187,
+            "document_sha256": "2327939a9645644ca60c8cc432e5d486094d064d5fe7e05031947edddcb9800c",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "bec51a453f3fee05fada80c861cbb5a8aaa81f90c4ccabffc59d7188f2f18b0a"
+            },
+            "sample_pair_start": 123
+          },
+          {
+            "sequence_id": 229,
+            "document_sha256": "1a1b4694b08bde4783e68952252f09bd77fdd866fccf357b788dba689216e21d",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "337ff84729e935fd4d5bee8de1e925d75be9ca5024dd6e75b214f3e2cc4a36f1"
+            },
+            "sample_pair_start": 324
+          },
+          {
+            "sequence_id": 8374,
+            "document_sha256": "6710f62657be21608701e971a1a443ef1eeedc35bfe382145e011facc7cd4592",
+            "split": "validation",
+            "domain": "conversation",
+            "source_index": 2,
+            "document_token_offset": 0,
+            "length": 512,
+            "provenance": {
+              "prompt_id": "03fd9e39d186507c0af048d809d004275f0fe3208204aa2f294e9fa373b91dc1"
+            },
+            "sample_pair_start": 292
+          }
+        ]
+      },
+      "seconds": 178.2821118410211,
+      "execution": "Sequential cached teacher and student; batch16; same planner order/padding",
+      "reuse_definition": "Current active rows also active in immediately previous token; first tokens excluded",
+      "centroid_accuracy_labels": "Original training vocabulary, before runtime mask-density calibration; actual cached held-out execution"
+    },
+    "native": {
+      "overall": {
+        "tokens": 28857.0,
+        "windows": 63,
+        "dense_nll": 1.7738305577069604,
+        "student_nll": 7.969967988977331,
+        "dense_perplexity": 5.893385131043404,
+        "student_perplexity": 2892.7647623798794,
+        "relative_ppl_increase": 489.8494350966889,
+        "teacher_kl_nats": 6.186899193172462,
+        "top1_agreement": 0.08767370135495721,
+        "relative_ppl_increase_ci95": [
+          407.2045199254692,
+          596.6287608177763
+        ],
+        "teacher_kl_nats_ci95": [
+          6.016967843162305,
+          6.367103561090819
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.26390400039446277,
+        "previous_token_reuse_count_weighted": 0.5803132374882348,
+        "previous_token_reuse_token_mean": 0.5799067537113564,
+        "gate_centroid_top1": 0.589345072919249,
+        "up_centroid_top1": 0.47363657931284503,
+        "per_layer_centroid_top1": [
+          [
+            0.8512319367917663,
+            0.8302664864677548,
+            0.7593304917351076,
+            0.7588106871816197,
+            0.6831617978306823,
+            0.6092109366878053,
+            0.5651661641889316,
+            0.5261115154035416,
+            0.5165471116193645,
+            0.4930172921648127,
+            0.4948885885573691,
+            0.47076965727553105,
+            0.4955123540215546,
+            0.5178292961846346,
+            0.5289184599923762,
+            0.5696364833489275,
+            0.6129881831098174,
+            0.6239040787330631,
+            0.6226912014415913,
+            0.5901514363932495,
+            0.5568492913331254,
+            0.535537304640122,
+            0.5392798974252347,
+            0.5302006445576464,
+            0.5313095609384205,
+            0.5096510378764252
+          ],
+          [
+            0.7017014935717504,
+            0.6425477353848287,
+            0.6181862286446963,
+            0.6063693384620716,
+            0.5374432546695775,
+            0.4259278511279759,
+            0.4032990262328031,
+            0.4285615275323145,
+            0.44651211144609626,
+            0.38368506774786015,
+            0.40264060713171845,
+            0.373947395779187,
+            0.3871504314377794,
+            0.43344769033510067,
+            0.46324981806840626,
+            0.4919430294209377,
+            0.5507155976019683,
+            0.5535918494646013,
+            0.5511314412447587,
+            0.46096267803305957,
+            0.4104030217971376,
+            0.3745018539695741,
+            0.35194233634819977,
+            0.3774820667429047,
+            0.40465051807187163,
+            0.5325570918667915
+          ]
+        ]
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578.0,
+          "windows": 24,
+          "dense_nll": 2.6228023976702186,
+          "student_nll": 7.539436216357832,
+          "dense_perplexity": 13.774270531560871,
+          "student_perplexity": 1880.7693791926813,
+          "relative_ppl_increase": 135.54221288040554,
+          "teacher_kl_nats": 4.951981501402303,
+          "top1_agreement": 0.10555439548966382,
+          "relative_ppl_increase_ci95": [
+            117.9612767047882,
+            155.34625757652026
+          ],
+          "teacher_kl_nats_ci95": [
+            4.831743834870365,
+            5.072561388749249
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.2648489939562101,
+          "previous_token_reuse_count_weighted": 0.5703519936257937,
+          "previous_token_reuse_token_mean": 0.5701487452909826,
+          "gate_centroid_top1": 0.5423526671699569,
+          "up_centroid_top1": 0.46261464574264743,
+          "per_layer_centroid_top1": [
+            [
+              0.8521612027563166,
+              0.8269993735644184,
+              0.7260388390060556,
+              0.7421173522656087,
+              0.6412612236375026,
+              0.5483399457089163,
+              0.5053247024430988,
+              0.46815619127166425,
+              0.45249530173313846,
+              0.4450824806849029,
+              0.44654416370849864,
+              0.41355188974733764,
+              0.4444560451033619,
+              0.4684694090624347,
+              0.4778659427855502,
+              0.5219252453539361,
+              0.572457715598246,
+              0.5891626644393402,
+              0.5847776153685529,
+              0.5369596993109209,
+              0.5030277719774483,
+              0.4785967842973481,
+              0.4736897055752767,
+              0.4556274796408436,
+              0.46627688452704114,
+              0.45980371685111715
+            ],
+            [
+              0.7047400292336605,
+              0.6304030068907914,
+              0.6114011275840467,
+              0.6108790979327626,
+              0.5411359365211944,
+              0.42900396742534974,
+              0.40164961369805807,
+              0.4129254541657966,
+              0.42148674044685736,
+              0.3735644184589685,
+              0.3827521403215703,
+              0.3491334307788682,
+              0.37022342869074965,
+              0.4093756525370641,
+              0.4564627270828983,
+              0.4832950511589058,
+              0.5423888076842764,
+              0.549175193150971,
+              0.5326790561703905,
+              0.460534558362915,
+              0.4093756525370641,
+              0.3682397160158697,
+              0.3600960534558363,
+              0.3617665483399457,
+              0.3782626853205262,
+              0.4770306953434955
+            ]
+          ]
+        },
+        "code": {
+          "tokens": 7515.0,
+          "windows": 15,
+          "dense_nll": 1.0438476198469662,
+          "student_nll": 9.030178549765237,
+          "dense_perplexity": 2.8401237348891395,
+          "student_perplexity": 8351.350570747061,
+          "relative_ppl_increase": 2939.4882851250304,
+          "teacher_kl_nats": 7.91176563553061,
+          "top1_agreement": 0.0739853626081171,
+          "relative_ppl_increase_ci95": [
+            1960.0590315043835,
+            4494.30408108725
+          ],
+          "teacher_kl_nats_ci95": [
+            7.534896376033772,
+            8.312860361604972
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.2651868272003002,
+          "previous_token_reuse_count_weighted": 0.6046749058730183,
+          "previous_token_reuse_token_mean": 0.6036037913332893,
+          "gate_centroid_top1": 0.6680229285019704,
+          "up_centroid_top1": 0.4725574492041558,
+          "per_layer_centroid_top1": [
+            [
+              0.819560878243513,
+              0.8134397870924817,
+              0.7725881570192947,
+              0.7524950099800399,
+              0.7446440452428477,
+              0.7048569527611444,
+              0.6652029274783766,
+              0.6199600798403193,
+              0.6360612109115104,
+              0.587624750499002,
+              0.6006653359946773,
+              0.5878908848968729,
+              0.593080505655356,
+              0.6191616766467066,
+              0.6231536926147705,
+              0.6819693945442449,
+              0.688622754491018,
+              0.6878243512974052,
+              0.6799733865602129,
+              0.6592149035262808,
+              0.6407185628742516,
+              0.6070525615435796,
+              0.6487025948103793,
+              0.6517631403858949,
+              0.6790419161676646,
+              0.6033266799733865
+            ],
+            [
+              0.6529607451763141,
+              0.6018629407850965,
+              0.593080505655356,
+              0.5177644710578843,
+              0.4588157019294744,
+              0.3703260146373919,
+              0.35741849634065204,
+              0.4332667997338656,
+              0.48383233532934133,
+              0.36114437791084497,
+              0.42208915502328676,
+              0.4077178975382568,
+              0.38163672654690617,
+              0.45961410512308715,
+              0.4899534264803726,
+              0.5224218230206255,
+              0.5755156353958749,
+              0.5583499667332003,
+              0.5870924817032601,
+              0.4657351962741184,
+              0.4085163007318696,
+              0.3563539587491683,
+              0.3312042581503659,
+              0.3815036593479707,
+              0.43832335329341315,
+              0.6699933466400533
+            ]
+          ]
+        },
+        "conversation": {
+          "tokens": 11764.0,
+          "windows": 24,
+          "dense_nll": 1.5489384712440029,
+          "student_nll": 7.6432212152463235,
+          "dense_perplexity": 4.706471475114159,
+          "student_perplexity": 2086.453920604334,
+          "relative_ppl_increase": 442.3159600853048,
+          "teacher_kl_nats": 6.090475386427573,
+          "top1_agreement": 0.08185991159469568,
+          "relative_ppl_increase_ci95": [
+            314.8313354673184,
+            622.1167187742625
+          ],
+          "teacher_kl_nats_ci95": [
+            5.763988331765052,
+            6.41565370167459
+          ],
+          "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+          "routed_kept": 0.2623151197603006,
+          "previous_token_reuse_count_weighted": 0.5727636920064213,
+          "previous_token_reuse_token_mean": 0.5727091583351852,
+          "gate_centroid_top1": 0.5773448329976723,
+          "up_centroid_top1": 0.4832997672168023,
+          "per_layer_centroid_top1": [
+            [
+              0.8707072424345461,
+              0.8436756205372322,
+              0.7779666780006801,
+              0.7764365861951718,
+              0.6780006800408025,
+              0.5976708602516151,
+              0.5499829989799387,
+              0.5133458007480449,
+              0.49234954097245837,
+              0.47160829649778985,
+              0.4666780006800408,
+              0.4425365521931316,
+              0.47475348520911254,
+              0.49328459707582456,
+              0.5102856171370282,
+              0.5367222033321999,
+              0.5976708602516151,
+              0.6113566814008841,
+              0.6169670180210812,
+              0.5893403604216253,
+              0.5470928255695342,
+              0.5362121727303638,
+              0.5227813668820129,
+              0.5132607956477389,
+              0.48988439306358383,
+              0.4903944236654199
+            ],
+            [
+              0.7303638218293098,
+              0.6784257055423325,
+              0.6397483849030942,
+              0.6592995579734784,
+              0.5846650799047943,
+              0.45894253655219314,
+              0.4339510370622237,
+              0.4382862971778307,
+              0.4430465827949677,
+              0.4063243794627678,
+              0.4064093845630738,
+              0.3725773546412785,
+              0.40445426725603534,
+              0.43633117987079223,
+              0.45171710302618157,
+              0.4795137708262496,
+              0.541652499149949,
+              0.5541482488949337,
+              0.5431825909554573,
+              0.458262495749745,
+              0.4124447466848011,
+              0.3911934716082965,
+              0.3585515130907854,
+              0.38770826249574974,
+              0.4046242774566474,
+              0.48996939816388985
+            ]
+          ]
+        }
+      },
+      "calibration": {
+        "policy": "Original training centroid masks; no density adjustment",
+        "matched_budget": false,
+        "validation_retention": 0.2637375602963595
+      },
+      "seconds": 179.89624086301774,
+      "execution": "Sequential cached teacher and student; batch16; same planner order/padding",
+      "reuse_definition": "Current active rows also active in immediately previous token; first tokens excluded",
+      "centroid_accuracy_labels": "Original training vocabulary, before runtime mask-density calibration; actual cached held-out execution"
+    }
+  },
+  "saved_planner": {
+    "50": {
+      "overall": {
+        "tokens": 28857.0,
+        "windows": 63,
+        "dense_nll": 1.7738305577069604,
+        "student_nll": 1.856335265631668,
+        "dense_perplexity": 5.893385131043404,
+        "student_perplexity": 6.400238566148949,
+        "relative_ppl_increase": 0.08600378625107907,
+        "teacher_kl_nats": 0.09400340871680023,
+        "top1_agreement": 0.865578542468032,
+        "relative_ppl_increase_ci95": [
+          0.07890196276896484,
+          0.09353217975510772
+        ],
+        "teacher_kl_nats_ci95": [
+          0.08877469948762037,
+          0.09948592930325828
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.5161830837802903
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578.0,
+          "windows": 24,
+          "dense_nll": 2.6228023976702186,
+          "student_nll": 2.7033304599054317,
+          "dense_perplexity": 13.774270531560871,
+          "student_perplexity": 14.929370689193524,
+          "relative_ppl_increase": 0.08385926172903171,
+          "teacher_kl_nats": 0.09351870386312551,
+          "top1_agreement": 0.8361870954270203,
+          "routed_kept": 0.494521888602888
+        },
+        "code": {
+          "tokens": 7515.0,
+          "windows": 15,
+          "dense_nll": 1.0438476198469662,
+          "student_nll": 1.1091838730914239,
+          "dense_perplexity": 2.8401237348891395,
+          "student_perplexity": 3.031882983161986,
+          "relative_ppl_increase": 0.06751792040508825,
+          "teacher_kl_nats": 0.07056143918169676,
+          "top1_agreement": 0.9194943446440452,
+          "routed_kept": 0.594046355739376
+        },
+        "conversation": {
+          "tokens": 11764.0,
+          "windows": 24,
+          "dense_nll": 1.5489384712440029,
+          "student_nll": 1.6440199599691236,
+          "dense_perplexity": 4.706471475114159,
+          "student_perplexity": 5.175934797150922,
+          "relative_ppl_increase": 0.09974846857546824,
+          "teacher_kl_nats": 0.10937308774985013,
+          "top1_agreement": 0.8550663039782387,
+          "routed_kept": 0.4840790748238664
+        }
+      },
+      "per_layer_oracle_accuracy": [
+        {
+          "layer_one_based": 3,
+          "recall": 0.6777015375205034,
+          "precision": 0.7127925503834341,
+          "iou": 0.5323372100194372,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 4,
+          "recall": 0.5529097639148791,
+          "precision": 0.6885857225249855,
+          "iou": 0.4423085079376286,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 5,
+          "recall": 0.6342274558238324,
+          "precision": 0.5953261036876204,
+          "iou": 0.4431694875031845,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 6,
+          "recall": 0.7137008004087685,
+          "precision": 0.5311067468078814,
+          "iou": 0.43782683177535187,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 7,
+          "recall": 0.7109822045452576,
+          "precision": 0.528292903743474,
+          "iou": 0.43489713926723733,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 8,
+          "recall": 0.6892724116982015,
+          "precision": 0.5357816333115565,
+          "iou": 0.431548392068863,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 9,
+          "recall": 0.6552841539567233,
+          "precision": 0.5338065626621852,
+          "iou": 0.4167720235849979,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 10,
+          "recall": 0.663046072280989,
+          "precision": 0.5449718867180591,
+          "iou": 0.4267763109720314,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 11,
+          "recall": 0.6665631682556803,
+          "precision": 0.5654851738235487,
+          "iou": 0.44079546767967487,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 12,
+          "recall": 0.616581726902629,
+          "precision": 0.5679774408325258,
+          "iou": 0.4197309964216353,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 13,
+          "recall": 0.5768969053399811,
+          "precision": 0.5890642467649889,
+          "iou": 0.411350024825624,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 14,
+          "recall": 0.5505837400623477,
+          "precision": 0.5997182701698981,
+          "iou": 0.4026245058999005,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 15,
+          "recall": 0.5431416459286308,
+          "precision": 0.6165021247957058,
+          "iou": 0.4059768272952721,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 16,
+          "recall": 0.5819959533756974,
+          "precision": 0.6384513159897488,
+          "iou": 0.4377296438021341,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 17,
+          "recall": 0.64934265705678,
+          "precision": 0.6555930908742776,
+          "iou": 0.48417818341157237,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 18,
+          "recall": 0.6124988245739047,
+          "precision": 0.655429152263992,
+          "iou": 0.4633117101342513,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 19,
+          "recall": 0.6251278529689503,
+          "precision": 0.671940742580182,
+          "iou": 0.47895031694493845,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 20,
+          "recall": 0.6317745378432154,
+          "precision": 0.6907454322594135,
+          "iou": 0.4924763168205319,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 21,
+          "recall": 0.6213834778678773,
+          "precision": 0.7044205462083957,
+          "iou": 0.49287337125166186,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 22,
+          "recall": 0.6100953602209458,
+          "precision": 0.698588024350997,
+          "iou": 0.4829641956942448,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 23,
+          "recall": 0.6020907197921359,
+          "precision": 0.6890437999723839,
+          "iou": 0.4734476745239135,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 24,
+          "recall": 0.6099403100128796,
+          "precision": 0.6761375375916497,
+          "iou": 0.4720334973402074,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 25,
+          "recall": 0.6119853145286817,
+          "precision": 0.6576315138657459,
+          "iou": 0.464115832758853,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 26,
+          "recall": 0.6434724076733259,
+          "precision": 0.6485458958051346,
+          "iou": 0.4771039913156912,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 27,
+          "recall": 0.73983927616133,
+          "precision": 0.6320208222733837,
+          "iou": 0.5170974996933208,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 28,
+          "recall": 0.8494213970685911,
+          "precision": 0.6778160925861993,
+          "iou": 0.605107688324335,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        }
+      ],
+      "offsets": [
+        0.5201292037963867,
+        0.7606542110443115,
+        0.7786210775375366,
+        0.684433102607727,
+        0.7026020884513855,
+        0.7065311074256897,
+        0.6909154653549194,
+        0.6297594904899597,
+        0.5608339905738831,
+        0.6061916351318359,
+        0.5886477828025818,
+        0.5785040259361267,
+        0.5705069303512573,
+        0.5335479974746704,
+        0.4773268401622772,
+        0.537399172782898,
+        0.590542197227478,
+        0.6384164094924927,
+        0.7481194138526917,
+        0.7932320833206177,
+        0.7504864931106567,
+        0.706191897392273,
+        0.7000627517700195,
+        0.709924042224884,
+        0.686560332775116,
+        0.6709667444229126
+      ],
+      "drop_previous": false,
+      "execution": "exact sequential history with independent-document batching",
+      "batch_size": 16,
+      "seconds": 206.4055793340085,
+      "historical_full_sequence_numbers_not_directly_substituted": true
+    },
+    "40": {
+      "overall": {
+        "tokens": 28857.0,
+        "windows": 63,
+        "dense_nll": 1.7738305577069604,
+        "student_nll": 1.919693446605876,
+        "dense_perplexity": 5.893385131043404,
+        "student_perplexity": 6.818867801787792,
+        "relative_ppl_increase": 0.15703753448411298,
+        "teacher_kl_nats": 0.1612362310493203,
+        "top1_agreement": 0.8236129881831098,
+        "relative_ppl_increase_ci95": [
+          0.14725709202400342,
+          0.16744819716220338
+        ],
+        "teacher_kl_nats_ci95": [
+          0.15330856880319865,
+          0.16959638102078706
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.41142757059456747
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578.0,
+          "windows": 24,
+          "dense_nll": 2.6228023976702186,
+          "student_nll": 2.7597227149622774,
+          "dense_perplexity": 13.774270531560871,
+          "student_perplexity": 15.79546249555754,
+          "relative_ppl_increase": 0.1467367697886816,
+          "teacher_kl_nats": 0.15071110882931546,
+          "top1_agreement": 0.7908749216955523,
+          "routed_kept": 0.39421463553943564
+        },
+        "code": {
+          "tokens": 7515.0,
+          "windows": 15,
+          "dense_nll": 1.0438476198469662,
+          "student_nll": 1.1791111083953076,
+          "dense_perplexity": 2.8401237348891395,
+          "student_perplexity": 3.2514827022878876,
+          "relative_ppl_increase": 0.14483839642106486,
+          "teacher_kl_nats": 0.1417870052853006,
+          "top1_agreement": 0.8856952761144378,
+          "routed_kept": 0.4794879800028682
+        },
+        "conversation": {
+          "tokens": 11764.0,
+          "windows": 24,
+          "dense_nll": 1.5489384712440029,
+          "student_nll": 1.7088532510376002,
+          "dense_perplexity": 4.706471475114159,
+          "student_perplexity": 5.522624780781069,
+          "relative_ppl_increase": 0.17341086841434925,
+          "teacher_kl_nats": 0.18222998761509843,
+          "top1_agreement": 0.810608636518191,
+          "routed_kept": 0.381964081581874
+        }
+      },
+      "per_layer_oracle_accuracy": [
+        {
+          "layer_one_based": 3,
+          "recall": 0.6396387190583415,
+          "precision": 0.6587749595430389,
+          "iou": 0.48045703013836316,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 4,
+          "recall": 0.43809779109710567,
+          "precision": 0.6393433678087111,
+          "iou": 0.35128392476861064,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 5,
+          "recall": 0.5371902041696982,
+          "precision": 0.5225246987553127,
+          "iou": 0.36031839810598376,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 6,
+          "recall": 0.5767435382457302,
+          "precision": 0.4431347863730557,
+          "iou": 0.33438970896691356,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 7,
+          "recall": 0.5757852481695253,
+          "precision": 0.44060317612826705,
+          "iou": 0.33262654728814905,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 8,
+          "recall": 0.5542285712722816,
+          "precision": 0.44998015469096464,
+          "iou": 0.33040048374372705,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 9,
+          "recall": 0.4988736581126321,
+          "precision": 0.452729033262124,
+          "iou": 0.3112024519319363,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 10,
+          "recall": 0.49646181855801225,
+          "precision": 0.4808430258764185,
+          "iou": 0.32321306143835926,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 11,
+          "recall": 0.5488167531188908,
+          "precision": 0.5109344568894635,
+          "iou": 0.35980282640406136,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 12,
+          "recall": 0.5139141965235663,
+          "precision": 0.504696440386034,
+          "iou": 0.3416188233856389,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 13,
+          "recall": 0.48902156428998267,
+          "precision": 0.5362554595011146,
+          "iou": 0.3436801121224069,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 14,
+          "recall": 0.4676306411799741,
+          "precision": 0.5513019394200553,
+          "iou": 0.3387157634466677,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 15,
+          "recall": 0.46165301569962014,
+          "precision": 0.5848141651790304,
+          "iou": 0.34769620780902927,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 16,
+          "recall": 0.5268985392547461,
+          "precision": 0.6068668094768909,
+          "iou": 0.39281824125905057,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 17,
+          "recall": 0.6402314400520419,
+          "precision": 0.6110003100885835,
+          "iou": 0.45483581644283727,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 18,
+          "recall": 0.5919792959040783,
+          "precision": 0.6087012812470767,
+          "iou": 0.42879987763452787,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 19,
+          "recall": 0.6175517484677185,
+          "precision": 0.6174896081973064,
+          "iou": 0.4466762478053818,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 20,
+          "recall": 0.6377058976570673,
+          "precision": 0.6295449042512887,
+          "iou": 0.46369929461692616,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 21,
+          "recall": 0.6150933422073712,
+          "precision": 0.6426163412464758,
+          "iou": 0.4583144740795934,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 22,
+          "recall": 0.5860976657913592,
+          "precision": 0.6301035988784902,
+          "iou": 0.4360640896522894,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 23,
+          "recall": 0.5665193760213694,
+          "precision": 0.6171175846902708,
+          "iou": 0.4191815075842127,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 24,
+          "recall": 0.5654702646559436,
+          "precision": 0.6002310440507878,
+          "iou": 0.41076791794909945,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 25,
+          "recall": 0.5651247715616183,
+          "precision": 0.5794610570537019,
+          "iou": 0.4007594803016158,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 26,
+          "recall": 0.6106724799058955,
+          "precision": 0.5734980561447096,
+          "iou": 0.4199520795570798,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 27,
+          "recall": 0.7217829095988685,
+          "precision": 0.5551569941737412,
+          "iou": 0.457299562845594,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        },
+        {
+          "layer_one_based": 28,
+          "recall": 0.8588092688920054,
+          "precision": 0.5928863787123848,
+          "iou": 0.5402290447964917,
+          "reference": "dense full-model magnitude top-k, not a global optimum"
+        }
+      ],
+      "offsets": [
+        0.9054926037788391,
+        0.569473385810852,
+        0.5255621075630188,
+        0.3802156448364258,
+        0.39053982496261597,
+        0.39279016852378845,
+        0.36725789308547974,
+        0.30785614252090454,
+        0.2508498728275299,
+        0.2900979518890381,
+        0.2674906849861145,
+        0.2712189555168152,
+        0.2666144371032715,
+        0.26226305961608887,
+        0.2597517967224121,
+        0.28417474031448364,
+        0.3394603431224823,
+        0.3801719546318054,
+        0.4867863059043884,
+        0.5533995628356934,
+        0.5734659433364868,
+        0.5350939631462097,
+        0.5143202543258667,
+        0.5050432682037354,
+        0.47094660997390747,
+        0.585295557975769
+      ],
+      "drop_previous": false,
+      "execution": "exact sequential history with independent-document batching",
+      "batch_size": 16,
+      "seconds": 203.8400964209577,
+      "historical_full_sequence_numbers_not_directly_substituted": true
+    }
+  },
+  "paired": {
+    "0.5000": {
+      "ppl_relative_increase_difference_ci95": [
+        10.777325754777001,
+        13.836493908904647
+      ],
+      "kl_nats_difference_ci95": [
+        2.3981951855633183,
+        2.619783027814503
+      ],
+      "top1_difference_ci95": [
+        -0.522977973023262,
+        -0.48634623377807196
+      ],
+      "direction": "NeuroPrefetcher minus saved planner",
+      "method": "Paired document bootstrap, stratified by domain",
+      "repetitions": 2000,
+      "seed": 20261113,
+      "documents": 63,
+      "planner_validation_target": 0.5,
+      "same_validation_target": true
+    },
+    "0.4000": {
+      "ppl_relative_increase_difference_ci95": [
+        53.64788208231765,
+        69.91463520624723
+      ],
+      "kl_nats_difference_ci95": [
+        3.8443161141427717,
+        4.100585942994501
+      ],
+      "top1_difference_ci95": [
+        -0.6380540781467865,
+        -0.6093357775730367
+      ],
+      "direction": "NeuroPrefetcher minus saved planner",
+      "method": "Paired document bootstrap, stratified by domain",
+      "repetitions": 2000,
+      "seed": 20261113,
+      "documents": 63,
+      "planner_validation_target": 0.4,
+      "same_validation_target": true
+    },
+    "0.5162": {
+      "ppl_relative_increase_difference_ci95": [
+        8.431227224628085,
+        10.731280143879923
+      ],
+      "kl_nats_difference_ci95": [
+        2.178364943584885,
+        2.384173094241486
+      ],
+      "top1_difference_ci95": [
+        -0.49560351643283057,
+        -0.4594567088890398
+      ],
+      "direction": "NeuroPrefetcher minus saved planner",
+      "method": "Paired document bootstrap, stratified by domain",
+      "repetitions": 2000,
+      "seed": 20261113,
+      "documents": 63,
+      "planner_validation_target": 0.5,
+      "same_validation_target": false
+    }
+  }
+}

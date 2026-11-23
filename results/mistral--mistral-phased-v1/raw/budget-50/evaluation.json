@@ -1,0 +1,61 @@
+{
+  "overall": {
+    "tokens": 34000.0,
+    "windows": 63,
+    "dense_nll": 1.410948798949648,
+    "student_nll": 1.4590502416685402,
+    "dense_perplexity": 4.099843486468934,
+    "student_perplexity": 4.301871848869323,
+    "relative_ppl_increase": 0.04927709144682205,
+    "teacher_kl_nats": 0.05617992440514411,
+    "top1_agreement": 0.9049117647058823,
+    "relative_ppl_increase_ci95": [
+      0.045246072968165005,
+      0.05338694438948066
+    ],
+    "teacher_kl_nats_ci95": [
+      0.053236962516320104,
+      0.05889543517929777
+    ],
+    "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+    "routed_kept": 0.5135542742389924
+  },
+  "selected_tokens": 25000000,
+  "lineage_e2e_tokens": 25000000,
+  "domains": {
+    "web": {
+      "tokens": 10636.0,
+      "windows": 24,
+      "dense_nll": 2.130495871548896,
+      "student_nll": 2.1888096152367416,
+      "dense_perplexity": 8.419040539210576,
+      "student_perplexity": 8.924583101308773,
+      "relative_ppl_increase": 0.06004752676313865,
+      "teacher_kl_nats": 0.06210359540375927,
+      "top1_agreement": 0.8822865738999623
+    },
+    "code": {
+      "tokens": 9942.0,
+      "windows": 15,
+      "dense_nll": 0.8055885279603563,
+      "student_nll": 0.8430646773779743,
+      "dense_perplexity": 2.238013244681245,
+      "student_perplexity": 2.323476783320797,
+      "relative_ppl_increase": 0.03818723541634994,
+      "teacher_kl_nats": 0.040497469339489445,
+      "top1_agreement": 0.943975055320861
+    },
+    "conversation": {
+      "tokens": 13422.0,
+      "windows": 24,
+      "dense_nll": 1.2891628616832154,
+      "student_nll": 1.337042179003171,
+      "dense_perplexity": 3.6297466835045857,
+      "student_perplexity": 3.8077641476821675,
+      "relative_ppl_increase": 0.04904404623787768,
+      "teacher_kl_nats": 0.06310220152639788,
+      "top1_agreement": 0.8939055282372225
+    }
+  },
+  "selection": "Final phase checkpoint; threshold calibrated on separate validation; phase40 inherits final phase50"
+}

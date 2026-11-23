@@ -1,0 +1,617 @@
+{
+  "hard_only": {
+    "overall": {
+      "tokens": 28857.0,
+      "windows": 63,
+      "dense_nll": 1.7738305577069604,
+      "student_nll": 1.8525549216637245,
+      "dense_perplexity": 5.893385131043404,
+      "student_perplexity": 6.37608913822405,
+      "relative_ppl_increase": 0.08190606865958977,
+      "teacher_kl_nats": 0.09303615937966736,
+      "top1_agreement": 0.8656825033787297,
+      "relative_ppl_increase_ci95": [
+        0.07472971314164882,
+        0.08939325410615796
+      ],
+      "teacher_kl_nats_ci95": [
+        0.08746158004432188,
+        0.09849818400710086
+      ],
+      "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+      "routed_kept": 0.5147532956427828
+    },
+    "domains": {
+      "web": {
+        "tokens": 9578.0,
+        "windows": 24,
+        "dense_nll": 2.6228023976702186,
+        "student_nll": 2.6976381788419173,
+        "dense_perplexity": 13.774270531560871,
+        "student_perplexity": 14.844629928058701,
+        "relative_ppl_increase": 0.0777071565456279,
+        "teacher_kl_nats": 0.08937216586178653,
+        "top1_agreement": 0.8409897682188349,
+        "routed_kept": 0.5082286172126813
+      },
+      "code": {
+        "tokens": 7515.0,
+        "windows": 15,
+        "dense_nll": 1.0438476198469662,
+        "student_nll": 1.127653223965782,
+        "dense_perplexity": 2.8401237348891395,
+        "student_perplexity": 3.088400205419554,
+        "relative_ppl_increase": 0.08741748378089785,
+        "teacher_kl_nats": 0.08884098691021942,
+        "top1_agreement": 0.9087159015302728,
+        "routed_kept": 0.5633652183480262
+      },
+      "conversation": {
+        "tokens": 11764.0,
+        "windows": 24,
+        "dense_nll": 1.5489384712440029,
+        "student_nll": 1.6275828731213329,
+        "dense_perplexity": 4.706471475114159,
+        "student_perplexity": 5.09155290346359,
+        "relative_ppl_increase": 0.08181956065931331,
+        "teacher_kl_nats": 0.09869923750123857,
+        "top1_agreement": 0.8582964977898674,
+        "routed_kept": 0.4890116066657008
+      }
+    },
+    "per_layer_oracle_accuracy": [
+      {
+        "layer_one_based": 3,
+        "recall": 0.6977553896332201,
+        "precision": 0.7085730077756168,
+        "iou": 0.5421658131598723,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 4,
+        "recall": 0.5266193739279031,
+        "precision": 0.6794635401996197,
+        "iou": 0.4218245247926872,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 5,
+        "recall": 0.5768841019943168,
+        "precision": 0.6054941423860964,
+        "iou": 0.4192882525957651,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 6,
+        "recall": 0.6503700381226103,
+        "precision": 0.5406886375398618,
+        "iou": 0.4189219532930389,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 7,
+        "recall": 0.6228092065508369,
+        "precision": 0.5405294942737114,
+        "iou": 0.40722150887721653,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 8,
+        "recall": 0.6278973125202146,
+        "precision": 0.5464882974272227,
+        "iou": 0.4127996872521709,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 9,
+        "recall": 0.6045007381044172,
+        "precision": 0.5431799974464921,
+        "iou": 0.40075854711632986,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 10,
+        "recall": 0.6338505636811115,
+        "precision": 0.5560043564040381,
+        "iou": 0.4208389365271878,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 11,
+        "recall": 0.671743537277206,
+        "precision": 0.5736025331247183,
+        "iou": 0.448022481748912,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 12,
+        "recall": 0.6422434444162883,
+        "precision": 0.5688834035629052,
+        "iou": 0.43198943589689814,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 13,
+        "recall": 0.6159033977530004,
+        "precision": 0.5812289794463379,
+        "iou": 0.426598670745126,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 14,
+        "recall": 0.6039612603924813,
+        "precision": 0.5863261891702977,
+        "iou": 0.42350080265642104,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 15,
+        "recall": 0.5841433620958519,
+        "precision": 0.5977326639463731,
+        "iou": 0.4193052787302189,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 16,
+        "recall": 0.6091638294001456,
+        "precision": 0.6198364005879642,
+        "iou": 0.44347403492163606,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 17,
+        "recall": 0.6748804810502362,
+        "precision": 0.6419974693011086,
+        "iou": 0.4903445313374603,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 18,
+        "recall": 0.6374515300302642,
+        "precision": 0.6461229252845162,
+        "iou": 0.4724915791538137,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 19,
+        "recall": 0.6608912184435319,
+        "precision": 0.6626934345399929,
+        "iou": 0.4945349708056969,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 20,
+        "recall": 0.6603635626754341,
+        "precision": 0.6814795200705903,
+        "iou": 0.5046139687718701,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 21,
+        "recall": 0.6369919181221194,
+        "precision": 0.7004735782993977,
+        "iou": 0.5006297356174284,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 22,
+        "recall": 0.6130773440297559,
+        "precision": 0.694556890412165,
+        "iou": 0.48288593400413166,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 23,
+        "recall": 0.598049408595979,
+        "precision": 0.6785175199303456,
+        "iou": 0.4660040831553379,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 24,
+        "recall": 0.6047651976953887,
+        "precision": 0.663288158255953,
+        "iou": 0.46271132789297315,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 25,
+        "recall": 0.6136081470519862,
+        "precision": 0.6476848155518369,
+        "iou": 0.4600524030550206,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 26,
+        "recall": 0.6607488587763223,
+        "precision": 0.6431505937971874,
+        "iou": 0.48349350255458307,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 27,
+        "recall": 0.7509890612726837,
+        "precision": 0.6273648154071891,
+        "iou": 0.5193331609456936,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 28,
+        "recall": 0.8046717298878955,
+        "precision": 0.6780594773236005,
+        "iou": 0.5822281791065828,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      }
+    ],
+    "offsets": [
+      0.5018186569213867,
+      0.7423436641693115,
+      0.7603105306625366,
+      0.666122555732727,
+      0.6842915415763855,
+      0.6882205605506897,
+      0.6726049184799194,
+      0.6114489436149597,
+      0.5425234436988831,
+      0.5878810882568359,
+      0.5703372359275818,
+      0.5601934790611267,
+      0.5521963834762573,
+      0.5152374505996704,
+      0.4590162932872772,
+      0.519088625907898,
+      0.572231650352478,
+      0.6201058626174927,
+      0.7298088669776917,
+      0.7749215364456177,
+      0.7321759462356567,
+      0.687881350517273,
+      0.6817522048950195,
+      0.691613495349884,
+      0.668249785900116,
+      0.6526561975479126
+    ],
+    "drop_previous": false,
+    "execution": "exact sequential history with independent-document batching",
+    "batch_size": 16,
+    "seconds": 215.63117448298726,
+    "historical_full_sequence_numbers_not_directly_substituted": true
+  },
+  "noisy_then_hard_control": {
+    "overall": {
+      "tokens": 28857.0,
+      "windows": 63,
+      "dense_nll": 1.7738305577069604,
+      "student_nll": 1.856335265631668,
+      "dense_perplexity": 5.893385131043404,
+      "student_perplexity": 6.400238566148949,
+      "relative_ppl_increase": 0.08600378625107907,
+      "teacher_kl_nats": 0.09400340871680023,
+      "top1_agreement": 0.865578542468032,
+      "relative_ppl_increase_ci95": [
+        0.07890196276896484,
+        0.09353217975510772
+      ],
+      "teacher_kl_nats_ci95": [
+        0.08877469948762037,
+        0.09948592930325828
+      ],
+      "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+      "routed_kept": 0.5161830837802903
+    },
+    "domains": {
+      "web": {
+        "tokens": 9578.0,
+        "windows": 24,
+        "dense_nll": 2.6228023976702186,
+        "student_nll": 2.7033304599054317,
+        "dense_perplexity": 13.774270531560871,
+        "student_perplexity": 14.929370689193524,
+        "relative_ppl_increase": 0.08385926172903171,
+        "teacher_kl_nats": 0.09351870386312551,
+        "top1_agreement": 0.8361870954270203,
+        "routed_kept": 0.494521888602888
+      },
+      "code": {
+        "tokens": 7515.0,
+        "windows": 15,
+        "dense_nll": 1.0438476198469662,
+        "student_nll": 1.1091838730914239,
+        "dense_perplexity": 2.8401237348891395,
+        "student_perplexity": 3.031882983161986,
+        "relative_ppl_increase": 0.06751792040508825,
+        "teacher_kl_nats": 0.07056143918169676,
+        "top1_agreement": 0.9194943446440452,
+        "routed_kept": 0.594046355739376
+      },
+      "conversation": {
+        "tokens": 11764.0,
+        "windows": 24,
+        "dense_nll": 1.5489384712440029,
+        "student_nll": 1.6440199599691236,
+        "dense_perplexity": 4.706471475114159,
+        "student_perplexity": 5.175934797150922,
+        "relative_ppl_increase": 0.09974846857546824,
+        "teacher_kl_nats": 0.10937308774985013,
+        "top1_agreement": 0.8550663039782387,
+        "routed_kept": 0.4840790748238664
+      }
+    },
+    "per_layer_oracle_accuracy": [
+      {
+        "layer_one_based": 3,
+        "recall": 0.6777015375205034,
+        "precision": 0.7127925503834341,
+        "iou": 0.5323372100194372,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 4,
+        "recall": 0.5529097639148791,
+        "precision": 0.6885857225249855,
+        "iou": 0.4423085079376286,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 5,
+        "recall": 0.6342274558238324,
+        "precision": 0.5953261036876204,
+        "iou": 0.4431694875031845,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 6,
+        "recall": 0.7137008004087685,
+        "precision": 0.5311067468078814,
+        "iou": 0.43782683177535187,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 7,
+        "recall": 0.7109822045452576,
+        "precision": 0.528292903743474,
+        "iou": 0.43489713926723733,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 8,
+        "recall": 0.6892724116982015,
+        "precision": 0.5357816333115565,
+        "iou": 0.431548392068863,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 9,
+        "recall": 0.6552841539567233,
+        "precision": 0.5338065626621852,
+        "iou": 0.4167720235849979,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 10,
+        "recall": 0.663046072280989,
+        "precision": 0.5449718867180591,
+        "iou": 0.4267763109720314,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 11,
+        "recall": 0.6665631682556803,
+        "precision": 0.5654851738235487,
+        "iou": 0.44079546767967487,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 12,
+        "recall": 0.616581726902629,
+        "precision": 0.5679774408325258,
+        "iou": 0.4197309964216353,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 13,
+        "recall": 0.5768969053399811,
+        "precision": 0.5890642467649889,
+        "iou": 0.411350024825624,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 14,
+        "recall": 0.5505837400623477,
+        "precision": 0.5997182701698981,
+        "iou": 0.4026245058999005,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 15,
+        "recall": 0.5431416459286308,
+        "precision": 0.6165021247957058,
+        "iou": 0.4059768272952721,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 16,
+        "recall": 0.5819959533756974,
+        "precision": 0.6384513159897488,
+        "iou": 0.4377296438021341,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 17,
+        "recall": 0.64934265705678,
+        "precision": 0.6555930908742776,
+        "iou": 0.48417818341157237,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 18,
+        "recall": 0.6124988245739047,
+        "precision": 0.655429152263992,
+        "iou": 0.4633117101342513,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 19,
+        "recall": 0.6251278529689503,
+        "precision": 0.671940742580182,
+        "iou": 0.47895031694493845,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 20,
+        "recall": 0.6317745378432154,
+        "precision": 0.6907454322594135,
+        "iou": 0.4924763168205319,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 21,
+        "recall": 0.6213834778678773,
+        "precision": 0.7044205462083957,
+        "iou": 0.49287337125166186,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 22,
+        "recall": 0.6100953602209458,
+        "precision": 0.698588024350997,
+        "iou": 0.4829641956942448,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 23,
+        "recall": 0.6020907197921359,
+        "precision": 0.6890437999723839,
+        "iou": 0.4734476745239135,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 24,
+        "recall": 0.6099403100128796,
+        "precision": 0.6761375375916497,
+        "iou": 0.4720334973402074,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 25,
+        "recall": 0.6119853145286817,
+        "precision": 0.6576315138657459,
+        "iou": 0.464115832758853,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 26,
+        "recall": 0.6434724076733259,
+        "precision": 0.6485458958051346,
+        "iou": 0.4771039913156912,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 27,
+        "recall": 0.73983927616133,
+        "precision": 0.6320208222733837,
+        "iou": 0.5170974996933208,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      },
+      {
+        "layer_one_based": 28,
+        "recall": 0.8494213970685911,
+        "precision": 0.6778160925861993,
+        "iou": 0.605107688324335,
+        "reference": "dense full-model magnitude top-k, not a global optimum"
+      }
+    ],
+    "offsets": [
+      0.5201292037963867,
+      0.7606542110443115,
+      0.7786210775375366,
+      0.684433102607727,
+      0.7026020884513855,
+      0.7065311074256897,
+      0.6909154653549194,
+      0.6297594904899597,
+      0.5608339905738831,
+      0.6061916351318359,
+      0.5886477828025818,
+      0.5785040259361267,
+      0.5705069303512573,
+      0.5335479974746704,
+      0.4773268401622772,
+      0.537399172782898,
+      0.590542197227478,
+      0.6384164094924927,
+      0.7481194138526917,
+      0.7932320833206177,
+      0.7504864931106567,
+      0.706191897392273,
+      0.7000627517700195,
+      0.709924042224884,
+      0.686560332775116,
+      0.6709667444229126
+    ],
+    "drop_previous": false,
+    "execution": "exact sequential history with independent-document batching",
+    "batch_size": 16,
+    "seconds": 206.4055793340085,
+    "historical_full_sequence_numbers_not_directly_substituted": true
+  },
+  "hard_minus_control": {
+    "ppl_increase_difference_pp": -0.4097717591489136,
+    "ppl_difference_ci95_pp": [
+      -1.0572544914640718,
+      0.231552259810505
+    ],
+    "teacher_kl_difference": -0.0009672493371328771,
+    "teacher_kl_difference_ci95": [
+      -0.0046565036600135475,
+      0.0033869844395286405
+    ],
+    "retention_difference_pp": -0.14297881375075003,
+    "retention_difference_ci95_pp": [
+      -0.5617000623911472,
+      0.27024436302164867
+    ],
+    "scope": "A minus B; stratified paired-document bootstrap, not seed uncertainty; no adjustment for retention differences."
+  },
+  "initial_offsets_max_difference": 0.0,
+  "protocol": {
+    "model": "Qwen3-1.7B-Base, frozen, original clustered neuron order",
+    "predictor": "Original upfront autoregressive planner with previous-token path",
+    "source_checkpoint_sha256": "a474ce2d3c67fab8c8a628cb0ca62244c714ef793cb348a5054f86ed532957d6",
+    "e2e_tokens_each": 2000000,
+    "control": "Existing 2M run: noisy binary gates for first 80%, deterministic for final 20%",
+    "treatment": "Deterministic binary gates throughout new E2E training; no gate sampling",
+    "unchanged_settings_verified": [
+      "seed",
+      "e2e_tokens_per_budget",
+      "sequence_length",
+      "width",
+      "depth",
+      "heads",
+      "quality_learning_rate",
+      "weight_decay",
+      "warmup_tokens",
+      "beta",
+      "epsilon",
+      "alpha_initial",
+      "dual_learning_rate",
+      "maximum_alpha",
+      "hard_fraction",
+      "temperatures",
+      "quality_checkpoint_tokens",
+      "teacher_head_chunk_size",
+      "quality_corpus",
+      "eval_batch_size",
+      "validation_documents_per_domain",
+      "calibration_tolerance",
+      "calibration_max_evaluations"
+    ],
+    "training_order_sha256": "2df26c7e69d4fd51f161ece80e51cf24bf1005d81b53777be7d8abcc12fd5d19",
+    "evaluation": "Same validation calibration and same 63 test documents; actual retention reported",
+    "one_seed": true,
+    "warm_start_contains_prior_copy_and_scheduled_training": true,
+    "not_a_claim_of_deterministic_floating_point_arithmetic": true,
+    "control_retrained": false,
+    "physical_sparse_kernels": false
+  }
+}

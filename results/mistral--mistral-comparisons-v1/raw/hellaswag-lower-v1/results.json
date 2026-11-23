@@ -1,0 +1,352 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "method": "planner-30",
+      "examples": 10042,
+      "accuracy": 0.5753833897629954,
+      "accuracy_normalized": 0.7708623780123481,
+      "suffix_kept": 0.297032226426502,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true,
+      "protocol": "dense prompt; first answer likelihood from dense prompt logits; subsequent answer likelihoods from sparse decoding",
+      "attention_dense": true,
+      "final_answer_input_not_executed": true,
+      "retention_denominator": "eligible MLP neurons averaged over executed answer inputs, layers 2-31; all four candidates; padding excluded",
+      "calibration_provenance": {
+        "calibration_sha256": "41a1c280a13d188e5bc1e38966eaab446637e2cf3e37984233103cd0a67764ea",
+        "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+        "code": {
+          "scripts/mistral_hellaswag.py": "56e9c558f3dc19061a052c1725a69cd3f930bb727cdd2fb146661eefe24741b8",
+          "scripts/mistral_comparison_core.py": "7d6769528be99aa40e7abbc5c40ff0120e97340bed03e1dec3bcd0f114c1249f",
+          "scripts/mistral_comparisons.py": "30c09c21b187a06180767e802dd609cbe1cdf5b7ff7cef97020283dfe5ac6710"
+        },
+        "limit": 0,
+        "budget": 30
+      },
+      "target_retention": 0.3,
+      "within_match_tolerance": true
+    },
+    {
+      "method": "planner-20",
+      "examples": 10042,
+      "accuracy": 0.5446126269667397,
+      "accuracy_normalized": 0.739892451702848,
+      "suffix_kept": 0.19737630362497155,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true,
+      "protocol": "dense prompt; first answer likelihood from dense prompt logits; subsequent answer likelihoods from sparse decoding",
+      "attention_dense": true,
+      "final_answer_input_not_executed": true,
+      "retention_denominator": "eligible MLP neurons averaged over executed answer inputs, layers 2-31; all four candidates; padding excluded",
+      "calibration_provenance": {
+        "calibration_sha256": "f556a51a7835bab065d7f0b07bea32219d9b4fe56c6c1fe5a80cad8f90948398",
+        "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+        "code": {
+          "scripts/mistral_hellaswag.py": "56e9c558f3dc19061a052c1725a69cd3f930bb727cdd2fb146661eefe24741b8",
+          "scripts/mistral_comparison_core.py": "7d6769528be99aa40e7abbc5c40ff0120e97340bed03e1dec3bcd0f114c1249f",
+          "scripts/mistral_comparisons.py": "30c09c21b187a06180767e802dd609cbe1cdf5b7ff7cef97020283dfe5ac6710"
+        },
+        "limit": 0,
+        "budget": 20
+      },
+      "target_retention": 0.2,
+      "within_match_tolerance": true
+    }
+  ],
+  "references": {
+    "griffin-50": {
+      "method": "griffin-50",
+      "examples": 10042,
+      "accuracy": 0.5538737303326031,
+      "accuracy_normalized": 0.7409878510256921,
+      "suffix_kept": 0.4804687500000001,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true
+    },
+    "griffin-40": {
+      "method": "griffin-40",
+      "examples": 10042,
+      "accuracy": 0.5295757817167894,
+      "accuracy_normalized": 0.7093208524198367,
+      "suffix_kept": 0.4003906250000001,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true
+    },
+    "neuro-50": {
+      "method": "neuro-50",
+      "examples": 10042,
+      "accuracy": 0.44632543318064133,
+      "accuracy_normalized": 0.6092411870145389,
+      "suffix_kept": 0.47966796024379793,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true
+    },
+    "neuro-40": {
+      "method": "neuro-40",
+      "examples": 10042,
+      "accuracy": 0.40599482174865564,
+      "accuracy_normalized": 0.5254929296952798,
+      "suffix_kept": 0.4003906250000001,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true
+    },
+    "dense-A100": {
+      "method": "dense",
+      "examples": 10042,
+      "accuracy": 0.6153156741684923,
+      "accuracy_normalized": 0.811790479984067,
+      "suffix_kept": 1.0,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true
+    },
+    "dense-H200": {
+      "method": "dense",
+      "examples": 10042,
+      "accuracy": 0.6165106552479586,
+      "accuracy_normalized": 0.8118900617406891,
+      "suffix_kept": 1.0,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true,
+      "protocol": "dense prompt; first answer likelihood from dense prompt logits; subsequent answer likelihoods from sparse decoding",
+      "attention_dense": true,
+      "final_answer_input_not_executed": true,
+      "retention_denominator": "eligible MLP neurons averaged over executed answer inputs, layers 2-31; all four candidates; padding excluded",
+      "calibration_provenance": null
+    },
+    "planner-48-matched": {
+      "method": "planner-50",
+      "examples": 10042,
+      "accuracy": 0.5985859390559649,
+      "accuracy_normalized": 0.7948615813582952,
+      "suffix_kept": 0.47645785066272867,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true,
+      "protocol": "dense prompt; first answer likelihood from dense prompt logits; subsequent answer likelihoods from sparse decoding",
+      "attention_dense": true,
+      "final_answer_input_not_executed": true,
+      "retention_denominator": "eligible MLP neurons averaged over executed answer inputs, layers 2-31; all four candidates; padding excluded",
+      "calibration_provenance": {
+        "calibration_sha256": "137ffbd0e508de6587832a4bf652482fda2bfaa6198be2aa6640bfc8a348d890",
+        "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+        "code": {
+          "scripts/mistral_hellaswag.py": "e8deb3af95f61414e7e34c29fcfb11ad62ba3691a4dd35a8a1058e13840bc1d4",
+          "scripts/mistral_comparison_core.py": "7d6769528be99aa40e7abbc5c40ff0120e97340bed03e1dec3bcd0f114c1249f",
+          "scripts/mistral_comparisons.py": "73d9738c5b7f6d34659c8b4558a8c5921988e6988789a0505b8c2131cda74cca"
+        },
+        "limit": 0,
+        "budget": 50
+      }
+    },
+    "planner-40-matched": {
+      "method": "planner-40",
+      "examples": 10042,
+      "accuracy": 0.5904202350129456,
+      "accuracy_normalized": 0.791077474606652,
+      "suffix_kept": 0.396609746690858,
+      "zero_shot": true,
+      "add_bos_token": true,
+      "prompt_fully_dense": true,
+      "dense_prefix": 2,
+      "candidate_histories_independent": true,
+      "normalization": "character count of preprocessed ending",
+      "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+      "full_validation": true,
+      "protocol": "dense prompt; first answer likelihood from dense prompt logits; subsequent answer likelihoods from sparse decoding",
+      "attention_dense": true,
+      "final_answer_input_not_executed": true,
+      "retention_denominator": "eligible MLP neurons averaged over executed answer inputs, layers 2-31; all four candidates; padding excluded",
+      "calibration_provenance": {
+        "calibration_sha256": "0fac5290e1da1a29b054b4f7ec4cff52a23596aed55657f493d77d46b6f2d906",
+        "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+        "code": {
+          "scripts/mistral_hellaswag.py": "e8deb3af95f61414e7e34c29fcfb11ad62ba3691a4dd35a8a1058e13840bc1d4",
+          "scripts/mistral_comparison_core.py": "7d6769528be99aa40e7abbc5c40ff0120e97340bed03e1dec3bcd0f114c1249f",
+          "scripts/mistral_comparisons.py": "73d9738c5b7f6d34659c8b4558a8c5921988e6988789a0505b8c2131cda74cca"
+        },
+        "limit": 0,
+        "budget": 40
+      }
+    }
+  },
+  "paired": {
+    "planner-30-vs-griffin-50": {
+      "gap_percentage_points": 2.9874526986656043,
+      "ci95_percentage_points": [
+        2.3600876319458277,
+        3.6150667197769333
+      ]
+    },
+    "planner-30-vs-griffin-40": {
+      "gap_percentage_points": 6.154152559251145,
+      "ci95_percentage_points": [
+        5.457080262895837,
+        6.871141206930891
+      ]
+    },
+    "planner-30-vs-neuro-50": {
+      "gap_percentage_points": 16.16211909978092,
+      "ci95_percentage_points": [
+        15.315674168492333,
+        17.028480382393944
+      ]
+    },
+    "planner-30-vs-neuro-40": {
+      "gap_percentage_points": 24.53694483170683,
+      "ci95_percentage_points": [
+        23.58095996813384,
+        25.522804222266483
+      ]
+    },
+    "planner-30-vs-dense-A100": {
+      "gap_percentage_points": -4.092810197171878,
+      "ci95_percentage_points": [
+        -4.60067715594503,
+        -3.5949014140609443
+      ]
+    },
+    "planner-30-vs-dense-H200": {
+      "gap_percentage_points": -4.102768372834096,
+      "ci95_percentage_points": [
+        -4.6106353316072495,
+        -3.6048595897231626
+      ]
+    },
+    "planner-30-vs-planner-48-matched": {
+      "gap_percentage_points": -2.399920334594702,
+      "ci95_percentage_points": [
+        -2.8380800637323245,
+        -1.9717187811192989
+      ]
+    },
+    "planner-30-vs-planner-40-matched": {
+      "gap_percentage_points": -2.0215096594303925,
+      "ci95_percentage_points": [
+        -2.4300438159729136,
+        -1.6032662816172079
+      ]
+    },
+    "planner-20-vs-griffin-50": {
+      "gap_percentage_points": -0.1095399322844055,
+      "ci95_percentage_points": [
+        -0.7667795259908384,
+        0.5277833100975902
+      ]
+    },
+    "planner-20-vs-griffin-40": {
+      "gap_percentage_points": 3.057159928301135,
+      "ci95_percentage_points": [
+        2.350129456283609,
+        3.7641904003186615
+      ]
+    },
+    "planner-20-vs-neuro-50": {
+      "gap_percentage_points": 13.06512646883091,
+      "ci95_percentage_points": [
+        12.218681537542322,
+        13.941445927106155
+      ]
+    },
+    "planner-20-vs-neuro-40": {
+      "gap_percentage_points": 21.43995220075682,
+      "ci95_percentage_points": [
+        20.483967337183827,
+        22.42581159131647
+      ]
+    },
+    "planner-20-vs-dense-A100": {
+      "gap_percentage_points": -7.189802828121889,
+      "ci95_percentage_points": [
+        -7.78729336785501,
+        -6.602270464050985
+      ]
+    },
+    "planner-20-vs-dense-H200": {
+      "gap_percentage_points": -7.199761003784107,
+      "ci95_percentage_points": [
+        -7.807209719179446,
+        -6.602270464050985
+      ]
+    },
+    "planner-20-vs-planner-48-matched": {
+      "gap_percentage_points": -5.496912965544712,
+      "ci95_percentage_points": [
+        -6.054570802628959,
+        -4.949213304122685
+      ]
+    },
+    "planner-20-vs-planner-40-matched": {
+      "gap_percentage_points": -5.118502290380402,
+      "ci95_percentage_points": [
+        -5.66620195180243,
+        -4.580760804620594
+      ]
+    },
+    "planner-20-vs-planner-30": {
+      "gap_percentage_points": -3.09699263095001,
+      "ci95_percentage_points": [
+        -3.575234017128062,
+        -2.6190001991635135
+      ]
+    }
+  },
+  "match_tolerance": 0.005,
+  "reference_budget_note": "Reused GRIFFIN/NeuroPrefetcher rows remain at their original approximately 48%/40% retention; not new 30%/20% baselines",
+  "calibration": "1024 label-free train examples; thresholds frozen before full validation",
+  "protocol": "dense prompts, first answer likelihood dense, subsequent answer likelihoods sparse; attention and first two MLP layers dense",
+  "griffin_comparison": "generation-style adaptation, not reproduction of final-token-only classification mode"
+}

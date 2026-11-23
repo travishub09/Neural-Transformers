@@ -1,0 +1,185 @@
+{
+  "checkpoint": "0000000",
+  "trained_tokens": 0,
+  "documents": 63,
+  "seconds": 29.682356090983376,
+  "conditions": {
+    "topk-50": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.9464732624819243,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 7.003942904033187,
+        "relative_ppl_increase": 0.1885287755662333,
+        "teacher_kl_nats": 0.1791890706793458,
+        "top1_agreement": 0.824548636379388,
+        "relative_ppl_increase_ci95": [
+          0.16738289991926167,
+          0.21185976103556056
+        ],
+        "teacher_kl_nats_ci95": [
+          0.16332215717817694,
+          0.19640087734803338
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.49999999934109984,
+        "all_mlp_kept": 0.5357142851024499
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.7715292152487083,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 15.983056865412573,
+          "relative_ppl_increase": 0.16049081511033284,
+          "teacher_kl_nats": 0.1633806617939322,
+          "top1_agreement": 0.7963040300689079
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.2685419385726355,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.5556644038318734,
+          "relative_ppl_increase": 0.252103828821732,
+          "teacher_kl_nats": 0.22537635708051734,
+          "top1_agreement": 0.8670658682634731
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.7078017207935565,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 5.516820625954555,
+          "relative_ppl_increase": 0.17218010432247427,
+          "teacher_kl_nats": 0.16255488868339943,
+          "top1_agreement": 0.8203842230533832
+        }
+      }
+    },
+    "topk-40": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 2.039785603421849,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 7.6889605353230905,
+        "relative_ppl_increase": 0.3047723226244821,
+        "teacher_kl_nats": 0.2725516847572392,
+        "top1_agreement": 0.7812315902553973,
+        "relative_ppl_increase_ci95": [
+          0.2764705758928524,
+          0.33550925668457654
+        ],
+        "teacher_kl_nats_ci95": [
+          0.25064800808986937,
+          0.2961890642355493
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.400065124281711,
+        "all_mlp_kept": 0.4429176154044459
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.8606553681963307,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 17.472974416741078,
+          "relative_ppl_increase": 0.26867009821918864,
+          "teacher_kl_nats": 0.2551075351132532,
+          "top1_agreement": 0.7439966590102318
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.3719205218705965,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.942915884780064,
+          "relative_ppl_increase": 0.3884718902983917,
+          "teacher_kl_nats": 0.3264141107988003,
+          "top1_agreement": 0.8327345309381238
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.7980919176727572,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 6.038115244711208,
+          "relative_ppl_increase": 0.2829415776468294,
+          "teacher_kl_nats": 0.2523463067895213,
+          "top1_agreement": 0.7786467188031282
+        }
+      }
+    },
+    "native": {
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.9680220847522056,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 7.1565075151166715,
+        "relative_ppl_increase": 0.2144181114575032,
+        "teacher_kl_nats": 0.1996507701908381,
+        "top1_agreement": 0.8185189035589285,
+        "relative_ppl_increase_ci95": [
+          0.18676231402964075,
+          0.24598584322572659
+        ],
+        "teacher_kl_nats_ci95": [
+          0.1775343780586581,
+          0.2248643525234648
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+        "routed_kept": 0.4807878697381577,
+        "all_mlp_kept": 0.5178744504711464
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.779250399026369,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 16.106942641751566,
+          "relative_ppl_increase": 0.1694858594735504,
+          "teacher_kl_nats": 0.1694307151445564,
+          "top1_agreement": 0.7929630403006891
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.3444218984690324,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 3.835968320324731,
+          "relative_ppl_increase": 0.3508110090314842,
+          "teacher_kl_nats": 0.2986114922852205,
+          "top1_agreement": 0.846307385229541
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.7059012589956697,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 5.506346075503251,
+          "relative_ppl_increase": 0.1699545362873316,
+          "teacher_kl_nats": 0.1610378715759114,
+          "top1_agreement": 0.8215742944576675
+        }
+      }
+    }
+  }
+}

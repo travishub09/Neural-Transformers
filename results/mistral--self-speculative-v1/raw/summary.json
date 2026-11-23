@@ -1,0 +1,114 @@
+{
+  "protocol": "mistral-greedy-self-speculative-wikitext-v1",
+  "single_seed": true,
+  "conditions": {
+    "planner-30-k4": {
+      "exact_match_all": false,
+      "decode_speedup": 0.2848607496963566,
+      "decode_speedup_ci95": [
+        0.26443066402772153,
+        0.31320012851742157
+      ],
+      "accepted_draft_tokens_per_verification": 2.7572463768115942,
+      "accepted_ci95": [
+        2.5067567567567566,
+        3.0706862745098036
+      ],
+      "proposed_acceptance_fraction": 0.7059369202226345,
+      "emitted_tokens_per_verification": 3.710144927536232,
+      "total_speedup_including_prefill": 0.28661767187206716,
+      "total_speedup_ci95": [
+        0.2661269345662099,
+        0.3148102898575332
+      ],
+      "inference_tokens_per_second": 8.186018225790487,
+      "draft_routed_kept": 0.35432691424416857,
+      "teacher_forced_routed_kept": 0.42714027087251305,
+      "quality_source": "quality-30.json",
+      "implementation": "dense masked draft; shared backbone weights; separate KV; batch 1; synchronized wall clock; includes rollback, planner, retention accounting and host token selection",
+      "bootstrap": "percentile paired nonoverlapping WikiText block bootstrap; evaluation noise, not seed variation",
+      "speedup_supported": false
+    },
+    "planner-30-k8": {
+      "exact_match_all": false,
+      "decode_speedup": 0.2692646684768864,
+      "decode_speedup_ci95": [
+        0.2413042861213118,
+        0.30816673331754124
+      ],
+      "accepted_draft_tokens_per_verification": 4.373056994818653,
+      "accepted_ci95": [
+        3.8231395348837207,
+        5.1301775147929
+      ],
+      "proposed_acceptance_fraction": 0.5733695652173914,
+      "emitted_tokens_per_verification": 5.305699481865285,
+      "total_speedup_including_prefill": 0.27127218710949486,
+      "total_speedup_ci95": [
+        0.2432659028878624,
+        0.3099898197083231
+      ],
+      "inference_tokens_per_second": 7.737835016100911,
+      "draft_routed_kept": 0.36051940195050075,
+      "teacher_forced_routed_kept": 0.42714027087251305,
+      "quality_source": "quality-30.json",
+      "implementation": "dense masked draft; shared backbone weights; separate KV; batch 1; synchronized wall clock; includes rollback, planner, retention accounting and host token selection",
+      "bootstrap": "percentile paired nonoverlapping WikiText block bootstrap; evaluation noise, not seed variation",
+      "speedup_supported": false
+    },
+    "planner-20-k4": {
+      "exact_match_all": false,
+      "decode_speedup": 0.32203351268570785,
+      "decode_speedup_ci95": [
+        0.29702161596569676,
+        0.35307323090018145
+      ],
+      "accepted_draft_tokens_per_verification": 2.556701030927835,
+      "accepted_ci95": [
+        2.2721518987341773,
+        2.901896013618953
+      ],
+      "proposed_acceptance_fraction": 0.6526315789473685,
+      "emitted_tokens_per_verification": 3.5189003436426116,
+      "total_speedup_including_prefill": 0.32419839916129417,
+      "total_speedup_ci95": [
+        0.2994286403305229,
+        0.3550778070641687
+      ],
+      "inference_tokens_per_second": 9.254248635414067,
+      "draft_routed_kept": 0.23335835756766923,
+      "teacher_forced_routed_kept": 0.29456416252716944,
+      "quality_source": "quality-20.json",
+      "implementation": "dense masked draft; shared backbone weights; separate KV; batch 1; synchronized wall clock; includes rollback, planner, retention accounting and host token selection",
+      "bootstrap": "percentile paired nonoverlapping WikiText block bootstrap; evaluation noise, not seed variation",
+      "speedup_supported": false
+    },
+    "planner-20-k8": {
+      "exact_match_all": false,
+      "decode_speedup": 0.2514523165675191,
+      "decode_speedup_ci95": [
+        0.21915057134484603,
+        0.2934549148125243
+      ],
+      "accepted_draft_tokens_per_verification": 3.8779342723004695,
+      "accepted_ci95": [
+        3.3291666666666666,
+        4.641304347826087
+      ],
+      "proposed_acceptance_fraction": 0.5095619987661937,
+      "emitted_tokens_per_verification": 4.807511737089202,
+      "total_speedup_including_prefill": 0.25364472618676354,
+      "total_speedup_ci95": [
+        0.22127339645859204,
+        0.29550905326197907
+      ],
+      "inference_tokens_per_second": 7.225963031175991,
+      "draft_routed_kept": 0.24517475181680307,
+      "teacher_forced_routed_kept": 0.29456416252716944,
+      "quality_source": "quality-20.json",
+      "implementation": "dense masked draft; shared backbone weights; separate KV; batch 1; synchronized wall clock; includes rollback, planner, retention accounting and host token selection",
+      "bootstrap": "percentile paired nonoverlapping WikiText block bootstrap; evaluation noise, not seed variation",
+      "speedup_supported": false
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collection": "results/mistral--gather-latency-v3",
+  "output": "artifacts/value-followups/gather-latency-v3",
+  "protocol": "mistral-batch-one-gather-latency-v1",
+  "seed": 20261122,
+  "documents": 8,
+  "prompt_tokens": 64,
+  "tokens": 64,
+  "budgets": [
+    30,
+    20
+  ],
+  "repetitions": 3,
+  "bootstrap_repetitions": 2000,
+  "dollar_cap": 15,
+  "launch_status": "preregistered; awaiting allocation",
+  "maximum_gpu_hours": 7,
+  "packed_cpu_down": true,
+  "validation_parity_diagnostic": true,
+  "backup_interval_seconds": 600,
+  "archive_sources": [
+    "results/mistral--gather-latency-v2"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "seed": 20261114,
+  "model_id": "mistralai/Mistral-7B-v0.1",
+  "revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+  "model_path": "checkpoints/mistral-7b-v0.1",
+  "train_corpus": "data/mistral-pilot-train-v1",
+  "heldout_corpus": "data/mistral-heldout-v1",
+  "copy_tokens": 10000000,
+  "scheduled_tokens": 2000000,
+  "budget": 0.5,
+  "sequence_length": 512,
+  "width": 256,
+  "depth": 2,
+  "heads": 4,
+  "copy_learning_rate": 0.0003,
+  "quality_learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "warmup_tokens": 20000,
+  "positive_weight": 2.0,
+  "beta": 1.0,
+  "epsilon": 0.01,
+  "alpha_initial": 0.1,
+  "dual_learning_rate": 0.05,
+  "maximum_alpha": 100.0,
+  "temperatures": [
+    0.1,
+    0.1
+  ],
+  "checkpoint_every_tokens": 500000,
+  "teacher_head_chunk_size": 32,
+  "eval_batch_size": 8,
+  "calibration_tolerance": 0.0005,
+  "calibration_max_evaluations": 20,
+  "pilot_gpu_cap_usd": 10.0,
+  "full_run_requires_spending_cap": false,
+  "budgets": [
+    30,
+    20
+  ],
+  "extra_train_corpus": "data/mistral-full-extension-v1",
+  "quality_checkpoint_tokens": [
+    2000000,
+    5000000,
+    10000000
+  ],
+  "total_cap_usd": 200,
+  "phase_tokens": {
+    "30": 10000000,
+    "20": 10000000
+  },
+  "additional_train_corpus": "data/mistral-phased-extension-v1",
+  "checkpoint_selection": "phase-final",
+  "minimum_phase_tokens": 5000000,
+  "extension_kl_improvement": 0.001,
+  "additional_lower_corpus": "data/mistral-lower-extension-v1",
+  "gate_policy": "hard_only",
+  "source_40": "artifacts/mistral-phased-v1/budget-40",
+  "initial_prior_spend_usd": 50.0,
+  "storage_reserve_usd": 10.0,
+  "new_allocation_cap_usd": 120.0
+}

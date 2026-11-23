@@ -1,0 +1,61 @@
+{
+  "overall": {
+    "tokens": 34000.0,
+    "windows": 63,
+    "dense_nll": 1.410948798949648,
+    "student_nll": 1.5287644893349879,
+    "dense_perplexity": 4.099843486468934,
+    "student_perplexity": 4.612474538924252,
+    "relative_ppl_increase": 0.12503673716989377,
+    "teacher_kl_nats": 0.13172334992119977,
+    "top1_agreement": 0.8556470588235294,
+    "relative_ppl_increase_ci95": [
+      0.11779913623960712,
+      0.13237107355767816
+    ],
+    "teacher_kl_nats_ci95": [
+      0.1255805755170727,
+      0.13751952100870565
+    ],
+    "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+    "routed_kept": 0.31476711651457456
+  },
+  "selected_tokens": 10000000,
+  "lineage_e2e_tokens": 50000000,
+  "domains": {
+    "web": {
+      "tokens": 10636.0,
+      "windows": 24,
+      "dense_nll": 2.130495871548896,
+      "student_nll": 2.259556653701636,
+      "dense_perplexity": 8.419040539210576,
+      "student_perplexity": 9.578841481322783,
+      "relative_ppl_increase": 0.1377592775222529,
+      "teacher_kl_nats": 0.14500578929068964,
+      "top1_agreement": 0.826720571643475
+    },
+    "code": {
+      "tokens": 9942.0,
+      "windows": 15,
+      "dense_nll": 0.8055885279603563,
+      "student_nll": 0.9070007616352999,
+      "dense_perplexity": 2.238013244681245,
+      "student_perplexity": 2.4768826205455095,
+      "relative_ppl_increase": 0.10673278026032676,
+      "teacher_kl_nats": 0.1035360423843094,
+      "top1_agreement": 0.9047475357071012
+    },
+    "conversation": {
+      "tokens": 13422.0,
+      "windows": 24,
+      "dense_nll": 1.2891628616832154,
+      "student_nll": 1.410218037285117,
+      "dense_perplexity": 3.6297466835045857,
+      "student_perplexity": 4.0968485724359045,
+      "relative_ppl_increase": 0.12868718664419954,
+      "teacher_kl_nats": 0.14207696237820097,
+      "top1_agreement": 0.8421993741618239
+    }
+  },
+  "selection": "Final phase checkpoint; threshold calibrated on separate validation; 30% inherits protected final 40%; 20% inherits final 30%"
+}

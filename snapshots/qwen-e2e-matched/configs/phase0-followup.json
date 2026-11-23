@@ -1,0 +1,22 @@
+{
+  "name": "phase0-followup-v1",
+  "seed": 20261109,
+  "budgets": [0.5, 0.25, 0.1],
+  "mask_seeds": [101, 202, 303],
+  "warmup_layers": 2,
+  "pilot_documents_per_domain": 1,
+  "test_documents_per_domain": 24,
+  "maximum_sequence_length": 512,
+  "minimum_sequence_length": 128,
+  "quality_max_relative_ppl_increase": 0.05,
+  "quality_max_teacher_kl_nats": 0.05,
+  "quality_threshold_status": "provisional default disclosed before observing results",
+  "quality_requires_each_domain": true,
+  "primary_budget": 0.25,
+  "minimum_oracle_fixed_gap_recovered": 0.2,
+  "bootstrap_repetitions": 2000,
+  "maximum_runtime_hours": 2,
+  "granularity_group_sizes": [1, 32, 128],
+  "energy_coverages": [0.5, 0.9, 0.95],
+  "near_zero_relative_rms_thresholds": [0.001, 0.01, 0.1]
+}

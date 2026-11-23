@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "config": {
+    "seed": 20261108,
+    "sequence_length": 512,
+    "max_document_tokens": 8192,
+    "shuffle_buffer": 1000,
+    "sample_pairs": 10000,
+    "split_salt": "pathpred-stage3-v1",
+    "sources": [
+      {
+        "domain": "web",
+        "tokens": 4000000,
+        "dataset": "HuggingFaceFW/fineweb-edu",
+        "config": "sample-10BT",
+        "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+        "split": "train",
+        "format": "text",
+        "field": "text",
+        "license": "odc-by"
+      },
+      {
+        "domain": "code",
+        "tokens": 500000,
+        "dataset": "codeparrot/codeparrot-clean",
+        "config": null,
+        "revision": "35a59fb025bc0a102f7d96eac09d145b896d487b",
+        "split": "train",
+        "format": "text",
+        "field": "content",
+        "license": "per-file metadata"
+      },
+      {
+        "domain": "conversation",
+        "tokens": 500000,
+        "dataset": "HuggingFaceH4/ultrachat_200k",
+        "config": null,
+        "revision": "8049631c405ae6576f93f445c6b8166f76f5505a",
+        "split": "train_sft",
+        "format": "messages",
+        "field": "messages",
+        "license": "mit"
+      }
+    ]
+  },
+  "model": {
+    "model_id": "Qwen/Qwen3-1.7B-Base",
+    "revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1",
+    "dtype": "bfloat16",
+    "attention_implementation": "eager",
+    "seed": 42,
+    "expected_architecture": {
+      "model_type": "qwen3",
+      "num_hidden_layers": 28,
+      "num_attention_heads": 16,
+      "num_key_value_heads": 8,
+      "intermediate_size": 6144,
+      "hidden_size": 2048
+    }
+  },
+  "preparer_sha256": "26dfdd2dd78831350c6ac45ae929e50744e7adac408be51182a2c5b4a647058b",
+  "sampling_source_sha256": "7f6236d2eb5256da1496b5ebe4e783bc792c1da55a24033f9450eef780bb9b8c",
+  "packages": {
+    "transformers": "4.57.1",
+    "datasets": "4.4.1",
+    "tokenizers": "0.22.2"
+  },
+  "tokens": 5000000,
+  "sequences": 12073,
+  "documents": 4684,
+  "sample_pairs": 10000,
+  "skipped_exact_duplicates": 0,
+  "tokens_by_domain_split": {
+    "code/test": 27527,
+    "code/train": 433342,
+    "code/validation": 39131,
+    "conversation/test": 52505,
+    "conversation/train": 400423,
+    "conversation/validation": 47072,
+    "web/test": 379818,
+    "web/train": 3257102,
+    "web/validation": 363080
+  },
+  "files": [
+    {
+      "file": "tokens.safetensors",
+      "bytes": 30907056,
+      "sha256": "d7a719290c536da54466a73972823101592d109fde61929e01649d5d8b8a648e"
+    },
+    {
+      "file": "sequences.jsonl",
+      "sha256": "e817359691af351c03ac4587b1d1ec4da2aff57d674d317914606dd30c3a2f16",
+      "bytes": 4586655
+    }
+  ],
+  "elapsed_seconds": 21.703780633979477,
+  "sampling": "Bounded shuffled streaming prefixes; windows never cross documents. Up to one sampled adjacent pair per selected sequence; not uniform token sampling."
+}

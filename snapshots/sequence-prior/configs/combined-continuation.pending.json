@@ -1,0 +1,22 @@
+{
+  "status": "Awaiting token-budget and gate-recipe clarification; not launchable",
+  "seed": 20261112,
+  "data_seed": 20261112,
+  "sequence_length": 512,
+  "train_tokens": null,
+  "milestones": null,
+  "gate_recipe": null,
+  "learning_rate": 0.00003,
+  "hidden_lr_multiplier": 7.5,
+  "weight_decay": 0.01,
+  "warmup_tokens": 20000,
+  "beta": 1.0,
+  "epsilon": 0.01,
+  "dual_learning_rate": 0.05,
+  "maximum_alpha": 100.0,
+  "checkpoint_every_tokens": 250000,
+  "maximum_branch_hours": 6,
+  "teacher_head_chunk_size": 32,
+  "attention": "dense",
+  "dense_prefix_layers": 2
+}

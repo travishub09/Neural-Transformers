@@ -1,0 +1,33 @@
+{
+  "status": "Authorized: 10M per budget; actual prior hard-threshold STE recipe",
+  "seed": 20261112,
+  "data_seed": 20261112,
+  "sequence_length": 512,
+  "train_tokens": 10000000,
+  "milestones": [
+    2000000,
+    5000000,
+    10000000
+  ],
+  "gate_recipe": "hard-threshold-ste",
+  "learning_rate": 3e-05,
+  "hidden_lr_multiplier": 7.5,
+  "weight_decay": 0.01,
+  "warmup_tokens": 20000,
+  "beta": 1.0,
+  "epsilon": 0.01,
+  "dual_learning_rate": 0.05,
+  "maximum_alpha": 100.0,
+  "checkpoint_every_tokens": 250000,
+  "maximum_branch_hours": 6,
+  "teacher_head_chunk_size": 32,
+  "attention": "dense",
+  "dense_prefix_layers": 2,
+  "training_corpus": "data/combined-corpus-v1",
+  "corpus_config": "configs/combined-corpus.json",
+  "exclude_corpora": [
+    "data/neuron-training-corpus-v1",
+    "data/stage3-corpus-v1",
+    "data/e2e-full-corpus-v1"
+  ]
+}

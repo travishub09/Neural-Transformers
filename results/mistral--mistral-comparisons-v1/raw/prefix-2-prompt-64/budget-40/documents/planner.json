@@ -1,0 +1,71 @@
+{
+  "overall": {
+    "tokens": 30031.0,
+    "windows": 63,
+    "dense_nll": 1.312338957385629,
+    "student_nll": 1.382707848944075,
+    "dense_perplexity": 3.714852440217707,
+    "student_perplexity": 3.985679646707765,
+    "relative_ppl_increase": 0.07290389345160256,
+    "teacher_kl_nats": 0.07746433650885177,
+    "top1_agreement": 0.8906796310479171,
+    "routed_kept": 0.41268628284108205,
+    "previous_token_active_reuse": 0.7043652707729373,
+    "relative_ppl_increase_ci95": [
+      0.0668902100389891,
+      0.07857680571647732
+    ],
+    "teacher_kl_nats_ci95": [
+      0.07305344715569223,
+      0.08161672626231437
+    ],
+    "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+  },
+  "domains": {
+    "code": {
+      "tokens": 8997.0,
+      "windows": 15,
+      "dense_nll": 0.7593748233817114,
+      "student_nll": 0.8229182677165067,
+      "dense_perplexity": 2.136939837981399,
+      "student_perplexity": 2.277135441433708,
+      "relative_ppl_increase": 0.06560577933010082,
+      "teacher_kl_nats": 0.062383848810041484,
+      "top1_agreement": 0.9284205846393242
+    },
+    "conversation": {
+      "tokens": 11910.0,
+      "windows": 24,
+      "dense_nll": 1.1511358096535944,
+      "student_nll": 1.2212397739634462,
+      "dense_perplexity": 3.1617820535908003,
+      "student_perplexity": 3.3913896849795138,
+      "relative_ppl_increase": 0.07261968962343585,
+      "teacher_kl_nats": 0.08346605387410556,
+      "top1_agreement": 0.8798488664987405
+    },
+    "web": {
+      "tokens": 9124.0,
+      "windows": 24,
+      "dense_nll": 2.0680324912657015,
+      "student_nll": 2.145477646765614,
+      "dense_perplexity": 7.9092462879467345,
+      "student_perplexity": 8.546122290236108,
+      "relative_ppl_increase": 0.08052297009133952,
+      "teacher_kl_nats": 0.08450058091985826,
+      "top1_agreement": 0.8676019289785182
+    }
+  },
+  "method": "planner",
+  "budget_nominal": 40,
+  "prefix": 2,
+  "prompt_tokens": 64,
+  "seconds": 846.2132494449615,
+  "accounting": "all three MLP projections eligible; dense masked quality harness; attention always dense",
+  "backbone_parameters": 7241732096,
+  "predictor_parameters": 337038080,
+  "predictor_parameter_share": 0.04654108651522256,
+  "predictor_stored_weight_bytes": 1348152320,
+  "predictor_weight_bytes_share": 0.09308217303044512,
+  "elapsed_is_quality_evaluation_not_decode_speed_benchmark": true
+}

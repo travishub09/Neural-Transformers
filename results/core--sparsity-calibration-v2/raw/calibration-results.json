@@ -1,0 +1,260 @@
+{
+  "status": "complete",
+  "stage": "calibration",
+  "fingerprint": {
+    "configs/sparsity-calibration.json": "376a2fba13015dbb2b9849018dcc60a5e955e96c1247bc654bba754e7966e77e",
+    "docs/sparsity-calibration-protocol.md": "60dd04d86838e768e6b23c237dd8bda8838acc9f7ac29eb9b658143f8c6c1977",
+    "scripts/calibrate_sparsity.py": "de24612dd5de86d4551cfcc9f180f4a1159248d927bcc04af93b5fd1a856a7fb",
+    "pathpred/sparsity_diagnostics.py": "457f8f80bc3fde8582ec1362846f20fa68b8d66a8362b442f8a3b8c6bc67a19b",
+    "pathpred/gated_qwen.py": "0bd4ac3e6d018478aad93abeab90ed44820b2add44ad20a6e85e885356c157a8",
+    "pathpred/reordering.py": "9f4ae301daeabf039877caf272fff49f0ff1d3ca18c16d8da6721f7d42a5b1a2",
+    "pathpred/oracle_checks.py": "9d481975e52146959809986b7a25b2eeffbdda80948dc0c2cd16ead7820e6b8d",
+    "data/stage3-corpus-v1/manifest.json": "3c9dcf7ab27c65b1c604899e4febf1e74fa66a1bfff72ee8abbda098c709e9da"
+  },
+  "config": {
+    "name": "sparsity-calibration-v1",
+    "seed": 20261109,
+    "kept_fractions": [
+      0.9,
+      0.75,
+      0.5,
+      0.25,
+      0.1
+    ],
+    "group_sizes": [
+      16,
+      32,
+      128
+    ],
+    "rules": [
+      "percentile",
+      "contribution",
+      "wina"
+    ],
+    "protections": [
+      "none",
+      "always",
+      "edges",
+      "both"
+    ],
+    "always_on_fraction": 0.05,
+    "edge_layers_each_end": 2,
+    "calibration_documents_per_domain": 8,
+    "calibration_sequence_length": 128,
+    "test_documents_per_domain": 24,
+    "minimum_sequence_length": 128,
+    "maximum_sequence_length": 512,
+    "bootstrap_repetitions": 2000,
+    "maximum_runtime_hours": 2
+  },
+  "results": {
+    "mlp-g1-magnitude-k90-none": {
+      "condition": {
+        "component": "mlp",
+        "group_size": 1,
+        "rule": "magnitude",
+        "keep": 0.9,
+        "protection": "none"
+      },
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.7736651674081123,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 5.892410502914594,
+        "relative_ppl_increase": -9.187166133535989e-05,
+        "teacher_kl_nats": 0.001902653364626684,
+        "top1_agreement": 0.9802474269674603,
+        "relative_ppl_increase_ci95": [
+          -0.0008113399003867997,
+          0.0006101224357029254
+        ],
+        "teacher_kl_nats_ci95": [
+          0.0017896607365916208,
+          0.0020413287948095656
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.622801625893373,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 13.774259900901914,
+          "relative_ppl_increase": 0.00011544941259979615,
+          "teacher_kl_nats": 0.00195113761045899,
+          "top1_agreement": 0.9742117352265609
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.0434506254693532,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 2.838996445513241,
+          "relative_ppl_increase": -0.0002660780900574796,
+          "teacher_kl_nats": 0.0013772789110102243,
+          "top1_agreement": 0.9893546240851631
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.548787003798621,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 4.705758651889181,
+          "relative_ppl_increase": -0.00014935386204743156,
+          "teacher_kl_nats": 0.0021987947206574443,
+          "top1_agreement": 0.9793437606256375
+        }
+      },
+      "retained": {
+        "mlp": 0.9000651041666665,
+        "attention": 1.0
+      }
+    },
+    "mlp-g1-magnitude-k75-none": {
+      "condition": {
+        "component": "mlp",
+        "group_size": 1,
+        "rule": "magnitude",
+        "keep": 0.75,
+        "protection": "none"
+      },
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.7755800919338514,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 5.903704834747563,
+        "relative_ppl_increase": 0.0018247114074025723,
+        "teacher_kl_nats": 0.0035347323469532023,
+        "top1_agreement": 0.9728662023079322,
+        "relative_ppl_increase_ci95": [
+          0.0008228433734585083,
+          0.002779681894214596
+        ],
+        "teacher_kl_nats_ci95": [
+          0.0032516774566343732,
+          0.0038704896931627585
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.6245937444343386,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 13.798967139996373,
+          "relative_ppl_increase": 0.001909381842252999,
+          "teacher_kl_nats": 0.0034755835506566327,
+          "top1_agreement": 0.9626226769680518
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.0443887351334797,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 2.841660985134972,
+          "relative_ppl_increase": 0.0006722220090242144,
+          "teacher_kl_nats": 0.0026803257383739686,
+          "top1_agreement": 0.98416500332668
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.5514259167132742,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 4.718193138716828,
+          "relative_ppl_increase": 0.002492649395817292,
+          "teacher_kl_nats": 0.004128696375719053,
+          "top1_agreement": 0.9739884393063584
+        }
+      },
+      "retained": {
+        "mlp": 0.75,
+        "attention": 1.0
+      }
+    },
+    "mlp-g1-magnitude-k50-none": {
+      "condition": {
+        "component": "mlp",
+        "group_size": 1,
+        "rule": "magnitude",
+        "keep": 0.5,
+        "protection": "none"
+      },
+      "overall": {
+        "tokens": 28857,
+        "windows": 63,
+        "dense_nll": 1.7737570432899072,
+        "student_nll": 1.7848850128139286,
+        "dense_perplexity": 5.892951898195651,
+        "student_perplexity": 5.958894711651678,
+        "relative_ppl_increase": 0.011190115683146522,
+        "teacher_kl_nats": 0.013573233769036696,
+        "top1_agreement": 0.9476037010084208,
+        "relative_ppl_increase_ci95": [
+          0.009098054476912538,
+          0.013296831448464873
+        ],
+        "teacher_kl_nats_ci95": [
+          0.012409713526831475,
+          0.01490261689287841
+        ],
+        "method": "paired document bootstrap within domains; random-mask seeds averaged first"
+      },
+      "domains": {
+        "web": {
+          "tokens": 9578,
+          "windows": 24,
+          "dense_nll": 2.622686183144544,
+          "student_nll": 2.6333191802025464,
+          "dense_perplexity": 13.772669854257309,
+          "student_perplexity": 13.91989595251298,
+          "relative_ppl_increase": 0.010689728267185753,
+          "teacher_kl_nats": 0.01311148322118175,
+          "top1_agreement": 0.9347462935894759
+        },
+        "code": {
+          "tokens": 7515,
+          "windows": 15,
+          "dense_nll": 1.0437167389644662,
+          "student_nll": 1.052205104554742,
+          "dense_perplexity": 2.83975204131263,
+          "student_perplexity": 2.863959490313462,
+          "relative_ppl_increase": 0.00852449391660357,
+          "teacher_kl_nats": 0.011440952203846898,
+          "top1_agreement": 0.9658017298735861
+        },
+        "conversation": {
+          "tokens": 11764,
+          "windows": 24,
+          "dense_nll": 1.5489363688150672,
+          "student_nll": 1.5621535486282445,
+          "dense_perplexity": 4.706461580102747,
+          "student_perplexity": 4.7690806411914695,
+          "relative_ppl_increase": 0.013304912835887866,
+          "teacher_kl_nats": 0.015311311184010854,
+          "top1_agreement": 0.9464467868072084
+        }
+      },
+      "retained": {
+        "mlp": 0.5,
+        "attention": 1.0
+      }
+    }
+  },
+  "documents": 63,
+  "seconds": 25.43243743100902,
+  "calibration_noncatastrophic": true,
+  "catastrophe_trigger": ">=2x dense PPL or >=1 nat KL at 50% MLP neurons; investigation trigger, not scientific pass criterion"
+}

@@ -1,0 +1,18 @@
+{
+  "seed": 20261109,
+  "train_tokens_per_predictor": 10000000,
+  "budgets": [0.5, 0.4],
+  "sequence_length": 512,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "positive_weight": 2.0,
+  "warmup_tokens": 100000,
+  "observation_curriculum_tokens": 3000000,
+  "checkpoint_every_tokens": 500000,
+  "validation_documents_per_domain": 2,
+  "test_documents_per_domain": 24,
+  "minimum_sequence_length": 128,
+  "maximum_runtime_hours": 4,
+  "architecture": {"units": 6144, "width": 256, "depth": 2, "heads": 4, "lookahead": 2, "previous_token": true},
+  "training": "One shared ranker per signal; budgets alternate by batch. Both signals see the same 10 million token presentations and teacher labels. Backbone frozen; own on-policy rollouts with gradually hidden non-selected observations."
+}

@@ -1,0 +1,12 @@
+# Versions used for every experiment in the paper (see environment/environment-freeze.txt).
+# PyTorch 2.8.0 with CUDA 12.8 is assumed to be installed for your GPU.
+torch==2.8.0
+transformers==4.57.1
+accelerate==1.11.0
+datasets==4.4.1
+safetensors==0.6.2
+numpy==2.1.2
+PyYAML==6.0.3
+ortools==9.14.6206   # balanced neuron clustering (granularity experiments only)
+matplotlib           # figures only
+pytest==8.4.2

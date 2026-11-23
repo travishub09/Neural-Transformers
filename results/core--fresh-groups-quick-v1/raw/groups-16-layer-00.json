@@ -1,0 +1,83 @@
+{
+  "fingerprint": {
+    "scripts/quick_fresh_groups.py": "a04f99e4d568305be21c9655b2fa8c1c20a7135221329aaf39e0a992b19b07e2",
+    "pathpred/fresh_groups.py": "01ccb56c3c1b64df2bcf2d11d7533520b7619bb8e76af7ea6268eea2e15063f2",
+    "pathpred/clustering.py": "2a3fb8264f52986e339bfcecb51276312d94ea4831e747b0a5d5d89158c77950",
+    "scripts/cluster_neurons.py": "a31fa9937de4448b02ea915f866ce2583673da3a4a6867bda2dbac5b1190c9ec",
+    "pathpred/sparsity_diagnostics.py": "457f8f80bc3fde8582ec1362846f20fa68b8d66a8362b442f8a3b8c6bc67a19b",
+    "pathpred/oracle_checks.py": "9d481975e52146959809986b7a25b2eeffbdda80948dc0c2cd16ead7820e6b8d",
+    "configs/fresh-groups-quick.json": "822b6cdae04266f22ee728c52df9ea37fa28a244546f7843416bb2d27defd992",
+    "docs/fresh-groups-protocol.md": "ba33fe37d7e6d18001d7ed1799aa76a10228933824d4e4376fb01cf575939af7",
+    "data/stage3-corpus-v1/manifest.json": "3c9dcf7ab27c65b1c604899e4febf1e74fa66a1bfff72ee8abbda098c709e9da",
+    "data/stage3-full-v1/manifest.json": "902a62ad2ef5c908a7a18a21f93527f5309f6b0cc9284dd2d0c06464b7f890bd",
+    "data/stage4-clusters-v1/manifest.json": "5ba4eb44eda86372bbbce56baf443ab22ccfa63c1305469c00d3a161371a719c",
+    "artifacts/sparsity-calibration-v2/grid-results.json": "e2918d14b2dcdb8cd3796ccf2d8dde763018c592a3dfef6e79f1388cacab2132"
+  },
+  "layer": 0,
+  "size": 16,
+  "fit": {
+    "objective": 3829.37353515625,
+    "selected_restart": 0,
+    "runs": [
+      {
+        "restart": 0,
+        "objectives": [
+          3846.79638671875,
+          3836.170166015625,
+          3833.8486328125,
+          3831.6474609375,
+          3830.691650390625,
+          3830.19873046875,
+          3829.37353515625,
+          3829.37353515625
+        ],
+        "stop_reason": "unchanged_assignment",
+        "best_objective": 3829.37353515625
+      }
+    ]
+  },
+  "metrics": {
+    "train": {
+      "fresh": {
+        "mean_pairwise_magnitude_cosine": 0.3351782262325287,
+        "sse": 3829.373779296875,
+        "zero_activity_neurons": 0
+      },
+      "old_subdivision": {
+        "mean_pairwise_magnitude_cosine": 0.30964550375938416,
+        "sse": 3976.442138671875,
+        "zero_activity_neurons": 0
+      }
+    },
+    "validation": {
+      "fresh": {
+        "mean_pairwise_magnitude_cosine": 0.3559650778770447,
+        "sse": 3709.6416015625,
+        "zero_activity_neurons": 0
+      },
+      "old_subdivision": {
+        "mean_pairwise_magnitude_cosine": 0.3324011564254761,
+        "sse": 3845.36962890625,
+        "zero_activity_neurons": 0
+      }
+    },
+    "test": {
+      "fresh": {
+        "mean_pairwise_magnitude_cosine": 0.3592091202735901,
+        "sse": 3690.955810546875,
+        "zero_activity_neurons": 0
+      },
+      "old_subdivision": {
+        "mean_pairwise_magnitude_cosine": 0.33597612380981445,
+        "sse": 3824.777587890625,
+        "zero_activity_neurons": 0
+      }
+    }
+  },
+  "fraction_new_groups_crossing_old_128_boundaries": 0.9609375,
+  "file": {
+    "file": "groups-16-layer-00.safetensors",
+    "bytes": 98464,
+    "sha256": "ea3d6757c5f728278643d3e20604b93a0aba518b00e0c71e688ee6b6f30b50d8"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collection": "results/mistral--self-speculative-v1",
+  "output": "artifacts/value-followups/speculative-v1",
+  "protocol": "mistral-greedy-self-speculative-wikitext-v1",
+  "seed": 20261122,
+  "documents": 16,
+  "prompt_tokens": 64,
+  "new_tokens": 64,
+  "quality_tokens": 128,
+  "budgets": [
+    30,
+    20
+  ],
+  "blocks": [
+    4,
+    8
+  ],
+  "bootstrap_repetitions": 2000,
+  "maximum_gpu_hours": 3,
+  "dollar_cap": 6.5
+}

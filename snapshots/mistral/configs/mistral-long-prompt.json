@@ -1,0 +1,21 @@
+{
+  "dataset": "Salesforce/wikitext",
+  "dataset_config": "wikitext-2-raw-v1",
+  "seed": 20261116,
+  "calibration_split": "validation",
+  "test_split": "test",
+  "calibration_windows": 32,
+  "test_windows": 64,
+  "window_tokens": 1536,
+  "prompt_tokens": [512, 1024],
+  "continuation_tokens": 512,
+  "targets": {"50": 0.48, "40": 0.40},
+  "calibration_tolerance": 0.001,
+  "test_retention_tolerance": 0.005,
+  "batch_size": 8,
+  "bootstrap_repetitions": 2000,
+  "dense_mlp_prefix": 2,
+  "attention_dense": true,
+  "selection": "SHA256(seed:split:block-index) ranking of nonoverlapping 1536-token blocks; identical final 512-token targets for both context lengths",
+  "protocol": "Concatenate nonempty WikiText rows with two newlines within each official split; no BOS/EOS inserted; reset caches for each block; dense prompts; first continuation likelihood dense; remaining 511 likelihoods from sparse decoding"
+}

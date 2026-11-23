@@ -1,0 +1,30 @@
+{
+  "method": "planner-40",
+  "examples": 10042,
+  "accuracy": 0.5904202350129456,
+  "accuracy_normalized": 0.791077474606652,
+  "suffix_kept": 0.396609746690858,
+  "zero_shot": true,
+  "add_bos_token": true,
+  "prompt_fully_dense": true,
+  "dense_prefix": 2,
+  "candidate_histories_independent": true,
+  "normalization": "character count of preprocessed ending",
+  "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+  "full_validation": true,
+  "protocol": "dense prompt; first answer likelihood from dense prompt logits; subsequent answer likelihoods from sparse decoding",
+  "attention_dense": true,
+  "final_answer_input_not_executed": true,
+  "retention_denominator": "eligible MLP neurons averaged over executed answer inputs, layers 2-31; all four candidates; padding excluded",
+  "calibration_provenance": {
+    "calibration_sha256": "0fac5290e1da1a29b054b4f7ec4cff52a23596aed55657f493d77d46b6f2d906",
+    "corpus_sha256": "bf9ccf58be56834f62ecf51509409ca494678e9d348c52b4d3f6af735789079c",
+    "code": {
+      "scripts/mistral_hellaswag.py": "e8deb3af95f61414e7e34c29fcfb11ad62ba3691a4dd35a8a1058e13840bc1d4",
+      "scripts/mistral_comparison_core.py": "7d6769528be99aa40e7abbc5c40ff0120e97340bed03e1dec3bcd0f114c1249f",
+      "scripts/mistral_comparisons.py": "73d9738c5b7f6d34659c8b4558a8c5921988e6988789a0505b8c2131cda74cca"
+    },
+    "limit": 0,
+    "budget": 40
+  }
+}

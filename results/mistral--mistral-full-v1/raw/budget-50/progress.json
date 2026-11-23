@@ -1,0 +1,24 @@
+{
+  "stage": "e2e",
+  "budget": 50,
+  "tokens": 10000000,
+  "target_tokens": 20000000,
+  "next_cursor": 42972,
+  "tokens_per_second": 548.5753356796527,
+  "seconds": 20414.03871413297,
+  "metrics": {
+    "log_cosine": 0.08725306391716003,
+    "kl": 0.1098354309797287,
+    "used": 0.5214961171150208,
+    "soft_mass": 0.5211762189865112,
+    "hard_used": 0.5214961171150208,
+    "cosine": 0.9171004295349121,
+    "quality": 0.19708849489688873,
+    "loss": 0.5728471279144287,
+    "gradient_norm": 0.24113178253173828,
+    "alpha": 0.7205396100878816,
+    "whole_plan_calls": 1,
+    "recomputations": 30,
+    "history": "no-history bootstrap two-pass approximation"
+  }
+}

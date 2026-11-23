@@ -1,0 +1,12 @@
+{
+  "seed": 20261108,
+  "group_size": 128,
+  "restarts": 2,
+  "max_iterations": 30,
+  "relative_tolerance": 0.00001,
+  "distance_integer_scale": 1000000,
+  "features": "absolute_activation_l2_normalized_per_neuron",
+  "fit_split": "train",
+  "cost_context_lengths": [1024, 16384],
+  "weight_bytes": 2
+}

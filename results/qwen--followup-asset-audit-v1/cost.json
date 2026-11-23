@@ -1,0 +1,19 @@
+{
+  "allocation_id": "p0iblhwpw4565f",
+  "provider": "Runpod",
+  "gpu_model": "NVIDIA A40",
+  "hourly_rate": 0.59,
+  "start_utc": "2026-11-22T02:21:26.078000+00:00",
+  "end_utc": "2026-11-22T02:34:31.377164+00:00",
+  "hours": 0.21813865666666668,
+  "estimated_cost": 0.12870180743333334,
+  "posted_provider_charge": 0.07036648993380368,
+  "currency": "USD",
+  "unknown_reasons": {},
+  "dollar_cap": 0.25,
+  "deadline_epoch": 1795315526.078,
+  "estimate_scope": "GPU only until posted provider charge includes disk",
+  "estimated_through_utc": "2026-11-22T02:28:23.749523Z",
+  "end_time_kind": "conservative release observation upper bound, not exact provider deletion time",
+  "posted_charge_status": "Provider hourly billing refreshed 2026-11-22; includes GPU and container disk, excludes persistent volumes; finality not guaranteed"
+}

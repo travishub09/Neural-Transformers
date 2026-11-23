@@ -1,0 +1,638 @@
+{
+  "gpu-100-dense": {
+    "inference_tokens_per_second": 27.202739761018325,
+    "routed_kept": 1.0,
+    "cpu_to_device_weight_payload_bytes_per_token": 0.0,
+    "max_absolute_logit_difference": 0.0,
+    "min_top1_parity": 1.0,
+    "by_document": [
+      {
+        "document": "1e7cb69d1965f44bb5026b0be10cbd91c3fbdb9ca475df8c921377dfe0337b1e",
+        "seconds": 2.341451418993529
+      },
+      {
+        "document": "58cac08c8fbc9e1f9fc79ad61f2fdfc899662d4e81fdaad240ef103141b5fa3e",
+        "seconds": 2.329188763338607
+      },
+      {
+        "document": "80eba701287199c4f5be308448f301f5374fdfeeb4568a76422db8ebd8848de3",
+        "seconds": 2.3109287196809114
+      },
+      {
+        "document": "f61b47fabe4426ceadc2ca1a5eda24e0662775e6e967ee84876c914db84b85c7",
+        "seconds": 2.283867806332031
+      },
+      {
+        "document": "ae46f13ced808541d105f4a289adf5da220ca8b01c3ed562f905911531646379",
+        "seconds": 2.414888286322821
+      },
+      {
+        "document": "0e410eb23fcda3859aa657427c49f01a738730b657f68a73c3bbe66b164f7301",
+        "seconds": 2.4457281453263326
+      },
+      {
+        "document": "9e401d63150b63c6e3da10e73706eb837430eb4e84c43977ca7d3e49806df51d",
+        "seconds": 2.351702499688448
+      },
+      {
+        "document": "e9a0ac51540f8a072b28cd02f15c783d959cc347beb65691047008543445a048",
+        "seconds": 2.3438779346567267
+      }
+    ],
+    "quality": {
+      "dense_perplexity": 7.265942367637316,
+      "student_perplexity": 7.265942367637316,
+      "relative_ppl_increase": 0.0,
+      "teacher_kl_nats": 0.0,
+      "top1_agreement": 1.0,
+      "routed_kept": 1.0,
+      "tokens": 512,
+      "student_perplexity_ci95": [
+        5.7210897962034215,
+        9.421606888920227
+      ],
+      "dense_perplexity_ci95": [
+        5.7210897962034215,
+        9.421606888920227
+      ],
+      "relative_ppl_increase_ci95": [
+        0.0,
+        0.0
+      ],
+      "teacher_kl_nats_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "routed_kept_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "strict_top1_parity_passed": true
+  },
+  "gpu-30-masked": {
+    "inference_tokens_per_second": 12.836804056809997,
+    "routed_kept": 0.4421025365591049,
+    "cpu_to_device_weight_payload_bytes_per_token": 0.0,
+    "max_absolute_logit_difference": 0.0,
+    "min_top1_parity": 1.0,
+    "by_document": [
+      {
+        "document": "1e7cb69d1965f44bb5026b0be10cbd91c3fbdb9ca475df8c921377dfe0337b1e",
+        "seconds": 4.928815077330607
+      },
+      {
+        "document": "58cac08c8fbc9e1f9fc79ad61f2fdfc899662d4e81fdaad240ef103141b5fa3e",
+        "seconds": 5.024701131643572
+      },
+      {
+        "document": "80eba701287199c4f5be308448f301f5374fdfeeb4568a76422db8ebd8848de3",
+        "seconds": 4.9308003823001245
+      },
+      {
+        "document": "f61b47fabe4426ceadc2ca1a5eda24e0662775e6e967ee84876c914db84b85c7",
+        "seconds": 4.918500338991483
+      },
+      {
+        "document": "ae46f13ced808541d105f4a289adf5da220ca8b01c3ed562f905911531646379",
+        "seconds": 4.940913871997812
+      },
+      {
+        "document": "0e410eb23fcda3859aa657427c49f01a738730b657f68a73c3bbe66b164f7301",
+        "seconds": 5.043344153324142
+      },
+      {
+        "document": "9e401d63150b63c6e3da10e73706eb837430eb4e84c43977ca7d3e49806df51d",
+        "seconds": 5.0225246779931085
+      },
+      {
+        "document": "e9a0ac51540f8a072b28cd02f15c783d959cc347beb65691047008543445a048",
+        "seconds": 5.075717438652646
+      }
+    ],
+    "quality": {
+      "dense_perplexity": 7.265942367637316,
+      "student_perplexity": 8.492499079429129,
+      "relative_ppl_increase": 0.1688090339465018,
+      "teacher_kl_nats": 0.13194846734404564,
+      "top1_agreement": 0.83984375,
+      "routed_kept": 0.4421025365591049,
+      "tokens": 512,
+      "student_perplexity_ci95": [
+        6.6466550828064035,
+        10.932148342953337
+      ],
+      "dense_perplexity_ci95": [
+        5.7210897962034215,
+        9.421606888920227
+      ],
+      "relative_ppl_increase_ci95": [
+        0.09956278575730816,
+        0.2505637581040057
+      ],
+      "teacher_kl_nats_ci95": [
+        0.11630867421627045,
+        0.14949320442974567
+      ],
+      "top1_agreement_ci95": [
+        0.8046875,
+        0.87109375
+      ],
+      "routed_kept_ci95": [
+        0.39640395604074,
+        0.4926784820854664
+      ]
+    },
+    "strict_top1_parity_passed": true,
+    "speedup_vs_dense": 0.47189379340404564,
+    "speedup_ci95": [
+      0.4659117032926386,
+      0.4788596934857605
+    ],
+    "speedup_supported": false
+  },
+  "gpu-30-gather": {
+    "inference_tokens_per_second": 12.05304180772195,
+    "routed_kept": 0.44132332503795624,
+    "cpu_to_device_weight_payload_bytes_per_token": 0.0,
+    "max_absolute_logit_difference": 4.9375,
+    "min_top1_parity": 0.921875,
+    "by_document": [
+      {
+        "document": "1e7cb69d1965f44bb5026b0be10cbd91c3fbdb9ca475df8c921377dfe0337b1e",
+        "seconds": 5.371492858646282
+      },
+      {
+        "document": "58cac08c8fbc9e1f9fc79ad61f2fdfc899662d4e81fdaad240ef103141b5fa3e",
+        "seconds": 5.1701335803372785
+      },
+      {
+        "document": "80eba701287199c4f5be308448f301f5374fdfeeb4568a76422db8ebd8848de3",
+        "seconds": 5.210786874658273
+      },
+      {
+        "document": "f61b47fabe4426ceadc2ca1a5eda24e0662775e6e967ee84876c914db84b85c7",
+        "seconds": 5.199075793692221
+      },
+      {
+        "document": "ae46f13ced808541d105f4a289adf5da220ca8b01c3ed562f905911531646379",
+        "seconds": 5.442070105675763
+      },
+      {
+        "document": "0e410eb23fcda3859aa657427c49f01a738730b657f68a73c3bbe66b164f7301",
+        "seconds": 5.40978044566388
+      },
+      {
+        "document": "9e401d63150b63c6e3da10e73706eb837430eb4e84c43977ca7d3e49806df51d",
+        "seconds": 5.402249386980354
+      },
+      {
+        "document": "e9a0ac51540f8a072b28cd02f15c783d959cc347beb65691047008543445a048",
+        "seconds": 5.27331446831037
+      }
+    ],
+    "quality": {
+      "dense_perplexity": 7.265942367637316,
+      "student_perplexity": 8.547296815749144,
+      "relative_ppl_increase": 0.17635075854978038,
+      "teacher_kl_nats": 0.13574217446148396,
+      "top1_agreement": 0.830078125,
+      "routed_kept": 0.44132332503795624,
+      "tokens": 512,
+      "student_perplexity_ci95": [
+        6.733300578480896,
+        10.90223812414555
+      ],
+      "dense_perplexity_ci95": [
+        5.7210897962034215,
+        9.421606888920227
+      ],
+      "relative_ppl_increase_ci95": [
+        0.10694184514261161,
+        0.2525113334709195
+      ],
+      "teacher_kl_nats_ci95": [
+        0.1183383110910654,
+        0.15652717058546842
+      ],
+      "top1_agreement_ci95": [
+        0.7890625,
+        0.865234375
+      ],
+      "routed_kept_ci95": [
+        0.3957611368969083,
+        0.49205386014655234
+      ]
+    },
+    "strict_top1_parity_passed": false,
+    "speedup_vs_dense": 0.4430819069553437,
+    "speedup_ci95": [
+      0.43908091919039166,
+      0.4471630994906242
+    ],
+    "speedup_supported": false
+  },
+  "gpu-20-masked": {
+    "inference_tokens_per_second": 12.777366798445499,
+    "routed_kept": 0.30757192708551884,
+    "cpu_to_device_weight_payload_bytes_per_token": 0.0,
+    "max_absolute_logit_difference": 0.0,
+    "min_top1_parity": 1.0,
+    "by_document": [
+      {
+        "document": "1e7cb69d1965f44bb5026b0be10cbd91c3fbdb9ca475df8c921377dfe0337b1e",
+        "seconds": 5.067215358353375
+      },
+      {
+        "document": "58cac08c8fbc9e1f9fc79ad61f2fdfc899662d4e81fdaad240ef103141b5fa3e",
+        "seconds": 4.915911868971307
+      },
+      {
+        "document": "80eba701287199c4f5be308448f301f5374fdfeeb4568a76422db8ebd8848de3",
+        "seconds": 5.146253023354802
+      },
+      {
+        "document": "f61b47fabe4426ceadc2ca1a5eda24e0662775e6e967ee84876c914db84b85c7",
+        "seconds": 5.019347871323892
+      },
+      {
+        "document": "ae46f13ced808541d105f4a289adf5da220ca8b01c3ed562f905911531646379",
+        "seconds": 5.047400604312618
+      },
+      {
+        "document": "0e410eb23fcda3859aa657427c49f01a738730b657f68a73c3bbe66b164f7301",
+        "seconds": 4.941759549333558
+      },
+      {
+        "document": "9e401d63150b63c6e3da10e73706eb837430eb4e84c43977ca7d3e49806df51d",
+        "seconds": 4.8933835356729105
+      },
+      {
+        "document": "e9a0ac51540f8a072b28cd02f15c783d959cc347beb65691047008543445a048",
+        "seconds": 5.039582228986546
+      }
+    ],
+    "quality": {
+      "dense_perplexity": 7.265942367637316,
+      "student_perplexity": 9.740926369016051,
+      "relative_ppl_increase": 0.3406280804541439,
+      "teacher_kl_nats": 0.2054136749356985,
+      "top1_agreement": 0.783203125,
+      "routed_kept": 0.30757192708551884,
+      "tokens": 512,
+      "student_perplexity_ci95": [
+        7.480803936648264,
+        12.799679014143113
+      ],
+      "dense_perplexity_ci95": [
+        5.7210897962034215,
+        9.421606888920227
+      ],
+      "relative_ppl_increase_ci95": [
+        0.27118450858652177,
+        0.4246227597910264
+      ],
+      "teacher_kl_nats_ci95": [
+        0.17467353572137653,
+        0.23575498792342842
+      ],
+      "top1_agreement_ci95": [
+        0.740234375,
+        0.82421875
+      ],
+      "routed_kept_ci95": [
+        0.2675903521012515,
+        0.3538823501206934
+      ]
+    },
+    "strict_top1_parity_passed": true,
+    "speedup_vs_dense": 0.4697088201665457,
+    "speedup_ci95": [
+      0.46057860649276494,
+      0.4798053550144389
+    ],
+    "speedup_supported": false
+  },
+  "gpu-20-gather": {
+    "inference_tokens_per_second": 11.944048674590695,
+    "routed_kept": 0.30763836950063705,
+    "cpu_to_device_weight_payload_bytes_per_token": 0.0,
+    "max_absolute_logit_difference": 4.375,
+    "min_top1_parity": 0.875,
+    "by_document": [
+      {
+        "document": "1e7cb69d1965f44bb5026b0be10cbd91c3fbdb9ca475df8c921377dfe0337b1e",
+        "seconds": 5.31118288966051
+      },
+      {
+        "document": "58cac08c8fbc9e1f9fc79ad61f2fdfc899662d4e81fdaad240ef103141b5fa3e",
+        "seconds": 5.296797522673539
+      },
+      {
+        "document": "80eba701287199c4f5be308448f301f5374fdfeeb4568a76422db8ebd8848de3",
+        "seconds": 5.340188335995966
+      },
+      {
+        "document": "f61b47fabe4426ceadc2ca1a5eda24e0662775e6e967ee84876c914db84b85c7",
+        "seconds": 5.44654285601185
+      },
+      {
+        "document": "ae46f13ced808541d105f4a289adf5da220ca8b01c3ed562f905911531646379",
+        "seconds": 5.467901405315691
+      },
+      {
+        "document": "0e410eb23fcda3859aa657427c49f01a738730b657f68a73c3bbe66b164f7301",
+        "seconds": 5.323790143360384
+      },
+      {
+        "document": "9e401d63150b63c6e3da10e73706eb837430eb4e84c43977ca7d3e49806df51d",
+        "seconds": 5.3075112793206545
+      },
+      {
+        "document": "e9a0ac51540f8a072b28cd02f15c783d959cc347beb65691047008543445a048",
+        "seconds": 5.372622195999914
+      }
+    ],
+    "quality": {
+      "dense_perplexity": 7.265942367637316,
+      "student_perplexity": 9.702288641234116,
+      "relative_ppl_increase": 0.3353104319197942,
+      "teacher_kl_nats": 0.21051752008497715,
+      "top1_agreement": 0.78515625,
+      "routed_kept": 0.30763836950063705,
+      "tokens": 512,
+      "student_perplexity_ci95": [
+        7.4899003535433195,
+        12.70955284370649
+      ],
+      "dense_perplexity_ci95": [
+        5.7210897962034215,
+        9.421606888920227
+      ],
+      "relative_ppl_increase_ci95": [
+        0.27450233509740424,
+        0.4134867174306185
+      ],
+      "teacher_kl_nats_ci95": [
+        0.1831478272564709,
+        0.23783032279461622
+      ],
+      "top1_agreement_ci95": [
+        0.755859375,
+        0.8125
+      ],
+      "routed_kept_ci95": [
+        0.26968332370743153,
+        0.3542593903839588
+      ]
+    },
+    "strict_top1_parity_passed": false,
+    "speedup_vs_dense": 0.4390752100531646,
+    "speedup_ci95": [
+      0.4315021881091007,
+      0.44664862100245417
+    ],
+    "speedup_supported": false
+  },
+  "cpu-100-dense": {
+    "inference_tokens_per_second": 1.0310703925920188,
+    "routed_kept": 1.0,
+    "cpu_to_device_weight_payload_bytes_per_token": 11274289152.0,
+    "max_absolute_logit_difference": 2.0234375,
+    "min_top1_parity": 0.96875,
+    "by_document": [
+      {
+        "document": "1e7cb69d1965f44bb5026b0be10cbd91c3fbdb9ca475df8c921377dfe0337b1e",
+        "seconds": 64.25216108199675
+      },
+      {
+        "document": "58cac08c8fbc9e1f9fc79ad61f2fdfc899662d4e81fdaad240ef103141b5fa3e",
+        "seconds": 63.54152888465129
+      },
+      {
+        "document": "80eba701287199c4f5be308448f301f5374fdfeeb4568a76422db8ebd8848de3",
+        "seconds": 63.94874847034225
+      },
+      {
+        "document": "f61b47fabe4426ceadc2ca1a5eda24e0662775e6e967ee84876c914db84b85c7",
+        "seconds": 64.2032748136553
+      },
+      {
+        "document": "ae46f13ced808541d105f4a289adf5da220ca8b01c3ed562f905911531646379",
+        "seconds": 62.61440403664407
+      },
+      {
+        "document": "0e410eb23fcda3859aa657427c49f01a738730b657f68a73c3bbe66b164f7301",
+        "seconds": 60.612123629660346
+      },
+      {
+        "document": "9e401d63150b63c6e3da10e73706eb837430eb4e84c43977ca7d3e49806df51d",
+        "seconds": 58.46843474468915
+      },
+      {
+        "document": "e9a0ac51540f8a072b28cd02f15c783d959cc347beb65691047008543445a048",
+        "seconds": 58.930658049997874
+      }
+    ],
+    "quality": {
+      "dense_perplexity": 7.247375570084924,
+      "student_perplexity": 7.247375570084924,
+      "relative_ppl_increase": 0.0,
+      "teacher_kl_nats": 0.0,
+      "top1_agreement": 1.0,
+      "routed_kept": 1.0,
+      "tokens": 512,
+      "student_perplexity_ci95": [
+        5.709817194956684,
+        9.389555816032095
+      ],
+      "dense_perplexity_ci95": [
+        5.709817194956684,
+        9.389555816032095
+      ],
+      "relative_ppl_increase_ci95": [
+        0.0,
+        0.0
+      ],
+      "teacher_kl_nats_ci95": [
+        0.0,
+        0.0
+      ],
+      "top1_agreement_ci95": [
+        1.0,
+        1.0
+      ],
+      "routed_kept_ci95": [
+        1.0,
+        1.0
+      ]
+    },
+    "strict_top1_parity_passed": false
+  },
+  "cpu-30-gather": {
+    "inference_tokens_per_second": 0.4129642441201015,
+    "routed_kept": 0.4406396746635437,
+    "cpu_to_device_weight_payload_bytes_per_token": 5362048704.0,
+    "max_absolute_logit_difference": 4.5,
+    "min_top1_parity": 0.890625,
+    "by_document": [
+      {
+        "document": "1e7cb69d1965f44bb5026b0be10cbd91c3fbdb9ca475df8c921377dfe0337b1e",
+        "seconds": 207.8371081809746
+      },
+      {
+        "document": "58cac08c8fbc9e1f9fc79ad61f2fdfc899662d4e81fdaad240ef103141b5fa3e",
+        "seconds": 144.77467061831462
+      },
+      {
+        "document": "80eba701287199c4f5be308448f301f5374fdfeeb4568a76422db8ebd8848de3",
+        "seconds": 176.43878420300703
+      },
+      {
+        "document": "f61b47fabe4426ceadc2ca1a5eda24e0662775e6e967ee84876c914db84b85c7",
+        "seconds": 132.5047508390077
+      },
+      {
+        "document": "ae46f13ced808541d105f4a289adf5da220ca8b01c3ed562f905911531646379",
+        "seconds": 172.7013393639742
+      },
+      {
+        "document": "0e410eb23fcda3859aa657427c49f01a738730b657f68a73c3bbe66b164f7301",
+        "seconds": 132.1710598526794
+      },
+      {
+        "document": "9e401d63150b63c6e3da10e73706eb837430eb4e84c43977ca7d3e49806df51d",
+        "seconds": 133.758146255995
+      },
+      {
+        "document": "e9a0ac51540f8a072b28cd02f15c783d959cc347beb65691047008543445a048",
+        "seconds": 139.63092213867154
+      }
+    ],
+    "quality": {
+      "dense_perplexity": 7.247375570084924,
+      "student_perplexity": 8.55430831183282,
+      "relative_ppl_increase": 0.1803318634600002,
+      "teacher_kl_nats": 0.1328382659703493,
+      "top1_agreement": 0.82421875,
+      "routed_kept": 0.4406396746635437,
+      "tokens": 512,
+      "student_perplexity_ci95": [
+        6.70050007591578,
+        11.0103366300087
+      ],
+      "dense_perplexity_ci95": [
+        5.709817194956684,
+        9.389555816032095
+      ],
+      "relative_ppl_increase_ci95": [
+        0.10948300277679242,
+        0.26626245367076623
+      ],
+      "teacher_kl_nats_ci95": [
+        0.11663944236934184,
+        0.1496796124614775
+      ],
+      "top1_agreement_ci95": [
+        0.787109375,
+        0.85546875
+      ],
+      "routed_kept_ci95": [
+        0.3956456328742206,
+        0.49050203943625087
+      ]
+    },
+    "strict_top1_parity_passed": false,
+    "speedup_vs_dense": 0.4005199325740954,
+    "speedup_ci95": [
+      0.3605107593446329,
+      0.4449621251621651
+    ],
+    "speedup_supported": false
+  },
+  "cpu-20-gather": {
+    "inference_tokens_per_second": 0.6308449483513844,
+    "routed_kept": 0.3074778113514185,
+    "cpu_to_device_weight_payload_bytes_per_token": 3954574272.0,
+    "max_absolute_logit_difference": 4.47265625,
+    "min_top1_parity": 0.90625,
+    "by_document": [
+      {
+        "document": "1e7cb69d1965f44bb5026b0be10cbd91c3fbdb9ca475df8c921377dfe0337b1e",
+        "seconds": 157.1865814186555
+      },
+      {
+        "document": "58cac08c8fbc9e1f9fc79ad61f2fdfc899662d4e81fdaad240ef103141b5fa3e",
+        "seconds": 99.83066959665545
+      },
+      {
+        "document": "80eba701287199c4f5be308448f301f5374fdfeeb4568a76422db8ebd8848de3",
+        "seconds": 112.29178440533967
+      },
+      {
+        "document": "f61b47fabe4426ceadc2ca1a5eda24e0662775e6e967ee84876c914db84b85c7",
+        "seconds": 82.40390389465028
+      },
+      {
+        "document": "ae46f13ced808541d105f4a289adf5da220ca8b01c3ed562f905911531646379",
+        "seconds": 123.56386564864079
+      },
+      {
+        "document": "0e410eb23fcda3859aa657427c49f01a738730b657f68a73c3bbe66b164f7301",
+        "seconds": 66.22347914532293
+      },
+      {
+        "document": "9e401d63150b63c6e3da10e73706eb837430eb4e84c43977ca7d3e49806df51d",
+        "seconds": 82.83528865900978
+      },
+      {
+        "document": "e9a0ac51540f8a072b28cd02f15c783d959cc347beb65691047008543445a048",
+        "seconds": 87.2743185973183
+      }
+    ],
+    "quality": {
+      "dense_perplexity": 7.247375570084924,
+      "student_perplexity": 9.706926425928042,
+      "relative_ppl_increase": 0.3393712430187054,
+      "teacher_kl_nats": 0.21054680459201336,
+      "top1_agreement": 0.78515625,
+      "routed_kept": 0.3074778113514185,
+      "tokens": 512,
+      "student_perplexity_ci95": [
+        7.511870173134173,
+        12.576817434468559
+      ],
+      "dense_perplexity_ci95": [
+        5.709817194956684,
+        9.389555816032095
+      ],
+      "relative_ppl_increase_ci95": [
+        0.27186102746483776,
+        0.4242472525463278
+      ],
+      "teacher_kl_nats_ci95": [
+        0.18080083495005966,
+        0.24004041845910248
+      ],
+      "top1_agreement_ci95": [
+        0.75,
+        0.814453125
+      ],
+      "routed_kept_ci95": [
+        0.2678208549972624,
+        0.3531898646615445
+      ]
+    },
+    "strict_top1_parity_passed": false,
+    "speedup_vs_dense": 0.6118349948595619,
+    "speedup_ci95": [
+      0.5191367953240246,
+      0.7345732630048348
+    ],
+    "speedup_supported": false
+  }
+}

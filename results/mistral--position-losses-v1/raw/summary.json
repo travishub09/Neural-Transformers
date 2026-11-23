@@ -1,0 +1,2242 @@
+{
+  "planner-50-prompt-64-cal-512": {
+    "dense_perplexity": 5.677918054446189,
+    "student_perplexity": 6.262040205071355,
+    "relative_ppl_increase": 0.10287611498157484,
+    "teacher_kl_nats": 0.09767167414973606,
+    "top1_agreement": 0.86639404296875,
+    "routed_kept": 0.5114866179751612,
+    "tokens": 32768.0,
+    "relative_ppl_increase_ci95": [
+      0.09476452604206996,
+      0.11097694121039807
+    ],
+    "teacher_kl_nats_ci95": [
+      0.09323782886082062,
+      0.1021230025891301
+    ],
+    "top1_agreement_ci95": [
+      0.86114501953125,
+      0.8718276977539062
+    ],
+    "routed_kept_ci95": [
+      0.5022701345277891,
+      0.5208351962998067
+    ],
+    "dense_perplexity_ci95": [
+      5.258680351539035,
+      6.124216442670409
+    ],
+    "student_perplexity_ci95": [
+      5.79071717458272,
+      6.773662529786052
+    ],
+    "bins": [
+      {
+        "continuation_start": 0,
+        "continuation_end_exclusive": 32,
+        "target_position_start": 64,
+        "dense_nll": 2.0862299627239707,
+        "student_nll": 2.1384831946229266,
+        "excess_nll": 0.05225323189895592,
+        "excess_nll_ci95": [
+          0.03472675007294146,
+          0.0689688932790611
+        ],
+        "kl": 0.0643079806760043,
+        "top1_agreement": 0.89111328125,
+        "retention": 0.5697250206890937
+      },
+      {
+        "continuation_start": 32,
+        "continuation_end_exclusive": 64,
+        "target_position_start": 96,
+        "dense_nll": 1.8844849719926844,
+        "student_nll": 1.9590016277780187,
+        "excess_nll": 0.07451665578533428,
+        "excess_nll_ci95": [
+          0.05852127393812841,
+          0.08950109055570431
+        ],
+        "kl": 0.0786388154852462,
+        "top1_agreement": 0.873046875,
+        "retention": 0.5425982765918889
+      },
+      {
+        "continuation_start": 64,
+        "continuation_end_exclusive": 96,
+        "target_position_start": 128,
+        "dense_nll": 1.8340766234549972,
+        "student_nll": 1.9353870248801504,
+        "excess_nll": 0.10131040142515313,
+        "excess_nll_ci95": [
+          0.07914782380755772,
+          0.12496416210599003
+        ],
+        "kl": 0.08651697052649598,
+        "top1_agreement": 0.87939453125,
+        "retention": 0.5236234266230895
+      },
+      {
+        "continuation_start": 96,
+        "continuation_end_exclusive": 128,
+        "target_position_start": 160,
+        "dense_nll": 1.834755102596397,
+        "student_nll": 1.916353610107838,
+        "excess_nll": 0.08159850751144082,
+        "excess_nll_ci95": [
+          0.05658754885581857,
+          0.1058484728500094
+        ],
+        "kl": 0.09388561468048054,
+        "top1_agreement": 0.86328125,
+        "retention": 0.551937330435976
+      },
+      {
+        "continuation_start": 128,
+        "continuation_end_exclusive": 160,
+        "target_position_start": 192,
+        "dense_nll": 1.7270912835810401,
+        "student_nll": 1.7972226119311432,
+        "excess_nll": 0.07013132835010305,
+        "excess_nll_ci95": [
+          0.05124982329845149,
+          0.08825703723464626
+        ],
+        "kl": 0.08890997722017602,
+        "top1_agreement": 0.8662109375,
+        "retention": 0.513534389941924
+      },
+      {
+        "continuation_start": 160,
+        "continuation_end_exclusive": 192,
+        "target_position_start": 224,
+        "dense_nll": 1.7964720128811553,
+        "student_nll": 1.9128987391881727,
+        "excess_nll": 0.11642672630701734,
+        "excess_nll_ci95": [
+          0.09255776324174593,
+          0.14344917091952253
+        ],
+        "kl": 0.10128714794762805,
+        "top1_agreement": 0.8642578125,
+        "retention": 0.5238811599647306
+      },
+      {
+        "continuation_start": 192,
+        "continuation_end_exclusive": 224,
+        "target_position_start": 256,
+        "dense_nll": 1.7766659413465482,
+        "student_nll": 1.8825807784395305,
+        "excess_nll": 0.10591483709298233,
+        "excess_nll_ci95": [
+          0.07851278753615247,
+          0.13320333506222665
+        ],
+        "kl": 0.10642512678032096,
+        "top1_agreement": 0.86376953125,
+        "retention": 0.517202503484441
+      },
+      {
+        "continuation_start": 224,
+        "continuation_end_exclusive": 256,
+        "target_position_start": 288,
+        "dense_nll": 1.713324804070088,
+        "student_nll": 1.8078427221136932,
+        "excess_nll": 0.09451791804360532,
+        "excess_nll_ci95": [
+          0.07383104142828519,
+          0.11577669596904003
+        ],
+        "kl": 0.09877372540394536,
+        "top1_agreement": 0.86865234375,
+        "retention": 0.506332254562949
+      },
+      {
+        "continuation_start": 256,
+        "continuation_end_exclusive": 288,
+        "target_position_start": 320,
+        "dense_nll": 1.64687023679234,
+        "student_nll": 1.7632080476004486,
+        "excess_nll": 0.11633781080810857,
+        "excess_nll_ci95": [
+          0.09268724463187357,
+          0.13949045903413812
+        ],
+        "kl": 0.09836866352253038,
+        "top1_agreement": 0.86767578125,
+        "retention": 0.5080453501632292
+      },
+      {
+        "continuation_start": 288,
+        "continuation_end_exclusive": 320,
+        "target_position_start": 352,
+        "dense_nll": 1.7098035832527363,
+        "student_nll": 1.8046155446326857,
+        "excess_nll": 0.0948119613799494,
+        "excess_nll_ci95": [
+          0.06941315124724991,
+          0.12035483324950412
+        ],
+        "kl": 0.10811096628845984,
+        "top1_agreement": 0.86181640625,
+        "retention": 0.5165520886912418
+      },
+      {
+        "continuation_start": 320,
+        "continuation_end_exclusive": 352,
+        "target_position_start": 384,
+        "dense_nll": 1.6710218513179926,
+        "student_nll": 1.783694070138342,
+        "excess_nll": 0.11267221882034928,
+        "excess_nll_ci95": [
+          0.09048312217951578,
+          0.13629950501357296
+        ],
+        "kl": 0.11030532161143802,
+        "top1_agreement": 0.86328125,
+        "retention": 0.5053027208668937
+      },
+      {
+        "continuation_start": 352,
+        "continuation_end_exclusive": 384,
+        "target_position_start": 416,
+        "dense_nll": 1.665696474739994,
+        "student_nll": 1.7669357742229959,
+        "excess_nll": 0.10123929948300181,
+        "excess_nll_ci95": [
+          0.08009082077187721,
+          0.12466295065071442
+        ],
+        "kl": 0.10519506706242299,
+        "top1_agreement": 0.84423828125,
+        "retention": 0.47453329807285627
+      },
+      {
+        "continuation_start": 384,
+        "continuation_end_exclusive": 416,
+        "target_position_start": 448,
+        "dense_nll": 1.602061499047784,
+        "student_nll": 1.7022189959773542,
+        "excess_nll": 0.10015749692957021,
+        "excess_nll_ci95": [
+          0.08073087057344809,
+          0.12141329507626714
+        ],
+        "kl": 0.10440506321494514,
+        "top1_agreement": 0.8623046875,
+        "retention": 0.4798091273587488
+      },
+      {
+        "continuation_start": 416,
+        "continuation_end_exclusive": 448,
+        "target_position_start": 480,
+        "dense_nll": 1.6869633364721812,
+        "student_nll": 1.800513703678409,
+        "excess_nll": 0.1135503672062278,
+        "excess_nll_ci95": [
+          0.09362696021084028,
+          0.1346282276983718
+        ],
+        "kl": 0.1100822574185889,
+        "top1_agreement": 0.85791015625,
+        "retention": 0.4974853043204348
+      },
+      {
+        "continuation_start": 448,
+        "continuation_end_exclusive": 480,
+        "target_position_start": 512,
+        "dense_nll": 1.5114710034544556,
+        "student_nll": 1.6241905203354934,
+        "excess_nll": 0.11271951688103776,
+        "excess_nll_ci95": [
+          0.08468337179819596,
+          0.1401044541997222
+        ],
+        "kl": 0.10357950428234619,
+        "top1_agreement": 0.8701171875,
+        "retention": 0.4799399636558519
+      },
+      {
+        "continuation_start": 480,
+        "continuation_end_exclusive": 512,
+        "target_position_start": 544,
+        "dense_nll": 1.6383653255681625,
+        "student_nll": 1.7569497282358402,
+        "excess_nll": 0.11858440266767767,
+        "excess_nll_ci95": [
+          0.09116277495638676,
+          0.14589933180614503
+        ],
+        "kl": 0.10395458427474802,
+        "top1_agreement": 0.865234375,
+        "retention": 0.47510393327138445
+      }
+    ],
+    "prompt_tokens": 64,
+    "calibration_prompt_tokens": 512,
+    "scored_tokens": 32768,
+    "single_seed": true,
+    "bootstrap": "paired nonoverlapping WikiText block percentile bootstrap; not independent original documents or seed variation"
+  },
+  "planner-50-prompt-512-cal-512": {
+    "dense_perplexity": 4.852437702125005,
+    "student_perplexity": 5.3675316634054555,
+    "relative_ppl_increase": 0.10615158666640416,
+    "teacher_kl_nats": 0.09852532093463195,
+    "top1_agreement": 0.868865966796875,
+    "routed_kept": 0.48388212803147523,
+    "tokens": 32768.0,
+    "relative_ppl_increase_ci95": [
+      0.09913856980781277,
+      0.11319201377788411
+    ],
+    "teacher_kl_nats_ci95": [
+      0.0941357848289832,
+      0.10280109834770229
+    ],
+    "top1_agreement_ci95": [
+      0.863616943359375,
+      0.8746040344238282
+    ],
+    "routed_kept_ci95": [
+      0.47307444015138905,
+      0.4950590379288562
+    ],
+    "dense_perplexity_ci95": [
+      4.493249449393876,
+      5.229613678487356
+    ],
+    "student_perplexity_ci95": [
+      4.948392143264743,
+      5.797252298847641
+    ],
+    "bins": [
+      {
+        "continuation_start": 0,
+        "continuation_end_exclusive": 32,
+        "target_position_start": 512,
+        "dense_nll": 1.6751320034888408,
+        "student_nll": 1.7330825679044213,
+        "excess_nll": 0.05795056441558044,
+        "excess_nll_ci95": [
+          0.04130517532792004,
+          0.0751650304871755
+        ],
+        "kl": 0.07820438296674936,
+        "top1_agreement": 0.8828125,
+        "retention": 0.49782682780078763
+      },
+      {
+        "continuation_start": 32,
+        "continuation_end_exclusive": 64,
+        "target_position_start": 544,
+        "dense_nll": 1.5710567750275153,
+        "student_nll": 1.657770909903613,
+        "excess_nll": 0.0867141348760978,
+        "excess_nll_ci95": [
+          0.07049270578547623,
+          0.10303565955849185
+        ],
+        "kl": 0.08326092377615191,
+        "top1_agreement": 0.88232421875,
+        "retention": 0.4915888618597819
+      },
+      {
+        "continuation_start": 64,
+        "continuation_end_exclusive": 96,
+        "target_position_start": 576,
+        "dense_nll": 1.5377919816830465,
+        "student_nll": 1.639853099519582,
+        "excess_nll": 0.10206111783653538,
+        "excess_nll_ci95": [
+          0.07944785660007375,
+          0.12422231586826689
+        ],
+        "kl": 0.09178586016041501,
+        "top1_agreement": 0.87158203125,
+        "retention": 0.47010108331051015
+      },
+      {
+        "continuation_start": 96,
+        "continuation_end_exclusive": 128,
+        "target_position_start": 608,
+        "dense_nll": 1.6001056665082911,
+        "student_nll": 1.6931703376286351,
+        "excess_nll": 0.093064671120344,
+        "excess_nll_ci95": [
+          0.07131945633861068,
+          0.1150250832022735
+        ],
+        "kl": 0.09278131695074054,
+        "top1_agreement": 0.86865234375,
+        "retention": 0.5152043595790019
+      },
+      {
+        "continuation_start": 128,
+        "continuation_end_exclusive": 160,
+        "target_position_start": 640,
+        "dense_nll": 1.5972795393414363,
+        "student_nll": 1.6761432066987596,
+        "excess_nll": 0.07886366735732331,
+        "excess_nll_ci95": [
+          0.06093195668139263,
+          0.09631874565444713
+        ],
+        "kl": 0.09219700168166844,
+        "top1_agreement": 0.8701171875,
+        "retention": 0.4831117723169882
+      },
+      {
+        "continuation_start": 160,
+        "continuation_end_exclusive": 192,
+        "target_position_start": 672,
+        "dense_nll": 1.6438205254680367,
+        "student_nll": 1.779410252311069,
+        "excess_nll": 0.1355897268430324,
+        "excess_nll_ci95": [
+          0.10932860694563298,
+          0.16294621078860408
+        ],
+        "kl": 0.1060740658619268,
+        "top1_agreement": 0.86669921875,
+        "retention": 0.4961477237793588
+      },
+      {
+        "continuation_start": 192,
+        "continuation_end_exclusive": 224,
+        "target_position_start": 704,
+        "dense_nll": 1.6041741184211535,
+        "student_nll": 1.7063390211261273,
+        "excess_nll": 0.10216490270497369,
+        "excess_nll_ci95": [
+          0.0813403808003969,
+          0.12361206306376907
+        ],
+        "kl": 0.10525407409469023,
+        "top1_agreement": 0.86083984375,
+        "retention": 0.4898825759955798
+      },
+      {
+        "continuation_start": 224,
+        "continuation_end_exclusive": 256,
+        "target_position_start": 736,
+        "dense_nll": 1.6018492023794397,
+        "student_nll": 1.706097617321939,
+        "excess_nll": 0.10424841494249937,
+        "excess_nll_ci95": [
+          0.0804764674767514,
+          0.1291428338005819
+        ],
+        "kl": 0.10198017697370942,
+        "top1_agreement": 0.87451171875,
+        "retention": 0.4866063011068036
+      },
+      {
+        "continuation_start": 256,
+        "continuation_end_exclusive": 288,
+        "target_position_start": 768,
+        "dense_nll": 1.5900153169434124,
+        "student_nll": 1.708392473039549,
+        "excess_nll": 0.11837715609613664,
+        "excess_nll_ci95": [
+          0.09099312654486849,
+          0.14926943823464733
+        ],
+        "kl": 0.10515717236532962,
+        "top1_agreement": 0.86474609375,
+        "retention": 0.4906122564661928
+      },
+      {
+        "continuation_start": 288,
+        "continuation_end_exclusive": 320,
+        "target_position_start": 800,
+        "dense_nll": 1.5783186157852778,
+        "student_nll": 1.6681950499562936,
+        "excess_nll": 0.08987643417101587,
+        "excess_nll_ci95": [
+          0.06560076123388796,
+          0.1132941137972484
+        ],
+        "kl": 0.10586251261840163,
+        "top1_agreement": 0.8681640625,
+        "retention": 0.4950327869064495
+      },
+      {
+        "continuation_start": 320,
+        "continuation_end_exclusive": 352,
+        "target_position_start": 832,
+        "dense_nll": 1.5717084542186046,
+        "student_nll": 1.674160568823479,
+        "excess_nll": 0.10245211460487447,
+        "excess_nll_ci95": [
+          0.07964606961107928,
+          0.12551525135297978
+        ],
+        "kl": 0.09973035122289775,
+        "top1_agreement": 0.87060546875,
+        "retention": 0.48867055219307076
+      },
+      {
+        "continuation_start": 352,
+        "continuation_end_exclusive": 384,
+        "target_position_start": 864,
+        "dense_nll": 1.5397289975945796,
+        "student_nll": 1.6468371478859032,
+        "excess_nll": 0.10710815029132359,
+        "excess_nll_ci95": [
+          0.08639311208926867,
+          0.12793743201436528
+        ],
+        "kl": 0.10122854842554263,
+        "top1_agreement": 0.873046875,
+        "retention": 0.454842718960208
+      },
+      {
+        "continuation_start": 384,
+        "continuation_end_exclusive": 416,
+        "target_position_start": 896,
+        "dense_nll": 1.5155011418054813,
+        "student_nll": 1.607558403853717,
+        "excess_nll": 0.09205726204823561,
+        "excess_nll_ci95": [
+          0.07220373138204861,
+          0.11274781456840803
+        ],
+        "kl": 0.09821298874700002,
+        "top1_agreement": 0.861328125,
+        "retention": 0.46187299606935994
+      },
+      {
+        "continuation_start": 416,
+        "continuation_end_exclusive": 448,
+        "target_position_start": 928,
+        "dense_nll": 1.607126060097851,
+        "student_nll": 1.7125289245498219,
+        "excess_nll": 0.10540286445197083,
+        "excess_nll_ci95": [
+          0.08337231209401522,
+          0.128206339313753
+        ],
+        "kl": 0.10619631596218015,
+        "top1_agreement": 0.8642578125,
+        "retention": 0.4851462411297689
+      },
+      {
+        "continuation_start": 448,
+        "continuation_end_exclusive": 480,
+        "target_position_start": 960,
+        "dense_nll": 1.4555628080161562,
+        "student_nll": 1.5697228574555142,
+        "excess_nll": 0.11416004943935798,
+        "excess_nll_ci95": [
+          0.08879917799632478,
+          0.14064690207292949
+        ],
+        "kl": 0.10419919396554334,
+        "top1_agreement": 0.86474609375,
+        "retention": 0.46902841415612784
+      },
+      {
+        "continuation_start": 480,
+        "continuation_end_exclusive": 512,
+        "target_position_start": 992,
+        "dense_nll": 1.5825279559988026,
+        "student_nll": 1.7066279596348473,
+        "excess_nll": 0.12410000363604468,
+        "excess_nll_ci95": [
+          0.09577844965809088,
+          0.15146043956791996
+        ],
+        "kl": 0.1042802491811643,
+        "top1_agreement": 0.857421875,
+        "retention": 0.4668746446568548
+      }
+    ],
+    "prompt_tokens": 512,
+    "calibration_prompt_tokens": 512,
+    "scored_tokens": 32768,
+    "single_seed": true,
+    "bootstrap": "paired nonoverlapping WikiText block percentile bootstrap; not independent original documents or seed variation"
+  },
+  "planner-50-prompt-1024-cal-512": {
+    "dense_perplexity": 4.6484823612701405,
+    "student_perplexity": 5.1544713116727365,
+    "relative_ppl_increase": 0.10885035396032795,
+    "teacher_kl_nats": 0.09890908567524574,
+    "top1_agreement": 0.871307373046875,
+    "routed_kept": 0.4750563983670176,
+    "tokens": 32768.0,
+    "relative_ppl_increase_ci95": [
+      0.10149721639846855,
+      0.11603736831180604
+    ],
+    "teacher_kl_nats_ci95": [
+      0.09458313716403409,
+      0.1031696769578652
+    ],
+    "top1_agreement_ci95": [
+      0.8663017272949218,
+      0.8764961242675782
+    ],
+    "routed_kept_ci95": [
+      0.4629548672214046,
+      0.48667034873646026
+    ],
+    "dense_perplexity_ci95": [
+      4.312188342343629,
+      5.000182146293361
+    ],
+    "student_perplexity_ci95": [
+      4.7658242355394655,
+      5.557750153699104
+    ],
+    "bins": [
+      {
+        "continuation_start": 0,
+        "continuation_end_exclusive": 32,
+        "target_position_start": 1024,
+        "dense_nll": 1.6212814520333794,
+        "student_nll": 1.689897534075278,
+        "excess_nll": 0.06861608204189862,
+        "excess_nll_ci95": [
+          0.04943696172736238,
+          0.08805972099625065
+        ],
+        "kl": 0.08086067018501342,
+        "top1_agreement": 0.8876953125,
+        "retention": 0.48598669521555665
+      },
+      {
+        "continuation_start": 32,
+        "continuation_end_exclusive": 64,
+        "target_position_start": 1056,
+        "dense_nll": 1.530324652175339,
+        "student_nll": 1.6161836477284865,
+        "excess_nll": 0.08585899555314747,
+        "excess_nll_ci95": [
+          0.06697083339507465,
+          0.10480305044270607
+        ],
+        "kl": 0.08836423106841784,
+        "top1_agreement": 0.8837890625,
+        "retention": 0.4819341375496151
+      },
+      {
+        "continuation_start": 64,
+        "continuation_end_exclusive": 96,
+        "target_position_start": 1088,
+        "dense_nll": 1.493206627568402,
+        "student_nll": 1.596163922418911,
+        "excess_nll": 0.1029572948505092,
+        "excess_nll_ci95": [
+          0.0813389624238214,
+          0.1247434335858308
+        ],
+        "kl": 0.091504988522282,
+        "top1_agreement": 0.876953125,
+        "retention": 0.46007150425066357
+      },
+      {
+        "continuation_start": 96,
+        "continuation_end_exclusive": 128,
+        "target_position_start": 1120,
+        "dense_nll": 1.5320284765200802,
+        "student_nll": 1.6315176940901714,
+        "excess_nll": 0.09948921757009127,
+        "excess_nll_ci95": [
+          0.07917955503206722,
+          0.12035522146392556
+        ],
+        "kl": 0.09637769434702681,
+        "top1_agreement": 0.87744140625,
+        "retention": 0.5015162221188803
+      },
+      {
+        "continuation_start": 128,
+        "continuation_end_exclusive": 160,
+        "target_position_start": 1152,
+        "dense_nll": 1.561346467360948,
+        "student_nll": 1.6413531276589057,
+        "excess_nll": 0.08000666029795767,
+        "excess_nll_ci95": [
+          0.06191514768260635,
+          0.09697402978631925
+        ],
+        "kl": 0.09121841784868989,
+        "top1_agreement": 0.86865234375,
+        "retention": 0.46756351030853693
+      },
+      {
+        "continuation_start": 160,
+        "continuation_end_exclusive": 192,
+        "target_position_start": 1184,
+        "dense_nll": 1.6065506305390667,
+        "student_nll": 1.7378318454209198,
+        "excess_nll": 0.13128121488185307,
+        "excess_nll_ci95": [
+          0.10255129616619077,
+          0.15996091182373656
+        ],
+        "kl": 0.10332178616655141,
+        "top1_agreement": 0.85888671875,
+        "retention": 0.4889569777678844
+      },
+      {
+        "continuation_start": 192,
+        "continuation_end_exclusive": 224,
+        "target_position_start": 1216,
+        "dense_nll": 1.548041738621404,
+        "student_nll": 1.6493104137069186,
+        "excess_nll": 0.10126867508551463,
+        "excess_nll_ci95": [
+          0.08013700585731429,
+          0.12278470206693372
+        ],
+        "kl": 0.10242565266919523,
+        "top1_agreement": 0.865234375,
+        "retention": 0.48009863362676697
+      },
+      {
+        "continuation_start": 224,
+        "continuation_end_exclusive": 256,
+        "target_position_start": 1248,
+        "dense_nll": 1.5598794069812965,
+        "student_nll": 1.6712108381585633,
+        "excess_nll": 0.11133143117726685,
+        "excess_nll_ci95": [
+          0.08758171327957484,
+          0.13600429682646056
+        ],
+        "kl": 0.09975958690708264,
+        "top1_agreement": 0.87109375,
+        "retention": 0.47547980855415517
+      },
+      {
+        "continuation_start": 256,
+        "continuation_end_exclusive": 288,
+        "target_position_start": 1280,
+        "dense_nll": 1.538149756978148,
+        "student_nll": 1.6607046360167348,
+        "excess_nll": 0.12255487903858686,
+        "excess_nll_ci95": [
+          0.0939136977814585,
+          0.1544934478818622
+        ],
+        "kl": 0.10623266065659534,
+        "top1_agreement": 0.8681640625,
+        "retention": 0.4842921681010921
+      },
+      {
+        "continuation_start": 288,
+        "continuation_end_exclusive": 320,
+        "target_position_start": 1312,
+        "dense_nll": 1.5279988407976286,
+        "student_nll": 1.6158971131949524,
+        "excess_nll": 0.08789827239732384,
+        "excess_nll_ci95": [
+          0.06419896615878114,
+          0.1116726895202667
+        ],
+        "kl": 0.10424911984300189,
+        "top1_agreement": 0.8740234375,
+        "retention": 0.4867181530644302
+      },
+      {
+        "continuation_start": 320,
+        "continuation_end_exclusive": 352,
+        "target_position_start": 1344,
+        "dense_nll": 1.5399925341462675,
+        "student_nll": 1.639652626676078,
+        "excess_nll": 0.09966009252981056,
+        "excess_nll_ci95": [
+          0.0764870213364267,
+          0.12326141698336082
+        ],
+        "kl": 0.10182174991979337,
+        "top1_agreement": 0.8759765625,
+        "retention": 0.48174308618035866
+      },
+      {
+        "continuation_start": 352,
+        "continuation_end_exclusive": 384,
+        "target_position_start": 1376,
+        "dense_nll": 1.493218255332044,
+        "student_nll": 1.6047057379311693,
+        "excess_nll": 0.11148748259912522,
+        "excess_nll_ci95": [
+          0.09255464080547501,
+          0.13096825383850916
+        ],
+        "kl": 0.10712568657126553,
+        "top1_agreement": 0.865234375,
+        "retention": 0.4462110396998469
+      },
+      {
+        "continuation_start": 384,
+        "continuation_end_exclusive": 416,
+        "target_position_start": 1408,
+        "dense_nll": 1.477043332258377,
+        "student_nll": 1.574980731450723,
+        "excess_nll": 0.09793739919234612,
+        "excess_nll_ci95": [
+          0.07937666293424957,
+          0.11752619099080634
+        ],
+        "kl": 0.09752094684644597,
+        "top1_agreement": 0.86279296875,
+        "retention": 0.4571590423511225
+      },
+      {
+        "continuation_start": 416,
+        "continuation_end_exclusive": 448,
+        "target_position_start": 1440,
+        "dense_nll": 1.5812980387443163,
+        "student_nll": 1.6939835833130314,
+        "excess_nll": 0.11268554456871527,
+        "excess_nll_ci95": [
+          0.08952683248352049,
+          0.13697034718335369
+        ],
+        "kl": 0.10539292221339336,
+        "top1_agreement": 0.861328125,
+        "retention": 0.4816604416082555
+      },
+      {
+        "continuation_start": 448,
+        "continuation_end_exclusive": 480,
+        "target_position_start": 1472,
+        "dense_nll": 1.4348630941142968,
+        "student_nll": 1.554027539403398,
+        "excess_nll": 0.1191644452891012,
+        "excess_nll_ci95": [
+          0.09422574693433938,
+          0.14611103974223105
+        ],
+        "kl": 0.10426737292144922,
+        "top1_agreement": 0.87158203125,
+        "retention": 0.4628534173225489
+      },
+      {
+        "continuation_start": 480,
+        "continuation_end_exclusive": 512,
+        "target_position_start": 1504,
+        "dense_nll": 1.5394293743458975,
+        "student_nll": 1.6604118704045776,
+        "excess_nll": 0.12098249605868006,
+        "excess_nll_ci95": [
+          0.09518125192600056,
+          0.14643768096079074
+        ],
+        "kl": 0.10210188411772791,
+        "top1_agreement": 0.8720703125,
+        "retention": 0.4589993967056216
+      }
+    ],
+    "prompt_tokens": 1024,
+    "calibration_prompt_tokens": 512,
+    "scored_tokens": 32768,
+    "single_seed": true,
+    "bootstrap": "paired nonoverlapping WikiText block percentile bootstrap; not independent original documents or seed variation"
+  },
+  "planner-50-prompt-1024-cal-1024": {
+    "dense_perplexity": 4.6484823612701405,
+    "student_perplexity": 5.136382900544402,
+    "relative_ppl_increase": 0.1049591030697057,
+    "teacher_kl_nats": 0.09562359995813574,
+    "top1_agreement": 0.87322998046875,
+    "routed_kept": 0.4816503936252838,
+    "tokens": 32768.0,
+    "relative_ppl_increase_ci95": [
+      0.09793439928385676,
+      0.1115547599105948
+    ],
+    "teacher_kl_nats_ci95": [
+      0.09137128258690948,
+      0.09976658539351016
+    ],
+    "top1_agreement_ci95": [
+      0.8684684753417968,
+      0.87811279296875
+    ],
+    "routed_kept_ci95": [
+      0.4695698381298999,
+      0.4932465719845653
+    ],
+    "dense_perplexity_ci95": [
+      4.312188342343629,
+      5.000182146293361
+    ],
+    "student_perplexity_ci95": [
+      4.7517268346960995,
+      5.540913847174603
+    ],
+    "bins": [
+      {
+        "continuation_start": 0,
+        "continuation_end_exclusive": 32,
+        "target_position_start": 1024,
+        "dense_nll": 1.6212814520333794,
+        "student_nll": 1.690616346310632,
+        "excess_nll": 0.0693348942772527,
+        "excess_nll_ci95": [
+          0.04859892275608444,
+          0.09121218182575544
+        ],
+        "kl": 0.0793615920407762,
+        "top1_agreement": 0.88671875,
+        "retention": 0.49246315070007357
+      },
+      {
+        "continuation_start": 32,
+        "continuation_end_exclusive": 64,
+        "target_position_start": 1056,
+        "dense_nll": 1.530324652175339,
+        "student_nll": 1.6170186987028836,
+        "excess_nll": 0.08669404652754453,
+        "excess_nll_ci95": [
+          0.06905070302019668,
+          0.10482661520121667
+        ],
+        "kl": 0.08438064055319416,
+        "top1_agreement": 0.8876953125,
+        "retention": 0.4886610314988502
+      },
+      {
+        "continuation_start": 64,
+        "continuation_end_exclusive": 96,
+        "target_position_start": 1088,
+        "dense_nll": 1.493206627568402,
+        "student_nll": 1.5926187595013868,
+        "excess_nll": 0.09941213193298493,
+        "excess_nll_ci95": [
+          0.07839493303267825,
+          0.12092214102047641
+        ],
+        "kl": 0.0887260766886998,
+        "top1_agreement": 0.88134765625,
+        "retention": 0.46684655880744685
+      },
+      {
+        "continuation_start": 96,
+        "continuation_end_exclusive": 128,
+        "target_position_start": 1120,
+        "dense_nll": 1.5320284765200802,
+        "student_nll": 1.6262061678815365,
+        "excess_nll": 0.09417769136145637,
+        "excess_nll_ci95": [
+          0.07439831617885624,
+          0.11499555897621129
+        ],
+        "kl": 0.0917573695954807,
+        "top1_agreement": 0.876953125,
+        "retention": 0.5075190426687186
+      },
+      {
+        "continuation_start": 128,
+        "continuation_end_exclusive": 160,
+        "target_position_start": 1152,
+        "dense_nll": 1.561346467360948,
+        "student_nll": 1.6366095379887482,
+        "excess_nll": 0.07526307062780013,
+        "excess_nll_ci95": [
+          0.05762738646781636,
+          0.09297436142364632
+        ],
+        "kl": 0.08778608667386018,
+        "top1_agreement": 0.8701171875,
+        "retention": 0.4741435843388899
+      },
+      {
+        "continuation_start": 160,
+        "continuation_end_exclusive": 192,
+        "target_position_start": 1184,
+        "dense_nll": 1.6065506305390667,
+        "student_nll": 1.7348609892459548,
+        "excess_nll": 0.128310358706888,
+        "excess_nll_ci95": [
+          0.10089117038740383,
+          0.15634034580068823
+        ],
+        "kl": 0.09974560111364883,
+        "top1_agreement": 0.861328125,
+        "retention": 0.4948380183759582
+      },
+      {
+        "continuation_start": 192,
+        "continuation_end_exclusive": 224,
+        "target_position_start": 1216,
+        "dense_nll": 1.548041738621404,
+        "student_nll": 1.6501139570132337,
+        "excess_nll": 0.1020722183918299,
+        "excess_nll_ci95": [
+          0.08152091891734456,
+          0.12423192026704459
+        ],
+        "kl": 0.10084227660217504,
+        "top1_agreement": 0.8603515625,
+        "retention": 0.4859993300451606
+      },
+      {
+        "continuation_start": 224,
+        "continuation_end_exclusive": 256,
+        "target_position_start": 1248,
+        "dense_nll": 1.5598794069812965,
+        "student_nll": 1.6681986194898428,
+        "excess_nll": 0.10831921250854637,
+        "excess_nll_ci95": [
+          0.08454082504222131,
+          0.1321437859599019
+        ],
+        "kl": 0.0954282314392998,
+        "top1_agreement": 0.876953125,
+        "retention": 0.4819720492050692
+      },
+      {
+        "continuation_start": 256,
+        "continuation_end_exclusive": 288,
+        "target_position_start": 1280,
+        "dense_nll": 1.538149756978148,
+        "student_nll": 1.653652885801233,
+        "excess_nll": 0.115503128823085,
+        "excess_nll_ci95": [
+          0.08765454288060281,
+          0.14644883430972258
+        ],
+        "kl": 0.10409827587925904,
+        "top1_agreement": 0.86328125,
+        "retention": 0.4907539427622396
+      },
+      {
+        "continuation_start": 288,
+        "continuation_end_exclusive": 320,
+        "target_position_start": 1312,
+        "dense_nll": 1.5279988407976286,
+        "student_nll": 1.6108032004207535,
+        "excess_nll": 0.08280435962312493,
+        "excess_nll_ci95": [
+          0.05970132099278173,
+          0.105489254442894
+        ],
+        "kl": 0.09944745526395038,
+        "top1_agreement": 0.87158203125,
+        "retention": 0.49264266309910454
+      },
+      {
+        "continuation_start": 320,
+        "continuation_end_exclusive": 352,
+        "target_position_start": 1344,
+        "dense_nll": 1.5399925341462675,
+        "student_nll": 1.637566935288495,
+        "excess_nll": 0.09757440114222748,
+        "excess_nll_ci95": [
+          0.07539942670841929,
+          0.1200364533225557
+        ],
+        "kl": 0.09856852853387743,
+        "top1_agreement": 0.87841796875,
+        "retention": 0.48877158767754736
+      },
+      {
+        "continuation_start": 352,
+        "continuation_end_exclusive": 384,
+        "target_position_start": 1376,
+        "dense_nll": 1.493218255332044,
+        "student_nll": 1.5977375901476387,
+        "excess_nll": 0.10451933481559461,
+        "excess_nll_ci95": [
+          0.08527525788968963,
+          0.12426768991085449
+        ],
+        "kl": 0.10220833673629404,
+        "top1_agreement": 0.87109375,
+        "retention": 0.4530267352329247
+      },
+      {
+        "continuation_start": 384,
+        "continuation_end_exclusive": 416,
+        "target_position_start": 1408,
+        "dense_nll": 1.477043332258377,
+        "student_nll": 1.571476298597504,
+        "excess_nll": 0.09443296633912712,
+        "excess_nll_ci95": [
+          0.07467146278624658,
+          0.11482060459432435
+        ],
+        "kl": 0.09519417668834507,
+        "top1_agreement": 0.87109375,
+        "retention": 0.46470511424922734
+      },
+      {
+        "continuation_start": 416,
+        "continuation_end_exclusive": 448,
+        "target_position_start": 1440,
+        "dense_nll": 1.5812980387443163,
+        "student_nll": 1.687831530892759,
+        "excess_nll": 0.1065334921484426,
+        "excess_nll_ci95": [
+          0.08414658786734963,
+          0.13041762463272477
+        ],
+        "kl": 0.10118138618845451,
+        "top1_agreement": 0.86328125,
+        "retention": 0.48897901358759555
+      },
+      {
+        "continuation_start": 448,
+        "continuation_end_exclusive": 480,
+        "target_position_start": 1472,
+        "dense_nll": 1.4348630941142968,
+        "student_nll": 1.546800137375833,
+        "excess_nll": 0.1119370432615363,
+        "excess_nll_ci95": [
+          0.08733646579496378,
+          0.13512392563220904
+        ],
+        "kl": 0.10026274285181658,
+        "top1_agreement": 0.87646484375,
+        "retention": 0.4696902910072822
+      },
+      {
+        "continuation_start": 480,
+        "continuation_end_exclusive": 512,
+        "target_position_start": 1504,
+        "dense_nll": 1.5394293743458975,
+        "student_nll": 1.6594741996689089,
+        "excess_nll": 0.1200448253230113,
+        "excess_nll_ci95": [
+          0.0953254271171003,
+          0.14458383295265406
+        ],
+        "kl": 0.10098882248104002,
+        "top1_agreement": 0.875,
+        "retention": 0.465732375449079
+      }
+    ],
+    "prompt_tokens": 1024,
+    "calibration_prompt_tokens": 1024,
+    "scored_tokens": 32768,
+    "single_seed": true,
+    "bootstrap": "paired nonoverlapping WikiText block percentile bootstrap; not independent original documents or seed variation"
+  },
+  "planner-40-prompt-64-cal-512": {
+    "dense_perplexity": 5.677918054446189,
+    "student_perplexity": 6.49681353825826,
+    "relative_ppl_increase": 0.14422460415236543,
+    "teacher_kl_nats": 0.1328375569281727,
+    "top1_agreement": 0.84405517578125,
+    "routed_kept": 0.42700557621646695,
+    "tokens": 32768.0,
+    "relative_ppl_increase_ci95": [
+      0.1335984906713604,
+      0.15404001081400234
+    ],
+    "teacher_kl_nats_ci95": [
+      0.1279390281031846,
+      0.13759558609869732
+    ],
+    "top1_agreement_ci95": [
+      0.83819580078125,
+      0.8494873046875
+    ],
+    "routed_kept_ci95": [
+      0.41881320833571084,
+      0.435300404404052
+    ],
+    "dense_perplexity_ci95": [
+      5.258680351539035,
+      6.124216442670409
+    ],
+    "student_perplexity_ci95": [
+      6.00853077710952,
+      7.008347997345037
+    ],
+    "bins": [
+      {
+        "continuation_start": 0,
+        "continuation_end_exclusive": 32,
+        "target_position_start": 64,
+        "dense_nll": 2.0862299627239707,
+        "student_nll": 2.1693280593841564,
+        "excess_nll": 0.08309809666018575,
+        "excess_nll_ci95": [
+          0.06516827090360021,
+          0.10067844615488414
+        ],
+        "kl": 0.09291516198406669,
+        "top1_agreement": 0.8701171875,
+        "retention": 0.4804449635426394
+      },
+      {
+        "continuation_start": 32,
+        "continuation_end_exclusive": 64,
+        "target_position_start": 96,
+        "dense_nll": 1.8844849719926844,
+        "student_nll": 1.983261480340608,
+        "excess_nll": 0.09877650834792351,
+        "excess_nll_ci95": [
+          0.07625773565822744,
+          0.12177074027617693
+        ],
+        "kl": 0.11021047376567061,
+        "top1_agreement": 0.84521484375,
+        "retention": 0.458125205930628
+      },
+      {
+        "continuation_start": 64,
+        "continuation_end_exclusive": 96,
+        "target_position_start": 128,
+        "dense_nll": 1.8340766234549972,
+        "student_nll": 1.9606991638452356,
+        "excess_nll": 0.12662254039023835,
+        "excess_nll_ci95": [
+          0.10054242485543881,
+          0.15539195628409083
+        ],
+        "kl": 0.11642352483150664,
+        "top1_agreement": 0.861328125,
+        "retention": 0.43842997531828587
+      },
+      {
+        "continuation_start": 96,
+        "continuation_end_exclusive": 128,
+        "target_position_start": 160,
+        "dense_nll": 1.834755102596397,
+        "student_nll": 1.9593762709681246,
+        "excess_nll": 0.12462116837172765,
+        "excess_nll_ci95": [
+          0.0985167678235956,
+          0.15260171147260562
+        ],
+        "kl": 0.128743512285676,
+        "top1_agreement": 0.853515625,
+        "retention": 0.4662170803039771
+      },
+      {
+        "continuation_start": 128,
+        "continuation_end_exclusive": 160,
+        "target_position_start": 192,
+        "dense_nll": 1.7270912835810401,
+        "student_nll": 1.8329686235155669,
+        "excess_nll": 0.10587733993452675,
+        "excess_nll_ci95": [
+          0.08180946482154604,
+          0.13027752900102657
+        ],
+        "kl": 0.12584120008266853,
+        "top1_agreement": 0.845703125,
+        "retention": 0.4292961493283656
+      },
+      {
+        "continuation_start": 160,
+        "continuation_end_exclusive": 192,
+        "target_position_start": 224,
+        "dense_nll": 1.7964720128811553,
+        "student_nll": 1.9517458712343343,
+        "excess_nll": 0.15527385835317897,
+        "excess_nll_ci95": [
+          0.12831343494704545,
+          0.18590678023859744
+        ],
+        "kl": 0.13347150024837307,
+        "top1_agreement": 0.85498046875,
+        "retention": 0.4402898289990844
+      },
+      {
+        "continuation_start": 192,
+        "continuation_end_exclusive": 224,
+        "target_position_start": 256,
+        "dense_nll": 1.7766659413465482,
+        "student_nll": 1.9236247929949006,
+        "excess_nll": 0.14695885164835243,
+        "excess_nll_ci95": [
+          0.11909466168860387,
+          0.17379607332663732
+        ],
+        "kl": 0.14070294901084657,
+        "top1_agreement": 0.8330078125,
+        "retention": 0.4307298928488308
+      },
+      {
+        "continuation_start": 224,
+        "continuation_end_exclusive": 256,
+        "target_position_start": 288,
+        "dense_nll": 1.713324804070088,
+        "student_nll": 1.8506810419332616,
+        "excess_nll": 0.13735623786317352,
+        "excess_nll_ci95": [
+          0.11034433876669358,
+          0.16306021194877365
+        ],
+        "kl": 0.14063411995487307,
+        "top1_agreement": 0.8369140625,
+        "retention": 0.42428032664793136
+      },
+      {
+        "continuation_start": 256,
+        "continuation_end_exclusive": 288,
+        "target_position_start": 320,
+        "dense_nll": 1.64687023679234,
+        "student_nll": 1.7980545083850077,
+        "excess_nll": 0.15118427159266767,
+        "excess_nll_ci95": [
+          0.12311191043783193,
+          0.17928001121726633
+        ],
+        "kl": 0.1309116122879196,
+        "top1_agreement": 0.833984375,
+        "retention": 0.422993619378758
+      },
+      {
+        "continuation_start": 288,
+        "continuation_end_exclusive": 320,
+        "target_position_start": 352,
+        "dense_nll": 1.7098035832527363,
+        "student_nll": 1.8381788989687093,
+        "excess_nll": 0.12837531571597305,
+        "excess_nll_ci95": [
+          0.09827113583437143,
+          0.15804532863900939
+        ],
+        "kl": 0.14769882104973586,
+        "top1_agreement": 0.83935546875,
+        "retention": 0.43232151138181507
+      },
+      {
+        "continuation_start": 320,
+        "continuation_end_exclusive": 352,
+        "target_position_start": 384,
+        "dense_nll": 1.6710218513179926,
+        "student_nll": 1.8402943257503983,
+        "excess_nll": 0.16927247443240567,
+        "excess_nll_ci95": [
+          0.14326297920689016,
+          0.19571958558063468
+        ],
+        "kl": 0.15271240516011142,
+        "top1_agreement": 0.845703125,
+        "retention": 0.42129833040780795
+      },
+      {
+        "continuation_start": 352,
+        "continuation_end_exclusive": 384,
+        "target_position_start": 416,
+        "dense_nll": 1.665696474739994,
+        "student_nll": 1.8096993051471104,
+        "excess_nll": 0.14400283040711637,
+        "excess_nll_ci95": [
+          0.12039035905034465,
+          0.1695327674317511
+        ],
+        "kl": 0.13894868186357812,
+        "top1_agreement": 0.8271484375,
+        "retention": 0.3920307259522815
+      },
+      {
+        "continuation_start": 384,
+        "continuation_end_exclusive": 416,
+        "target_position_start": 448,
+        "dense_nll": 1.602061499047784,
+        "student_nll": 1.7521886464104277,
+        "excess_nll": 0.15012714736264376,
+        "excess_nll_ci95": [
+          0.12012859288834382,
+          0.18215918031257078
+        ],
+        "kl": 0.14069747950739941,
+        "top1_agreement": 0.84130859375,
+        "retention": 0.39672401077223185
+      },
+      {
+        "continuation_start": 416,
+        "continuation_end_exclusive": 448,
+        "target_position_start": 480,
+        "dense_nll": 1.6869633364721812,
+        "student_nll": 1.82811883107304,
+        "excess_nll": 0.14115549460085886,
+        "excess_nll_ci95": [
+          0.1167370262899453,
+          0.166502491330185
+        ],
+        "kl": 0.14485882715651455,
+        "top1_agreement": 0.83544921875,
+        "retention": 0.4119068769959995
+      },
+      {
+        "continuation_start": 448,
+        "continuation_end_exclusive": 480,
+        "target_position_start": 512,
+        "dense_nll": 1.5114710034544556,
+        "student_nll": 1.658755615836835,
+        "excess_nll": 0.14728461238237944,
+        "excess_nll_ci95": [
+          0.11380042652380781,
+          0.18191334807342155
+        ],
+        "kl": 0.14267381224232656,
+        "top1_agreement": 0.84619140625,
+        "retention": 0.397015089620254
+      },
+      {
+        "continuation_start": 480,
+        "continuation_end_exclusive": 512,
+        "target_position_start": 544,
+        "dense_nll": 1.6383653255681625,
+        "student_nll": 1.7840138733121838,
+        "excess_nll": 0.14564854774402125,
+        "excess_nll_ci95": [
+          0.11489216138320105,
+          0.1757637230113051
+        ],
+        "kl": 0.1379568294194966,
+        "top1_agreement": 0.8349609375,
+        "retention": 0.3916558734035789
+      }
+    ],
+    "prompt_tokens": 64,
+    "calibration_prompt_tokens": 512,
+    "scored_tokens": 32768,
+    "single_seed": true,
+    "bootstrap": "paired nonoverlapping WikiText block percentile bootstrap; not independent original documents or seed variation"
+  },
+  "planner-40-prompt-512-cal-512": {
+    "dense_perplexity": 4.852437702125005,
+    "student_perplexity": 5.557253066527031,
+    "relative_ppl_increase": 0.14524975026333034,
+    "teacher_kl_nats": 0.13081071678492465,
+    "top1_agreement": 0.84893798828125,
+    "routed_kept": 0.4032248846361038,
+    "tokens": 32768.0,
+    "relative_ppl_increase_ci95": [
+      0.13616355763221777,
+      0.15456445223114232
+    ],
+    "teacher_kl_nats_ci95": [
+      0.12575895594957853,
+      0.13554357266474784
+    ],
+    "top1_agreement_ci95": [
+      0.8434135437011718,
+      0.854827880859375
+    ],
+    "routed_kept_ci95": [
+      0.3936297787883255,
+      0.4129210730703666
+    ],
+    "dense_perplexity_ci95": [
+      4.493249449393876,
+      5.229613678487356
+    ],
+    "student_perplexity_ci95": [
+      5.1317160143490925,
+      5.98883954477887
+    ],
+    "bins": [
+      {
+        "continuation_start": 0,
+        "continuation_end_exclusive": 32,
+        "target_position_start": 512,
+        "dense_nll": 1.6751320034888408,
+        "student_nll": 1.7682413523634222,
+        "excess_nll": 0.09310934887458133,
+        "excess_nll_ci95": [
+          0.06785977658356199,
+          0.11799744793178835
+        ],
+        "kl": 0.10644718831217981,
+        "top1_agreement": 0.8681640625,
+        "retention": 0.41667172224673954
+      },
+      {
+        "continuation_start": 32,
+        "continuation_end_exclusive": 64,
+        "target_position_start": 544,
+        "dense_nll": 1.5710567750275153,
+        "student_nll": 1.6862353131524916,
+        "excess_nll": 0.11517853812497636,
+        "excess_nll_ci95": [
+          0.09535394995731503,
+          0.13532919791478157
+        ],
+        "kl": 0.11192671506047447,
+        "top1_agreement": 0.8623046875,
+        "retention": 0.411820137864197
+      },
+      {
+        "continuation_start": 64,
+        "continuation_end_exclusive": 96,
+        "target_position_start": 576,
+        "dense_nll": 1.5377919816830465,
+        "student_nll": 1.660292533592691,
+        "excess_nll": 0.12250055190964448,
+        "excess_nll_ci95": [
+          0.09540002833887787,
+          0.1484861639853227
+        ],
+        "kl": 0.11738125351500261,
+        "top1_agreement": 0.8564453125,
+        "retention": 0.39278599905628653
+      },
+      {
+        "continuation_start": 96,
+        "continuation_end_exclusive": 128,
+        "target_position_start": 608,
+        "dense_nll": 1.6001056665082911,
+        "student_nll": 1.7384680406048436,
+        "excess_nll": 0.1383623740965525,
+        "excess_nll_ci95": [
+          0.11142606311815505,
+          0.16646031734085265
+        ],
+        "kl": 0.1272193079123658,
+        "top1_agreement": 0.85791015625,
+        "retention": 0.4333743335264444
+      },
+      {
+        "continuation_start": 128,
+        "continuation_end_exclusive": 160,
+        "target_position_start": 640,
+        "dense_nll": 1.5972795393414363,
+        "student_nll": 1.712011236307239,
+        "excess_nll": 0.11473169696580277,
+        "excess_nll_ci95": [
+          0.09216302542322061,
+          0.138143153468485
+        ],
+        "kl": 0.12304700782263467,
+        "top1_agreement": 0.849609375,
+        "retention": 0.4036338528167107
+      },
+      {
+        "continuation_start": 160,
+        "continuation_end_exclusive": 192,
+        "target_position_start": 672,
+        "dense_nll": 1.6438205254680367,
+        "student_nll": 1.8068103539954485,
+        "excess_nll": 0.16298982852741184,
+        "excess_nll_ci95": [
+          0.13355519596689178,
+          0.19441624306045963
+        ],
+        "kl": 0.13584847737524886,
+        "top1_agreement": 0.8408203125,
+        "retention": 0.41845890224976756
+      },
+      {
+        "continuation_start": 192,
+        "continuation_end_exclusive": 224,
+        "target_position_start": 704,
+        "dense_nll": 1.6041741184211535,
+        "student_nll": 1.7485620207317052,
+        "excess_nll": 0.14438790231055165,
+        "excess_nll_ci95": [
+          0.12065190855023329,
+          0.16781774001421493
+        ],
+        "kl": 0.13319955464235356,
+        "top1_agreement": 0.849609375,
+        "retention": 0.4079075105346419
+      },
+      {
+        "continuation_start": 224,
+        "continuation_end_exclusive": 256,
+        "target_position_start": 736,
+        "dense_nll": 1.6018492023794397,
+        "student_nll": 1.7520820531442287,
+        "excess_nll": 0.1502328507647891,
+        "excess_nll_ci95": [
+          0.12289075148330966,
+          0.17917159842690009
+        ],
+        "kl": 0.1411214255517872,
+        "top1_agreement": 0.85107421875,
+        "retention": 0.40656385020884045
+      },
+      {
+        "continuation_start": 256,
+        "continuation_end_exclusive": 288,
+        "target_position_start": 768,
+        "dense_nll": 1.5900153169434124,
+        "student_nll": 1.735368185141317,
+        "excess_nll": 0.1453528681979046,
+        "excess_nll_ci95": [
+          0.11581747099178119,
+          0.1751376319561384
+        ],
+        "kl": 0.13266456783397765,
+        "top1_agreement": 0.8388671875,
+        "retention": 0.4084606063370302
+      },
+      {
+        "continuation_start": 288,
+        "continuation_end_exclusive": 320,
+        "target_position_start": 800,
+        "dense_nll": 1.5783186157852778,
+        "student_nll": 1.6936547253917968,
+        "excess_nll": 0.11533610960651908,
+        "excess_nll_ci95": [
+          0.08801835829415489,
+          0.1418778219600857
+        ],
+        "kl": 0.13810323060251983,
+        "top1_agreement": 0.8505859375,
+        "retention": 0.41562972055908176
+      },
+      {
+        "continuation_start": 320,
+        "continuation_end_exclusive": 352,
+        "target_position_start": 832,
+        "dense_nll": 1.5717084542186046,
+        "student_nll": 1.708733906689514,
+        "excess_nll": 0.13702545247090936,
+        "excess_nll_ci95": [
+          0.11205218165991468,
+          0.1620283819654458
+        ],
+        "kl": 0.1370399544697749,
+        "top1_agreement": 0.85302734375,
+        "retention": 0.405677148633913
+      },
+      {
+        "continuation_start": 352,
+        "continuation_end_exclusive": 384,
+        "target_position_start": 864,
+        "dense_nll": 1.5397289975945796,
+        "student_nll": 1.6880375212119842,
+        "excess_nll": 0.14830852361740465,
+        "excess_nll_ci95": [
+          0.12641022519937642,
+          0.1709713536539828
+        ],
+        "kl": 0.1323803642878585,
+        "top1_agreement": 0.83740234375,
+        "retention": 0.3759516823301965
+      },
+      {
+        "continuation_start": 384,
+        "continuation_end_exclusive": 416,
+        "target_position_start": 896,
+        "dense_nll": 1.5155011418054813,
+        "student_nll": 1.6574263816840396,
+        "excess_nll": 0.1419252398785582,
+        "excess_nll_ci95": [
+          0.11282073358372324,
+          0.17176212901783763
+        ],
+        "kl": 0.1362883410258804,
+        "top1_agreement": 0.83740234375,
+        "retention": 0.38263467008619045
+      },
+      {
+        "continuation_start": 416,
+        "continuation_end_exclusive": 448,
+        "target_position_start": 928,
+        "dense_nll": 1.607126060097851,
+        "student_nll": 1.7469607573417663,
+        "excess_nll": 0.13983469724391528,
+        "excess_nll_ci95": [
+          0.11867210798900302,
+          0.1612122497517762
+        ],
+        "kl": 0.14361550960629854,
+        "top1_agreement": 0.82861328125,
+        "retention": 0.40142165544057207
+      },
+      {
+        "continuation_start": 448,
+        "continuation_end_exclusive": 480,
+        "target_position_start": 960,
+        "dense_nll": 1.4555628080161562,
+        "student_nll": 1.6025249730994329,
+        "excess_nll": 0.14696216508327664,
+        "excess_nll_ci95": [
+          0.11542158737988048,
+          0.18013832427306953
+        ],
+        "kl": 0.13974800843855223,
+        "top1_agreement": 0.85302734375,
+        "retention": 0.38695988915605994
+      },
+      {
+        "continuation_start": 480,
+        "continuation_end_exclusive": 512,
+        "target_position_start": 992,
+        "dense_nll": 1.5825279559988026,
+        "student_nll": 1.7362535798727898,
+        "excess_nll": 0.15372562387398725,
+        "excess_nll_ci95": [
+          0.12171557415973168,
+          0.1860417761653008
+        ],
+        "kl": 0.13694056210188554,
+        "top1_agreement": 0.84814453125,
+        "retention": 0.3840669311939564
+      }
+    ],
+    "prompt_tokens": 512,
+    "calibration_prompt_tokens": 512,
+    "scored_tokens": 32768,
+    "single_seed": true,
+    "bootstrap": "paired nonoverlapping WikiText block percentile bootstrap; not independent original documents or seed variation"
+  },
+  "planner-40-prompt-1024-cal-512": {
+    "dense_perplexity": 4.6484823612701405,
+    "student_perplexity": 5.333064374717877,
+    "relative_ppl_increase": 0.14727000346424532,
+    "teacher_kl_nats": 0.13143587864967798,
+    "top1_agreement": 0.851043701171875,
+    "routed_kept": 0.39484887966049004,
+    "tokens": 32768.0,
+    "relative_ppl_increase_ci95": [
+      0.1378674810057046,
+      0.15639269557432073
+    ],
+    "teacher_kl_nats_ci95": [
+      0.1258836846522996,
+      0.1363543703201807
+    ],
+    "top1_agreement_ci95": [
+      0.8458549499511718,
+      0.856658935546875
+    ],
+    "routed_kept_ci95": [
+      0.3838983243452226,
+      0.4052865575790939
+    ],
+    "dense_perplexity_ci95": [
+      4.312188342343629,
+      5.000182146293361
+    ],
+    "student_perplexity_ci95": [
+      4.9426752421398055,
+      5.741126171101982
+    ],
+    "bins": [
+      {
+        "continuation_start": 0,
+        "continuation_end_exclusive": 32,
+        "target_position_start": 1024,
+        "dense_nll": 1.6212814520333794,
+        "student_nll": 1.7205013320958797,
+        "excess_nll": 0.09921988006250038,
+        "excess_nll_ci95": [
+          0.07388586277174855,
+          0.1265753060664737
+        ],
+        "kl": 0.10908879311643904,
+        "top1_agreement": 0.86865234375,
+        "retention": 0.4067302429879595
+      },
+      {
+        "continuation_start": 32,
+        "continuation_end_exclusive": 64,
+        "target_position_start": 1056,
+        "dense_nll": 1.530324652175339,
+        "student_nll": 1.6423099442839524,
+        "excess_nll": 0.11198529210861341,
+        "excess_nll_ci95": [
+          0.09155112031266824,
+          0.13211739039221973
+        ],
+        "kl": 0.11816293405099887,
+        "top1_agreement": 0.869140625,
+        "retention": 0.40299215080995054
+      },
+      {
+        "continuation_start": 64,
+        "continuation_end_exclusive": 96,
+        "target_position_start": 1088,
+        "dense_nll": 1.493206627568402,
+        "student_nll": 1.6138088627740617,
+        "excess_nll": 0.12060223520565982,
+        "excess_nll_ci95": [
+          0.09620887337894743,
+          0.14621239699821376
+        ],
+        "kl": 0.11827268281547676,
+        "top1_agreement": 0.86767578125,
+        "retention": 0.3825501589853957
+      },
+      {
+        "continuation_start": 96,
+        "continuation_end_exclusive": 128,
+        "target_position_start": 1120,
+        "dense_nll": 1.5320284765200802,
+        "student_nll": 1.6680301125164765,
+        "excess_nll": 0.13600163599639636,
+        "excess_nll_ci95": [
+          0.10886866410416011,
+          0.166643370052168
+        ],
+        "kl": 0.1274814477138016,
+        "top1_agreement": 0.85986328125,
+        "retention": 0.4198498898240359
+      },
+      {
+        "continuation_start": 128,
+        "continuation_end_exclusive": 160,
+        "target_position_start": 1152,
+        "dense_nll": 1.561346467360948,
+        "student_nll": 1.6734031108757894,
+        "excess_nll": 0.11205664351484135,
+        "excess_nll_ci95": [
+          0.08791024766130315,
+          0.13677314777748373
+        ],
+        "kl": 0.1248489985126563,
+        "top1_agreement": 0.845703125,
+        "retention": 0.38889857338108413
+      },
+      {
+        "continuation_start": 160,
+        "continuation_end_exclusive": 192,
+        "target_position_start": 1184,
+        "dense_nll": 1.6065506305390667,
+        "student_nll": 1.7657135552159335,
+        "excess_nll": 0.15916292467686677,
+        "excess_nll_ci95": [
+          0.12881416524447412,
+          0.19014295556985758
+        ],
+        "kl": 0.13552918857187324,
+        "top1_agreement": 0.85009765625,
+        "retention": 0.40896313181838195
+      },
+      {
+        "continuation_start": 192,
+        "continuation_end_exclusive": 224,
+        "target_position_start": 1216,
+        "dense_nll": 1.548041738621404,
+        "student_nll": 1.6937556542247763,
+        "excess_nll": 0.14571391560337232,
+        "excess_nll_ci95": [
+          0.1212895719545076,
+          0.17088957415771827
+        ],
+        "kl": 0.13289345188195012,
+        "top1_agreement": 0.84228515625,
+        "retention": 0.3979190425307024
+      },
+      {
+        "continuation_start": 224,
+        "continuation_end_exclusive": 256,
+        "target_position_start": 1248,
+        "dense_nll": 1.5598794069812965,
+        "student_nll": 1.715934801130949,
+        "excess_nll": 0.15605539414965253,
+        "excess_nll_ci95": [
+          0.12819632457405758,
+          0.18512402951029086
+        ],
+        "kl": 0.13801139936975515,
+        "top1_agreement": 0.85546875,
+        "retention": 0.3968107892851549
+      },
+      {
+        "continuation_start": 256,
+        "continuation_end_exclusive": 288,
+        "target_position_start": 1280,
+        "dense_nll": 1.538149756978148,
+        "student_nll": 1.6887895721746178,
+        "excess_nll": 0.15063981519646985,
+        "excess_nll_ci95": [
+          0.11943498746071693,
+          0.1844895091219433
+        ],
+        "kl": 0.13920680184740478,
+        "top1_agreement": 0.83984375,
+        "retention": 0.4023309587046242
+      },
+      {
+        "continuation_start": 288,
+        "continuation_end_exclusive": 320,
+        "target_position_start": 1312,
+        "dense_nll": 1.5279988407976286,
+        "student_nll": 1.6547680928579855,
+        "excess_nll": 0.12676925206035694,
+        "excess_nll_ci95": [
+          0.100253948545198,
+          0.15368851761547586
+        ],
+        "kl": 0.13857266764649312,
+        "top1_agreement": 0.84765625,
+        "retention": 0.4057764661647525
+      },
+      {
+        "continuation_start": 320,
+        "continuation_end_exclusive": 352,
+        "target_position_start": 1344,
+        "dense_nll": 1.5399925341462675,
+        "student_nll": 1.67624383255336,
+        "excess_nll": 0.1362512984070925,
+        "excess_nll_ci95": [
+          0.1097054392461041,
+          0.16392206016616517
+        ],
+        "kl": 0.13801389970043432,
+        "top1_agreement": 0.86083984375,
+        "retention": 0.3991620650176628
+      },
+      {
+        "continuation_start": 352,
+        "continuation_end_exclusive": 384,
+        "target_position_start": 1376,
+        "dense_nll": 1.493218255332044,
+        "student_nll": 1.6455979649424557,
+        "excess_nll": 0.15237970961041158,
+        "excess_nll_ci95": [
+          0.12824103892641964,
+          0.1766556103837029
+        ],
+        "kl": 0.13533839446345342,
+        "top1_agreement": 0.8408203125,
+        "retention": 0.368190530785796
+      },
+      {
+        "continuation_start": 384,
+        "continuation_end_exclusive": 416,
+        "target_position_start": 1408,
+        "dense_nll": 1.477043332258377,
+        "student_nll": 1.6186262745870301,
+        "excess_nll": 0.14158294232865332,
+        "excess_nll_ci95": [
+          0.11159751803604552,
+          0.17284833961530083
+        ],
+        "kl": 0.13382152420661386,
+        "top1_agreement": 0.841796875,
+        "retention": 0.3794066529317206
+      },
+      {
+        "continuation_start": 416,
+        "continuation_end_exclusive": 448,
+        "target_position_start": 1440,
+        "dense_nll": 1.5812980387443163,
+        "student_nll": 1.727785573564068,
+        "excess_nll": 0.14648753481975163,
+        "excess_nll_ci95": [
+          0.12201807854218254,
+          0.17128825854253577
+        ],
+        "kl": 0.1422082077617075,
+        "top1_agreement": 0.82763671875,
+        "retention": 0.3984748629100068
+      },
+      {
+        "continuation_start": 448,
+        "continuation_end_exclusive": 480,
+        "target_position_start": 1472,
+        "dense_nll": 1.4348630941142968,
+        "student_nll": 1.5851349422796943,
+        "excess_nll": 0.15027184816539751,
+        "excess_nll_ci95": [
+          0.11929364362550768,
+          0.18233850923893766
+        ],
+        "kl": 0.13776858058260638,
+        "top1_agreement": 0.849609375,
+        "retention": 0.38201399517492973
+      },
+      {
+        "continuation_start": 480,
+        "continuation_end_exclusive": 512,
+        "target_position_start": 1504,
+        "dense_nll": 1.5394293743458975,
+        "student_nll": 1.692412414877393,
+        "excess_nll": 0.15298304053149536,
+        "excess_nll_ci95": [
+          0.12147028088458448,
+          0.1830083880880283
+        ],
+        "kl": 0.1337550861531831,
+        "top1_agreement": 0.849609375,
+        "retention": 0.3778840966770076
+      }
+    ],
+    "prompt_tokens": 1024,
+    "calibration_prompt_tokens": 512,
+    "scored_tokens": 32768,
+    "single_seed": true,
+    "bootstrap": "paired nonoverlapping WikiText block percentile bootstrap; not independent original documents or seed variation"
+  },
+  "planner-40-prompt-1024-cal-1024": {
+    "dense_perplexity": 4.6484823612701405,
+    "student_perplexity": 5.304070150470476,
+    "relative_ppl_increase": 0.141032650712523,
+    "teacher_kl_nats": 0.12637312101488027,
+    "top1_agreement": 0.85308837890625,
+    "routed_kept": 0.4026160789307028,
+    "tokens": 32768.0,
+    "relative_ppl_increase_ci95": [
+      0.13183999353326037,
+      0.14967952420564465
+    ],
+    "teacher_kl_nats_ci95": [
+      0.1210858809509985,
+      0.1313112133621078
+    ],
+    "top1_agreement_ci95": [
+      0.8477439880371094,
+      0.8587646484375
+    ],
+    "routed_kept_ci95": [
+      0.39155937760221293,
+      0.4131968075737417
+    ],
+    "dense_perplexity_ci95": [
+      4.312188342343629,
+      5.000182146293361
+    ],
+    "student_perplexity_ci95": [
+      4.916060363733262,
+      5.709745188689613
+    ],
+    "bins": [
+      {
+        "continuation_start": 0,
+        "continuation_end_exclusive": 32,
+        "target_position_start": 1024,
+        "dense_nll": 1.6212814520333794,
+        "student_nll": 1.7198055425981191,
+        "excess_nll": 0.09852409056473976,
+        "excess_nll_ci95": [
+          0.0735659551730215,
+          0.12522898357451126
+        ],
+        "kl": 0.10564968126061025,
+        "top1_agreement": 0.87255859375,
+        "retention": 0.4142101897535125
+      },
+      {
+        "continuation_start": 32,
+        "continuation_end_exclusive": 64,
+        "target_position_start": 1056,
+        "dense_nll": 1.530324652175339,
+        "student_nll": 1.6386513042811033,
+        "excess_nll": 0.10832665210576409,
+        "excess_nll_ci95": [
+          0.08818932418647846,
+          0.12885571422685826
+        ],
+        "kl": 0.1166582439036099,
+        "top1_agreement": 0.86572265625,
+        "retention": 0.41036401959718205
+      },
+      {
+        "continuation_start": 64,
+        "continuation_end_exclusive": 96,
+        "target_position_start": 1088,
+        "dense_nll": 1.493206627568402,
+        "student_nll": 1.6088330517008935,
+        "excess_nll": 0.11562642413249169,
+        "excess_nll_ci95": [
+          0.09259264158855113,
+          0.13946292815880826
+        ],
+        "kl": 0.11364672809277665,
+        "top1_agreement": 0.865234375,
+        "retention": 0.3902830638435262
+      },
+      {
+        "continuation_start": 96,
+        "continuation_end_exclusive": 128,
+        "target_position_start": 1120,
+        "dense_nll": 1.5320284765200802,
+        "student_nll": 1.6702830399858493,
+        "excess_nll": 0.13825456346576914,
+        "excess_nll_ci95": [
+          0.11125409602003732,
+          0.16632940758054993
+        ],
+        "kl": 0.12725940746511955,
+        "top1_agreement": 0.8583984375,
+        "retention": 0.42726938073610654
+      },
+      {
+        "continuation_start": 128,
+        "continuation_end_exclusive": 160,
+        "target_position_start": 1152,
+        "dense_nll": 1.561346467360948,
+        "student_nll": 1.6747141357249715,
+        "excess_nll": 0.11336766836402346,
+        "excess_nll_ci95": [
+          0.08924574053751823,
+          0.13918382247423688
+        ],
+        "kl": 0.12080171164253906,
+        "top1_agreement": 0.84912109375,
+        "retention": 0.3965353084204253
+      },
+      {
+        "continuation_start": 160,
+        "continuation_end_exclusive": 192,
+        "target_position_start": 1184,
+        "dense_nll": 1.6065506305390667,
+        "student_nll": 1.7610115774251094,
+        "excess_nll": 0.15446094688604262,
+        "excess_nll_ci95": [
+          0.12582113642493561,
+          0.1839521414124643
+        ],
+        "kl": 0.13137970988297365,
+        "top1_agreement": 0.845703125,
+        "retention": 0.4167284668819775
+      },
+      {
+        "continuation_start": 192,
+        "continuation_end_exclusive": 224,
+        "target_position_start": 1216,
+        "dense_nll": 1.548041738621404,
+        "student_nll": 1.6842753900692486,
+        "excess_nll": 0.13623365144784472,
+        "excess_nll_ci95": [
+          0.11164875490598965,
+          0.1601973214399224
+        ],
+        "kl": 0.12556928051729432,
+        "top1_agreement": 0.84130859375,
+        "retention": 0.405396111025766
+      },
+      {
+        "continuation_start": 224,
+        "continuation_end_exclusive": 256,
+        "target_position_start": 1248,
+        "dense_nll": 1.5598794069812965,
+        "student_nll": 1.7009527302993541,
+        "excess_nll": 0.14107332331805766,
+        "excess_nll_ci95": [
+          0.11377461755708773,
+          0.16818734564481697
+        ],
+        "kl": 0.13013103795992143,
+        "top1_agreement": 0.8603515625,
+        "retention": 0.4050258424413187
+      },
+      {
+        "continuation_start": 256,
+        "continuation_end_exclusive": 288,
+        "target_position_start": 1280,
+        "dense_nll": 1.538149756978148,
+        "student_nll": 1.6855440721326589,
+        "excess_nll": 0.14739431515451096,
+        "excess_nll_ci95": [
+          0.1174539543840329,
+          0.18050025897933458
+        ],
+        "kl": 0.13118616125826105,
+        "top1_agreement": 0.84912109375,
+        "retention": 0.4106782797607593
+      },
+      {
+        "continuation_start": 288,
+        "continuation_end_exclusive": 320,
+        "target_position_start": 1312,
+        "dense_nll": 1.5279988407976286,
+        "student_nll": 1.6370521574061283,
+        "excess_nll": 0.1090533166084997,
+        "excess_nll_ci95": [
+          0.08176946278750666,
+          0.1347371438496512
+        ],
+        "kl": 0.12998584884760178,
+        "top1_agreement": 0.8564453125,
+        "retention": 0.4140707160386228
+      },
+      {
+        "continuation_start": 320,
+        "continuation_end_exclusive": 352,
+        "target_position_start": 1344,
+        "dense_nll": 1.5399925341462675,
+        "student_nll": 1.6720761050452042,
+        "excess_nll": 0.13208357089893674,
+        "excess_nll_ci95": [
+          0.10596684941750921,
+          0.15879538038611313
+        ],
+        "kl": 0.1313090827649741,
+        "top1_agreement": 0.86474609375,
+        "retention": 0.40719205262575997
+      },
+      {
+        "continuation_start": 352,
+        "continuation_end_exclusive": 384,
+        "target_position_start": 1376,
+        "dense_nll": 1.493218255332044,
+        "student_nll": 1.638310029825242,
+        "excess_nll": 0.14509177449319788,
+        "excess_nll_ci95": [
+          0.12287948182842837,
+          0.1669493619223159
+        ],
+        "kl": 0.12991962618696862,
+        "top1_agreement": 0.84716796875,
+        "retention": 0.37582156049575133
+      },
+      {
+        "continuation_start": 384,
+        "continuation_end_exclusive": 416,
+        "target_position_start": 1408,
+        "dense_nll": 1.477043332258377,
+        "student_nll": 1.6144902477107217,
+        "excess_nll": 0.1374469154523449,
+        "excess_nll_ci95": [
+          0.10880209168741904,
+          0.1677331053527118
+        ],
+        "kl": 0.12948187787259213,
+        "top1_agreement": 0.8388671875,
+        "retention": 0.3869747251665103
+      },
+      {
+        "continuation_start": 416,
+        "continuation_end_exclusive": 448,
+        "target_position_start": 1440,
+        "dense_nll": 1.5812980387443163,
+        "student_nll": 1.7222566032406519,
+        "excess_nll": 0.1409585644963356,
+        "excess_nll_ci95": [
+          0.11733745315037543,
+          0.1643826849254026
+        ],
+        "kl": 0.137495926192011,
+        "top1_agreement": 0.83349609375,
+        "retention": 0.4065994909215078
+      },
+      {
+        "continuation_start": 448,
+        "continuation_end_exclusive": 480,
+        "target_position_start": 1472,
+        "dense_nll": 1.4348630941142968,
+        "student_nll": 1.576050532037916,
+        "excess_nll": 0.1411874379236191,
+        "excess_nll_ci95": [
+          0.11193515959119325,
+          0.1706398510644713
+        ],
+        "kl": 0.13114452271384652,
+        "top1_agreement": 0.8486328125,
+        "retention": 0.3895306618978793
+      },
+      {
+        "continuation_start": 480,
+        "continuation_end_exclusive": 512,
+        "target_position_start": 1504,
+        "dense_nll": 1.5394293743458975,
+        "student_nll": 1.6912851405499691,
+        "excess_nll": 0.1518557662040716,
+        "excess_nll_ci95": [
+          0.12063043733184416,
+          0.18159091349826653
+        ],
+        "kl": 0.13035108967698417,
+        "top1_agreement": 0.8525390625,
+        "retention": 0.3855399541716906
+      }
+    ],
+    "prompt_tokens": 1024,
+    "calibration_prompt_tokens": 1024,
+    "scored_tokens": 32768,
+    "single_seed": true,
+    "bootstrap": "paired nonoverlapping WikiText block percentile bootstrap; not independent original documents or seed variation"
+  }
+}

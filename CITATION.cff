@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+title: "Neural-Transformers: Predicting a Token's Full Neuron Path Ahead of Time in SwiGLU Language Models"
+authors:
+  - family-names: Waters
+    given-names: Travis
+    affiliation: Independent Researcher
+date-released: 2026-11-23
+license: MIT
+repository-code: "https://github.com/travishub09/Neural-Transformers"
+type: software

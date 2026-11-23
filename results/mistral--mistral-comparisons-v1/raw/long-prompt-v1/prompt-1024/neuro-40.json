@@ -1,0 +1,37 @@
+{
+  "method": "neuro",
+  "checkpoint_budget": null,
+  "prompt_tokens": 1024,
+  "continuation_tokens": 512,
+  "windows": 64,
+  "overall": {
+    "tokens": 32768.0,
+    "windows": 64,
+    "dense_nll": 1.5365407924073058,
+    "student_nll": 3.2859688711082455,
+    "dense_perplexity": 4.6484823612701405,
+    "student_perplexity": 26.734874418181313,
+    "relative_ppl_increase": 4.751312437136223,
+    "teacher_kl_nats": 1.719508459320789,
+    "top1_agreement": 0.487518310546875,
+    "relative_ppl_increase_ci95": [
+      3.9926545763954606,
+      6.078635376288416
+    ],
+    "teacher_kl_nats_ci95": [
+      1.5805690438522662,
+      1.9282325398945868
+    ],
+    "method": "paired document bootstrap within domains; random-mask seeds averaged first",
+    "routed_kept": 0.39997209821428437
+  },
+  "seconds": 486.325932264328,
+  "target_retention": 0.4,
+  "within_match_tolerance": true,
+  "test_retention_tolerance": 0.005,
+  "protocol": "Concatenate nonempty WikiText rows with two newlines within each official split; no BOS/EOS inserted; reset caches for each block; dense prompts; first continuation likelihood dense; remaining 511 likelihoods from sparse decoding",
+  "context_and_targets": "Both prompt lengths score the identical final 512 tokens of each 1536-token block",
+  "retention_denominator": "Eligible layers 2-31; 511 executed continuation inputs per window; prompt excluded",
+  "data_manifest_sha256": "5596d63410f932bddc8bca4b0c52a3947eae2107c287f812b88fd7a5e5a2df1c",
+  "identity_sha256": "8fc181955ab8a51e4b70e796974fae76f1088838f4f36ec22d87385e4908245b"
+}

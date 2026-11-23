@@ -1,0 +1,38 @@
+{
+  "50": {
+    "ppl_increase_difference_pp": 1.2180529919171068,
+    "ppl_difference_ci95_pp": [
+      0.8191080405667894,
+      1.5770078004061419
+    ],
+    "teacher_kl_difference": 0.013997471612051924,
+    "teacher_kl_difference_ci95": [
+      0.012690508297290475,
+      0.015321580944692699
+    ],
+    "retention_difference_pp": 0.054662015868575074,
+    "retention_difference_ci95_pp": [
+      -0.1133747470247677,
+      0.23091510098007123
+    ],
+    "scope": "A minus B; stratified paired-document bootstrap, not seed uncertainty; no adjustment for retention differences."
+  },
+  "40": {
+    "ppl_increase_difference_pp": 1.743428093037025,
+    "ppl_difference_ci95_pp": [
+      1.2231090986755095,
+      2.2718690182386267
+    ],
+    "teacher_kl_difference": 0.019387185379243378,
+    "teacher_kl_difference_ci95": [
+      0.017328659872420393,
+      0.02131882190213267
+    ],
+    "retention_difference_pp": -0.025315322935917952,
+    "retention_difference_ci95_pp": [
+      -0.21900630217768785,
+      0.17615252008198337
+    ],
+    "scope": "A minus B; stratified paired-document bootstrap, not seed uncertainty; no adjustment for retention differences."
+  }
+}

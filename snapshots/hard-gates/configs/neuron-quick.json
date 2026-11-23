@@ -1,0 +1,8 @@
+{
+  "seed": 20261109,
+  "documents_per_domain": 2,
+  "minimum_sequence_length": 128,
+  "maximum_sequence_length": 512,
+  "kept_fractions": [0.5, 0.4, 0.3, 0.25],
+  "maximum_runtime_seconds": 300
+}

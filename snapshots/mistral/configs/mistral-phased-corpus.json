@@ -1,0 +1,49 @@
+{
+  "seed": 20261116,
+  "sequence_length": 512,
+  "max_document_tokens": 8192,
+  "shuffle_buffer": 1000,
+  "sample_pairs": 1000,
+  "split_salt": "pathpred-stage3-v1",
+  "sources": [
+    {
+      "domain": "web",
+      "tokens": 20000000,
+      "dataset": "HuggingFaceFW/fineweb-edu",
+      "config": "sample-10BT",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "split": "train",
+      "format": "text",
+      "field": "text",
+      "license": "odc-by"
+    },
+    {
+      "domain": "code",
+      "tokens": 2500000,
+      "dataset": "codeparrot/codeparrot-clean",
+      "config": null,
+      "revision": "35a59fb025bc0a102f7d96eac09d145b896d487b",
+      "split": "train",
+      "format": "text",
+      "field": "content",
+      "license": "per-file metadata"
+    },
+    {
+      "domain": "conversation",
+      "tokens": 2500000,
+      "dataset": "HuggingFaceH4/ultrachat_200k",
+      "config": null,
+      "revision": "8049631c405ae6576f93f445c6b8166f76f5505a",
+      "split": "train_sft",
+      "format": "messages",
+      "field": "messages",
+      "license": "mit"
+    }
+  ],
+  "train_only": true,
+  "exclude_corpora": [
+    "data/stage3-corpus-v1",
+    "data/mistral-pilot-train-v1",
+    "data/mistral-full-extension-v1"
+  ]
+}

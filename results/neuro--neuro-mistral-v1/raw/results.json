@@ -1,0 +1,32 @@
+{
+  "32": {
+    "nll": 2835.7596141256163,
+    "tokens": 2047,
+    "paper_denominator_ppl": 3.9934209682567894,
+    "correct_denominator_ppl": 3.9961231440858866,
+    "kl": 0.0,
+    "top1_agreement": 1.0,
+    "suffix_kept": 1.0,
+    "seconds": 53.52116894721985
+  },
+  "20": {
+    "nll": 3560.460164669409,
+    "tokens": 2047,
+    "paper_denominator_ppl": 5.688837604189164,
+    "correct_denominator_ppl": 5.6936711552146555,
+    "kl": 0.3420713771105552,
+    "top1_agreement": 0.8065461651196874,
+    "suffix_kept": 0.49634704298774196,
+    "seconds": 57.6809868812561
+  },
+  "20_full_down": {
+    "nll": 3560.8731635452623,
+    "tokens": 2047,
+    "paper_denominator_ppl": 5.689984928627314,
+    "correct_denominator_ppl": 5.6948200155065996,
+    "kl": 0.3422225404722333,
+    "top1_agreement": 0.8050806057645334,
+    "suffix_kept": 0.49634704298774196,
+    "seconds": 56.17151141166687
+  }
+}
