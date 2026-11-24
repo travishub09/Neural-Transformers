@@ -75,7 +75,22 @@ This opens each cited result file, resolves the JSON pointer or formula for ever
 
 ## Trained Neural Transformers
 
-Checkpoints (Mistral NT-50, NT-40, NT-30, NT-20; Qwen 50% and 40% targets) will be published on Hugging Face; the link will be added here.
+The four Mistral-7B Neural Transformers are on Hugging Face: **[Tmoney29/neural-transformer](https://huggingface.co/Tmoney29/neural-transformer)**.
+
+| File | Paper name | Target retention | Training path in our runs |
+|---|---|---|---|
+| `NT-50.safetensors` | NT-50 | 50% | `artifacts/mistral-phased-v1/budget-50/planner-25000000.safetensors` |
+| `NT-40.safetensors` | NT-40 | 40% | `artifacts/mistral-phased-v1/budget-40/planner-15000000.safetensors` |
+| `NT-30.safetensors` | NT-30 | 30% | `artifacts/mistral-lower-v1/budget-30/planner-10000000.safetensors` |
+| `NT-20.safetensors` | NT-20 | 20% | `artifacts/mistral-lower-v1/budget-20/planner-10000000.safetensors` |
+
+Each checkpoint has a matching `NT-xx-calibration.json` (its per-layer score offsets and the shift δ calibrated to hit its target), and all four share `thresholds.safetensors` (the 75th-percentile thresholds used to build the previous-token path). The base model is `mistralai/Mistral-7B-v0.1`, which you download separately.
+
+```bash
+huggingface-cli download Tmoney29/neural-transformer --local-dir checkpoints/neural-transformer
+```
+
+The Qwen3-1.7B checkpoints are not published yet.
 
 ## Citation
 
